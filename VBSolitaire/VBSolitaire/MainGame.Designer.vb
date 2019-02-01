@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class MainGame
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -46,7 +46,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(8, 18)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(176, 28)
         Me.Button1.TabIndex = 0
@@ -62,9 +62,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Location = New System.Drawing.Point(11, -4)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(1140, 57)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
@@ -93,7 +93,7 @@ Partial Class Form1
         '
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Location = New System.Drawing.Point(865, 23)
-        Me.CheckBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(93, 21)
         Me.CheckBox3.TabIndex = 3
@@ -104,7 +104,7 @@ Partial Class Form1
         '
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Location = New System.Drawing.Point(703, 23)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(149, 21)
         Me.CheckBox2.TabIndex = 2
@@ -115,7 +115,7 @@ Partial Class Form1
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(579, 23)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(111, 21)
         Me.CheckBox1.TabIndex = 1
@@ -134,9 +134,9 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.GroupBox4)
         Me.GroupBox2.Controls.Add(Me.GroupBox3)
         Me.GroupBox2.Location = New System.Drawing.Point(11, 60)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(1140, 539)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
@@ -145,9 +145,9 @@ Partial Class Form1
         'GroupBox11
         '
         Me.GroupBox11.Location = New System.Drawing.Point(976, 145)
-        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox11.Size = New System.Drawing.Size(153, 386)
         Me.GroupBox11.TabIndex = 4
         Me.GroupBox11.TabStop = False
@@ -155,9 +155,9 @@ Partial Class Form1
         'GroupBox10
         '
         Me.GroupBox10.Location = New System.Drawing.Point(815, 145)
-        Me.GroupBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox10.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox10.Size = New System.Drawing.Size(153, 386)
         Me.GroupBox10.TabIndex = 3
         Me.GroupBox10.TabStop = False
@@ -165,9 +165,9 @@ Partial Class Form1
         'GroupBox9
         '
         Me.GroupBox9.Location = New System.Drawing.Point(653, 145)
-        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox9.Size = New System.Drawing.Size(153, 386)
         Me.GroupBox9.TabIndex = 3
         Me.GroupBox9.TabStop = False
@@ -175,9 +175,9 @@ Partial Class Form1
         'GroupBox8
         '
         Me.GroupBox8.Location = New System.Drawing.Point(492, 145)
-        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox8.Size = New System.Drawing.Size(153, 386)
         Me.GroupBox8.TabIndex = 3
         Me.GroupBox8.TabStop = False
@@ -185,9 +185,9 @@ Partial Class Form1
         'GroupBox7
         '
         Me.GroupBox7.Location = New System.Drawing.Point(331, 145)
-        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox7.Size = New System.Drawing.Size(153, 386)
         Me.GroupBox7.TabIndex = 3
         Me.GroupBox7.TabStop = False
@@ -195,9 +195,9 @@ Partial Class Form1
         'GroupBox6
         '
         Me.GroupBox6.Location = New System.Drawing.Point(169, 145)
-        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox6.Size = New System.Drawing.Size(153, 386)
         Me.GroupBox6.TabIndex = 3
         Me.GroupBox6.TabStop = False
@@ -205,9 +205,9 @@ Partial Class Form1
         'GroupBox5
         '
         Me.GroupBox5.Location = New System.Drawing.Point(8, 145)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox5.Size = New System.Drawing.Size(153, 386)
         Me.GroupBox5.TabIndex = 2
         Me.GroupBox5.TabStop = False
@@ -215,9 +215,9 @@ Partial Class Form1
         'GroupBox4
         '
         Me.GroupBox4.Location = New System.Drawing.Point(492, 23)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Size = New System.Drawing.Size(637, 114)
         Me.GroupBox4.TabIndex = 1
         Me.GroupBox4.TabStop = False
@@ -225,23 +225,23 @@ Partial Class Form1
         'GroupBox3
         '
         Me.GroupBox3.Location = New System.Drawing.Point(8, 23)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Size = New System.Drawing.Size(315, 114)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "0/23"
         '
-        'Form1
+        'MainGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1161, 614)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Name = "Form1"
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Name = "MainGame"
         Me.Text = "Main Games"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
