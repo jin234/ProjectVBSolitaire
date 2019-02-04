@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,26 +20,26 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
         Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -68,25 +68,23 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
-        'CheckBox1
+        'Label2
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(434, 19)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(87, 17)
-        Me.CheckBox1.TabIndex = 1
-        Me.CheckBox1.Text = "Debug mode"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(786, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(61, 13)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "00 : 00 : 00"
         '
-        'CheckBox2
+        'Label1
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(527, 19)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(116, 17)
-        Me.CheckBox2.TabIndex = 2
-        Me.CheckBox2.Text = "No move Condition"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(738, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(42, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Timer : "
         '
         'CheckBox3
         '
@@ -98,23 +96,25 @@ Partial Class Form1
         Me.CheckBox3.Text = "View Card"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
-        'Label1
+        'CheckBox2
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(738, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 13)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Timer : "
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(527, 19)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(116, 17)
+        Me.CheckBox2.TabIndex = 2
+        Me.CheckBox2.Text = "No move Condition"
+        Me.CheckBox2.UseVisualStyleBackColor = True
         '
-        'Label2
+        'CheckBox1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(786, 20)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 13)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "00 : 00 : 00"
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(434, 19)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(87, 17)
+        Me.CheckBox1.TabIndex = 1
+        Me.CheckBox1.Text = "Debug mode"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -134,62 +134,13 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Games"
         '
-        'GroupBox3
+        'GroupBox11
         '
-        Me.GroupBox3.Location = New System.Drawing.Point(6, 19)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(236, 93)
-        Me.GroupBox3.TabIndex = 0
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "0/23"
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Location = New System.Drawing.Point(369, 19)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(478, 93)
-        Me.GroupBox4.TabIndex = 1
-        Me.GroupBox4.TabStop = False
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Location = New System.Drawing.Point(6, 118)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(115, 314)
-        Me.GroupBox5.TabIndex = 2
-        Me.GroupBox5.TabStop = False
-        '
-        'GroupBox6
-        '
-        Me.GroupBox6.Location = New System.Drawing.Point(127, 118)
-        Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(115, 314)
-        Me.GroupBox6.TabIndex = 3
-        Me.GroupBox6.TabStop = False
-        '
-        'GroupBox7
-        '
-        Me.GroupBox7.Location = New System.Drawing.Point(248, 118)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(115, 314)
-        Me.GroupBox7.TabIndex = 3
-        Me.GroupBox7.TabStop = False
-        '
-        'GroupBox8
-        '
-        Me.GroupBox8.Location = New System.Drawing.Point(369, 118)
-        Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(115, 314)
-        Me.GroupBox8.TabIndex = 3
-        Me.GroupBox8.TabStop = False
-        '
-        'GroupBox9
-        '
-        Me.GroupBox9.Location = New System.Drawing.Point(490, 118)
-        Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(115, 314)
-        Me.GroupBox9.TabIndex = 3
-        Me.GroupBox9.TabStop = False
+        Me.GroupBox11.Location = New System.Drawing.Point(732, 118)
+        Me.GroupBox11.Name = "GroupBox11"
+        Me.GroupBox11.Size = New System.Drawing.Size(115, 314)
+        Me.GroupBox11.TabIndex = 4
+        Me.GroupBox11.TabStop = False
         '
         'GroupBox10
         '
@@ -199,13 +150,62 @@ Partial Class Form1
         Me.GroupBox10.TabIndex = 3
         Me.GroupBox10.TabStop = False
         '
-        'GroupBox11
+        'GroupBox9
         '
-        Me.GroupBox11.Location = New System.Drawing.Point(732, 118)
-        Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(115, 314)
-        Me.GroupBox11.TabIndex = 4
-        Me.GroupBox11.TabStop = False
+        Me.GroupBox9.Location = New System.Drawing.Point(490, 118)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(115, 314)
+        Me.GroupBox9.TabIndex = 3
+        Me.GroupBox9.TabStop = False
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.Location = New System.Drawing.Point(369, 118)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(115, 314)
+        Me.GroupBox8.TabIndex = 3
+        Me.GroupBox8.TabStop = False
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Location = New System.Drawing.Point(248, 118)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(115, 314)
+        Me.GroupBox7.TabIndex = 3
+        Me.GroupBox7.TabStop = False
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Location = New System.Drawing.Point(127, 118)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(115, 314)
+        Me.GroupBox6.TabIndex = 3
+        Me.GroupBox6.TabStop = False
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Location = New System.Drawing.Point(6, 118)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(115, 314)
+        Me.GroupBox5.TabIndex = 2
+        Me.GroupBox5.TabStop = False
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Location = New System.Drawing.Point(369, 19)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(478, 93)
+        Me.GroupBox4.TabIndex = 1
+        Me.GroupBox4.TabStop = False
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 19)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(236, 93)
+        Me.GroupBox3.TabIndex = 0
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "0/23"
         '
         'Form1
         '
