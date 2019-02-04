@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -39,6 +40,7 @@ Partial Class Form1
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.GroupBox10 = New System.Windows.Forms.GroupBox()
         Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -238,4 +240,5 @@ Partial Class Form1
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Timer1 As Timer
 End Class
