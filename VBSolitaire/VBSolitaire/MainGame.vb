@@ -5,7 +5,7 @@
     Dim Stage As Gamestage = New Gamestage
 
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
-        cards.Random()
+        Stage.Random()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -24,6 +24,7 @@
     End Sub
 
     Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click
+        PictureBox100.Image = My.Resources.AC
 
     End Sub
 
