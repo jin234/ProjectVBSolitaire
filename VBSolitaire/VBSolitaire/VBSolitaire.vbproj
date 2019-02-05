@@ -73,6 +73,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="card.vb" />
+    <Compile Include="Gamestage.vb" />
     <Compile Include="MainGame.Designer.vb">
       <DependentUpon>MainGame.vb</DependentUpon>
     </Compile>
