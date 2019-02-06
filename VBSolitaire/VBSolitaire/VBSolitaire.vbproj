@@ -292,5 +292,161 @@
   <ItemGroup>
     <None Include="Resources\BackWGlow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10CwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10DwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10HwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10SwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AHwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JCwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JDwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JHwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JSwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KCwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KDwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KHwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KSwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QCwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QDwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QHwL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QSwL.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
