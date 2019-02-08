@@ -448,5 +448,17 @@
   <ItemGroup>
     <None Include="Resources\QSwL.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AHClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASClear.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
