@@ -19,8 +19,8 @@
     Dim _FillD As New ArrayList
 
     Dim _Condition_cardselected As Boolean
-    Dim _selected_card1 As String
-    Dim _selected_card2 As String
+    Dim _selected_card1() As String
+    Dim _selected_card2() As String
 
     Public Property PulledPool1 As ArrayList
         Get
@@ -157,20 +157,20 @@
         End Set
     End Property
 
-    Public Property Selected_card1 As String
+    Public Property Selected_card1 As String()
         Get
             Return _selected_card1
         End Get
-        Set(value As String)
+        Set(value As String())
             _selected_card1 = value
         End Set
     End Property
 
-    Public Property Selected_card2 As String
+    Public Property Selected_card2 As String()
         Get
             Return _selected_card2
         End Get
-        Set(value As String)
+        Set(value As String())
             _selected_card2 = value
         End Set
     End Property
@@ -233,27 +233,70 @@
     End Sub
 
     Public Sub Move_card()
+        Dim temp As String
+        Dim row As String = Selected_card1(0)
+        Dim location As Integer = Selected_card1(1) - 1
+        If row = "R1" Then
+            temp = Row1(location)
+            Row1.RemoveAt(location)
+        ElseIf row = "R2" Then
+            temp = Row1(location)
+            Row2.RemoveAt(location)
+        ElseIf row = ("R3") Then
+            temp = Row1(location)
+            Row3.RemoveAt(location)
+        ElseIf row = ("R4") Then
+            temp = Row1(location)
+            Row4.RemoveAt(location)
+        ElseIf row = ("R5") Then
+            temp = Row1(location)
+            Row5.RemoveAt(location)
+        ElseIf row = ("R6") Then
+            temp = Row1(location)
+            Row6.RemoveAt(location)
+        ElseIf row = ("R7") Then
+            temp = Row1(location)
+            Row7.RemoveAt(location)
+        End If
 
-        MessageBox.Show("Move " + _selected_card1 + " to " + _selected_card2)
+        row = Selected_card2(0)
+        If row = "R1" Then
+            Row1.Add(temp)
+        ElseIf row = "R2" Then
+            Row2.Add(temp)
+        ElseIf row = ("R3") Then
+            Row3.Add(temp)
+        ElseIf row = ("R4") Then
+            Row4.Add(temp)
+        ElseIf row = ("R5") Then
+            Row5.Add(temp)
+        ElseIf row = ("R6") Then
+            Row6.Add(temp)
+        ElseIf row = ("R7") Then
+            Row7.Add(temp)
+        End If
 
     End Sub
-    Public Sub card_selected(card As String)
+
+    Public Sub card_selected(card As String())
 
         If _Condition_cardselected = False Then
             _Condition_cardselected = True
             _selected_card1 = card
             Hilight_card(card, True)
         Else
-            If _selected_card1 = card Then
+            If _selected_card1(0) = card(0) And _selected_card1(1) = card(1) Then
                 _Condition_cardselected = False
-                _selected_card1 = ""
+                _selected_card1(0) = ""
+                _selected_card1(1) = ""
                 Hilight_card(card, False)
             Else
                 _selected_card2 = card
-                Move_card()
                 Hilight_card(_selected_card1, False)
                 _Condition_cardselected = False
-                _selected_card1 = ""
+                Move_card()
+                _selected_card1(0) = ""
+                _selected_card1(1) = ""
             End If
         End If
     End Sub
@@ -279,77 +322,78 @@
 
 
 
-    Public Sub Hilight_card(card As String, condition As Boolean)
-        Dim location As Integer = card.Substring(card.IndexOf("_") + 1) - 1
+    Public Sub Hilight_card(card As String(), condition As Boolean)
+        Dim location As Integer = card(1) - 1
+        Dim row As String = card(0)
         If condition Then
-            If card.StartsWith("R1") Then
+            If row = ("R1") Then
                 Dim temp As String
                 temp = Row1(location)
                 Row1.RemoveAt(location)
                 Row1.Insert(location, temp + "WL")
-            ElseIf card.StartsWith("R2") Then
+            ElseIf row = ("R2") Then
                 Dim temp As String
                 temp = Row2(location)
                 Row2.RemoveAt(location)
                 Row2.Insert(location, temp + "WL")
-            ElseIf card.StartsWith("R3") Then
+            ElseIf row = ("R3") Then
                 Dim temp As String
                 temp = Row3(location)
                 Row3.RemoveAt(location)
                 Row3.Insert(location, temp + "WL")
-            ElseIf card.StartsWith("R4") Then
+            ElseIf row = ("R4") Then
                 Dim temp As String
                 temp = Row4(location)
                 Row4.RemoveAt(location)
                 Row4.Insert(location, temp + "WL")
-            ElseIf card.StartsWith("R5") Then
+            ElseIf row = ("R5") Then
                 Dim temp As String
                 temp = Row5(location)
                 Row5.RemoveAt(location)
                 Row5.Insert(location, temp + "WL")
-            ElseIf card.StartsWith("R6") Then
+            ElseIf row = ("R6") Then
                 Dim temp As String
                 temp = Row6(location)
                 Row6.RemoveAt(location)
                 Row6.Insert(location, temp + "WL")
-            ElseIf card.StartsWith("R7") Then
+            ElseIf row = ("R7") Then
                 Dim temp As String
                 temp = Row7(location)
                 Row7.RemoveAt(location)
                 Row7.Insert(location, temp + "WL")
             End If
         Else
-            If card.StartsWith("R1") Then
+            If row = ("R1") Then
                 Dim temp As String
                 temp = Row1(location)
                 Row1.RemoveAt(location)
                 Row1.Insert(location, temp.Substring(0, temp.Length - 2))
-            ElseIf card.StartsWith("R2") Then
+            ElseIf row = ("R2") Then
                 Dim temp As String
                 temp = Row2(location)
                 Row2.RemoveAt(location)
                 Row2.Insert(location, temp.TrimEnd("WL"))
-            ElseIf card.StartsWith("R3") Then
+            ElseIf row = ("R3") Then
                 Dim temp As String
                 temp = Row3(location)
                 Row3.RemoveAt(location)
                 Row3.Insert(location, temp.TrimEnd("WL"))
-            ElseIf card.StartsWith("R4") Then
+            ElseIf row = ("R4") Then
                 Dim temp As String
                 temp = Row4(location)
                 Row4.RemoveAt(location)
                 Row4.Insert(location, temp.TrimEnd("WL"))
-            ElseIf card.StartsWith("R5") Then
+            ElseIf row = ("R5") Then
                 Dim temp As String
                 temp = Row5(location)
                 Row5.RemoveAt(location)
                 Row5.Insert(location, temp.TrimEnd("WL"))
-            ElseIf card.StartsWith("R6") Then
+            ElseIf row = ("R6") Then
                 Dim temp As String
                 temp = Row6(location)
                 Row6.RemoveAt(location)
                 Row6.Insert(location, temp.TrimEnd("WL"))
-            ElseIf card.StartsWith("R7") Then
+            ElseIf row = ("R7") Then
                 Dim temp As String
                 temp = Row7(location)
                 Row7.RemoveAt(location)
