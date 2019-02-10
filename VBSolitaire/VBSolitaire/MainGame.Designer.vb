@@ -459,7 +459,7 @@ Partial Class MainGame
         Me.GroupBox11.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox11.TabIndex = 27
         Me.GroupBox11.TabStop = False
-        Me.GroupBox11.Text = "135-99"
+        Me.GroupBox11.Text = "135-117"
         '
         'PictureBox117
         '
@@ -891,7 +891,7 @@ Partial Class MainGame
         Me.GroupBox9.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox9.TabIndex = 25
         Me.GroupBox9.TabStop = False
-        Me.GroupBox9.Text = "97-61"
+        Me.GroupBox9.Text = "97-79"
         '
         'PictureBox79
         '
@@ -1935,6 +1935,7 @@ Partial Class MainGame
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 6
         Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
         '
         'PictureBox3
         '

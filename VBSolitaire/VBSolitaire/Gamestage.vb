@@ -250,10 +250,10 @@
                 Hilight_card(card, False)
             Else
                 _selected_card2 = card
-                Hilight_card(_selected_card1, False)
                 Move_card()
-
-
+                Hilight_card(_selected_card1, False)
+                _Condition_cardselected = False
+                _selected_card1 = ""
             End If
         End If
     End Sub
@@ -280,12 +280,82 @@
 
 
     Public Sub Hilight_card(card As String, condition As Boolean)
+        Dim location As Integer = card.Substring(card.IndexOf("_") + 1) - 1
         If condition Then
-            MessageBox.Show("hilight " + card)
+            If card.StartsWith("R1") Then
+                Dim temp As String
+                temp = Row1(location)
+                Row1.RemoveAt(location)
+                Row1.Insert(location, temp + "WL")
+            ElseIf card.StartsWith("R2") Then
+                Dim temp As String
+                temp = Row2(location)
+                Row2.RemoveAt(location)
+                Row2.Insert(location, temp + "WL")
+            ElseIf card.StartsWith("R3") Then
+                Dim temp As String
+                temp = Row3(location)
+                Row3.RemoveAt(location)
+                Row3.Insert(location, temp + "WL")
+            ElseIf card.StartsWith("R4") Then
+                Dim temp As String
+                temp = Row4(location)
+                Row4.RemoveAt(location)
+                Row4.Insert(location, temp + "WL")
+            ElseIf card.StartsWith("R5") Then
+                Dim temp As String
+                temp = Row5(location)
+                Row5.RemoveAt(location)
+                Row5.Insert(location, temp + "WL")
+            ElseIf card.StartsWith("R6") Then
+                Dim temp As String
+                temp = Row6(location)
+                Row6.RemoveAt(location)
+                Row6.Insert(location, temp + "WL")
+            ElseIf card.StartsWith("R7") Then
+                Dim temp As String
+                temp = Row7(location)
+                Row7.RemoveAt(location)
+                Row7.Insert(location, temp + "WL")
+            End If
         Else
-            MessageBox.Show("UN-hilight " + card)
+            If card.StartsWith("R1") Then
+                Dim temp As String
+                temp = Row1(location)
+                Row1.RemoveAt(location)
+                Row1.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf card.StartsWith("R2") Then
+                Dim temp As String
+                temp = Row2(location)
+                Row2.RemoveAt(location)
+                Row2.Insert(location, temp.TrimEnd("WL"))
+            ElseIf card.StartsWith("R3") Then
+                Dim temp As String
+                temp = Row3(location)
+                Row3.RemoveAt(location)
+                Row3.Insert(location, temp.TrimEnd("WL"))
+            ElseIf card.StartsWith("R4") Then
+                Dim temp As String
+                temp = Row4(location)
+                Row4.RemoveAt(location)
+                Row4.Insert(location, temp.TrimEnd("WL"))
+            ElseIf card.StartsWith("R5") Then
+                Dim temp As String
+                temp = Row5(location)
+                Row5.RemoveAt(location)
+                Row5.Insert(location, temp.TrimEnd("WL"))
+            ElseIf card.StartsWith("R6") Then
+                Dim temp As String
+                temp = Row6(location)
+                Row6.RemoveAt(location)
+                Row6.Insert(location, temp.TrimEnd("WL"))
+            ElseIf card.StartsWith("R7") Then
+                Dim temp As String
+                temp = Row7(location)
+                Row7.RemoveAt(location)
+                Row7.Insert(location, temp.TrimEnd("WL"))
+            End If
         End If
-
     End Sub
 
 End Class
