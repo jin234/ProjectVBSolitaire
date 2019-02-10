@@ -1,15 +1,13 @@
 ﻿Public Class Form1
 
-    Dim stage As Gamestage = New Gamestage
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        stage.Generate_Game()
-        For Each i In stage.Deck
-            MessageBox.Show(i)
-        Next
+
+        AxScriptControl1.AddObject("txtInput", TextBox1)
+        AxScriptControl1.ExecuteStatement(TextBox1.Text)
+        PictureBox1.BackColor = Color.White
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class

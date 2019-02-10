@@ -18,6 +18,10 @@
     Dim _FillH As New ArrayList
     Dim _FillD As New ArrayList
 
+    Dim _Condition_cardselected As Boolean
+    Dim _selected_card1 As String
+    Dim _selected_card2 As String
+
     Public Property PulledPool1 As ArrayList
         Get
             Return PulledPool
@@ -144,6 +148,33 @@
         End Set
     End Property
 
+    Public Property Condition_cardselected1 As Boolean
+        Get
+            Return _Condition_cardselected
+        End Get
+        Set(value As Boolean)
+            _Condition_cardselected = value
+        End Set
+    End Property
+
+    Public Property Selected_card1 As String
+        Get
+            Return _selected_card1
+        End Get
+        Set(value As String)
+            _selected_card1 = value
+        End Set
+    End Property
+
+    Public Property Selected_card2 As String
+        Get
+            Return _selected_card2
+        End Get
+        Set(value As String)
+            _selected_card2 = value
+        End Set
+    End Property
+
     Public Sub New()
 
     End Sub
@@ -201,10 +232,30 @@
 
     End Sub
 
-    Public Sub Move(PosA As String, PosB As String)
+    Public Sub Move_card()
+
+        MessageBox.Show("Move " + _selected_card1 + " to " + _selected_card2)
+
+    End Sub
+    Public Sub card_selected(card As String)
+
+        If _Condition_cardselected = False Then
+            _Condition_cardselected = True
+            _selected_card1 = card
+            Hilight_card(card, True)
+        Else
+            If _selected_card1 = card Then
+                _Condition_cardselected = False
+                _selected_card1 = ""
+                Hilight_card(card, False)
+            Else
+                _selected_card2 = card
+                Hilight_card(_selected_card1, False)
+                Move_card()
 
 
-
+            End If
+        End If
     End Sub
 
     Public Function checkmove(deck_name As String)
@@ -212,40 +263,28 @@
         Return True
         Return False
     End Function
-    Public Sub Display()
-        DisplayPerRow(1)
-        DisplayPerRow(2)
-        DisplayPerRow(3)
-        DisplayPerRow(4)
-        DisplayPerRow(5)
-        DisplayPerRow(6)
-        DisplayPerRow(7)
-        DisplayDeck()
-        DisplayDeckopen()
-        DisplayFill("C")
-        DisplayFill("S")
-        DisplayFill("H")
-        DisplayFill("D")
 
+    Public Sub Open_deck()
+        If _Deck.Count = 0 Then
+            _Deck.AddRange(_Deck_Open)
+            _Deck_Open.Clear()
+        Else
+            _Deck_Open.Add(_Deck(0))
+            _Deck.RemoveAt(0)
+        End If
     End Sub
 
-    Public Sub DisplayPerRow(Row As String)
 
 
-    End Sub
-
-    Public Sub DisplayDeck()
 
 
-    End Sub
 
-    Public Sub DisplayDeckopen()
-
-
-    End Sub
-
-    Public Sub DisplayFill(Row As String)
-
+    Public Sub Hilight_card(card As String, condition As Boolean)
+        If condition Then
+            MessageBox.Show("hilight " + card)
+        Else
+            MessageBox.Show("UN-hilight " + card)
+        End If
 
     End Sub
 
