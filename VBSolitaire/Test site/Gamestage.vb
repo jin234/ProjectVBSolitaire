@@ -1,148 +1,22 @@
 ﻿Public Class Gamestage
 
     Dim Full_Card() As String = {"AC", "AD", "AH", "AS", "2C", "2D", "2H", "2S", "3C", "3D", "3H", "3S", "4C", "4D", "4H", "4S", "5C", "5D", "5H", "5S", "6C", "6D", "6H", "6S", "7C", "7D", "7H", "7S", "8C", "8D", "8H", "8S", "9C", "9D", "9H", "9S", "10C", "10D", "10H", "10S", "JC", "JD", "JH", "JS", "QC", "QD", "QH", "QS", "KC", "KD", "KH", "KS"}
-    Dim PulledPool As New ArrayList
-    Dim _Row1 As New ArrayList
-    Dim _Row2 As New ArrayList
-    Dim _Row3 As New ArrayList
-    Dim _Row4 As New ArrayList
-    Dim _Row5 As New ArrayList
-    Dim _Row6 As New ArrayList
-    Dim _Row7 As New ArrayList
+    Dim PulledPool() As String
+    Dim _Row1() As String
+    Dim _Row2() As String
+    Dim _Row3() As String
+    Dim _Row4() As String
+    Dim _Row5() As String
+    Dim _Row6() As String
+    Dim _Row7() As String
 
-    Dim _Deck As New ArrayList
-    Dim _Deck_Open As New ArrayList
+    Dim _Deck() As String
+    Dim _Deck_Open() As String
 
-    Dim _FillC As New ArrayList
-    Dim _FillS As New ArrayList
-    Dim _FillH As New ArrayList
-    Dim _FillD As New ArrayList
-
-    Public Property PulledPool1 As ArrayList
-        Get
-            Return PulledPool
-        End Get
-        Set(value As ArrayList)
-            PulledPool = value
-        End Set
-    End Property
-
-    Public Property Row1 As ArrayList
-        Get
-            Return _Row1
-        End Get
-        Set(value As ArrayList)
-            _Row1 = value
-        End Set
-    End Property
-
-    Public Property Row2 As ArrayList
-        Get
-            Return _Row2
-        End Get
-        Set(value As ArrayList)
-            _Row2 = value
-        End Set
-    End Property
-
-    Public Property Row3 As ArrayList
-        Get
-            Return _Row3
-        End Get
-        Set(value As ArrayList)
-            _Row3 = value
-        End Set
-    End Property
-
-    Public Property Row4 As ArrayList
-        Get
-            Return _Row4
-        End Get
-        Set(value As ArrayList)
-            _Row4 = value
-        End Set
-    End Property
-
-    Public Property Row5 As ArrayList
-        Get
-            Return _Row5
-        End Get
-        Set(value As ArrayList)
-            _Row5 = value
-        End Set
-    End Property
-
-    Public Property Row6 As ArrayList
-        Get
-            Return _Row6
-        End Get
-        Set(value As ArrayList)
-            _Row6 = value
-        End Set
-    End Property
-
-    Public Property Row7 As ArrayList
-        Get
-            Return _Row7
-        End Get
-        Set(value As ArrayList)
-            _Row7 = value
-        End Set
-    End Property
-
-    Public Property Deck As ArrayList
-        Get
-            Return _Deck
-        End Get
-        Set(value As ArrayList)
-            _Deck = value
-        End Set
-    End Property
-
-    Public Property Deck_Open As ArrayList
-        Get
-            Return _Deck_Open
-        End Get
-        Set(value As ArrayList)
-            _Deck_Open = value
-        End Set
-    End Property
-
-    Public Property FillC As ArrayList
-        Get
-            Return _FillC
-        End Get
-        Set(value As ArrayList)
-            _FillC = value
-        End Set
-    End Property
-
-    Public Property FillS As ArrayList
-        Get
-            Return _FillS
-        End Get
-        Set(value As ArrayList)
-            _FillS = value
-        End Set
-    End Property
-
-    Public Property FillH As ArrayList
-        Get
-            Return _FillH
-        End Get
-        Set(value As ArrayList)
-            _FillH = value
-        End Set
-    End Property
-
-    Public Property FillD As ArrayList
-        Get
-            Return _FillD
-        End Get
-        Set(value As ArrayList)
-            _FillD = value
-        End Set
-    End Property
+    Dim _FillC() As String
+    Dim _FillS() As String
+    Dim _FillH() As String
+    Dim _FillD() As String
 
     Public Sub New()
 
@@ -152,11 +26,130 @@
 
     End Sub
 
+    Public Property Row1 As String()
+        Get
+            Return _Row1
+        End Get
+        Set(value As String())
+            _Row1 = value
+        End Set
+    End Property
+
+    Public Property Row2 As String()
+        Get
+            Return _Row2
+        End Get
+
+        Set(value As String())
+            _Row2 = value
+        End Set
+
+    End Property
+
+    Public Property Row3 As String()
+        Get
+            Return _Row3
+        End Get
+        Set(value As String())
+            _Row3 = value
+        End Set
+    End Property
+
+    Public Property Row4 As String()
+        Get
+            Return _Row4
+        End Get
+        Set(value As String())
+            _Row4 = value
+        End Set
+    End Property
+
+    Public Property Row5 As String()
+        Get
+            Return _Row5
+        End Get
+        Set(value As String())
+            _Row5 = value
+        End Set
+    End Property
+
+    Public Property Row6 As String()
+        Get
+            Return _Row6
+        End Get
+        Set(value As String())
+            _Row6 = value
+        End Set
+    End Property
+
+    Public Property Row7 As String()
+        Get
+            Return _Row7
+        End Get
+        Set(value As String())
+            _Row7 = value
+        End Set
+    End Property
+
+    Public Property Deck As String()
+        Get
+            Return _Deck
+        End Get
+        Set(value As String())
+            _Deck = value
+        End Set
+    End Property
+
+    Public Property Deck_Open As String()
+        Get
+            Return _Deck_Open
+        End Get
+        Set(value As String())
+            _Deck_Open = value
+        End Set
+    End Property
+
+    Public Property FillC As String()
+        Get
+            Return _FillC
+        End Get
+        Set(value As String())
+            _FillC = value
+        End Set
+    End Property
+
+    Public Property FillS As String()
+        Get
+            Return _FillS
+        End Get
+        Set(value As String())
+            _FillS = value
+        End Set
+    End Property
+
+    Public Property FillH As String()
+        Get
+            Return _FillH
+        End Get
+        Set(value As String())
+            _FillH = value
+        End Set
+    End Property
+
+    Public Property FillD As String()
+        Get
+            Return _FillD
+        End Get
+        Set(value As String())
+            _FillD = value
+        End Set
+    End Property
+
 
 
     Public Sub Generate_Game()
 
-        PulledPool.AddRange(Full_Card)
+        PulledPool = Full_Card
 
         Pull_from_Deck(1, "Row1")
         Pull_from_Deck(2, "Row2")
@@ -173,30 +166,29 @@
     Public Sub Pull_from_Deck(num As Integer, deck_name As String)
         Dim rng As New Random()
 
-        Dim out As New ArrayList
-
-        For i = 0 To num - 1
-            Dim rannum As Integer = rng.Next(0, PulledPool.Count)
-            out.Add(PulledPool(rannum))
-            PulledPool.RemoveAt(rannum)
+        Dim out(num) As String
+        For Each i In out
+            Dim rannum As Integer = rng.Next(0, PulledPool.Length() - 1)
+            i = PulledPool(rannum)
+            PulledPool = Filter(PulledPool, i, False)
         Next
 
         If deck_name = "Row1" Then
-            _Row1.AddRange(out)
+            _Row1 = out
         ElseIf deck_name = "Row2" Then
-            _Row2.AddRange(out)
+            _Row2 = out
         ElseIf deck_name = "Row3" Then
-            _Row3.AddRange(out)
+            _Row3 = out
         ElseIf deck_name = "Row4" Then
-            _Row4.AddRange(out)
+            _Row4 = out
         ElseIf deck_name = "Row5" Then
-            _Row5.AddRange(out)
+            _Row5 = out
         ElseIf deck_name = "Row6" Then
-            _Row6.AddRange(out)
+            _Row6 = out
         ElseIf deck_name = "Row7" Then
-            _Row7.AddRange(out)
+            _Row7 = out
         ElseIf deck_name = "Deck" Then
-            _Deck.AddRange(out)
+            _Deck = out
         End If
 
     End Sub

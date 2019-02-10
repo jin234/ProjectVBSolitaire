@@ -37,4 +37,9 @@
         End Set
     End Property
 
+    Public Sub movecard()
+
+    End Sub
+
+
 End Class

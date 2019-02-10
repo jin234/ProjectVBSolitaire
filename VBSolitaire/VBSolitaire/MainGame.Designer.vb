@@ -26,6 +26,7 @@ Partial Class MainGame
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainGame))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Show_deck = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
@@ -33,15 +34,6 @@ Partial Class MainGame
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox11 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox117 = New System.Windows.Forms.PictureBox()
         Me.PictureBox118 = New System.Windows.Forms.PictureBox()
         Me.PictureBox119 = New System.Windows.Forms.PictureBox()
@@ -61,6 +53,7 @@ Partial Class MainGame
         Me.PictureBox133 = New System.Windows.Forms.PictureBox()
         Me.PictureBox134 = New System.Windows.Forms.PictureBox()
         Me.PictureBox135 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
         Me.PictureBox98 = New System.Windows.Forms.PictureBox()
         Me.PictureBox99 = New System.Windows.Forms.PictureBox()
         Me.PictureBox100 = New System.Windows.Forms.PictureBox()
@@ -80,6 +73,7 @@ Partial Class MainGame
         Me.PictureBox114 = New System.Windows.Forms.PictureBox()
         Me.PictureBox115 = New System.Windows.Forms.PictureBox()
         Me.PictureBox116 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.PictureBox79 = New System.Windows.Forms.PictureBox()
         Me.PictureBox80 = New System.Windows.Forms.PictureBox()
         Me.PictureBox81 = New System.Windows.Forms.PictureBox()
@@ -99,6 +93,7 @@ Partial Class MainGame
         Me.PictureBox95 = New System.Windows.Forms.PictureBox()
         Me.PictureBox96 = New System.Windows.Forms.PictureBox()
         Me.PictureBox97 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
         Me.PictureBox60 = New System.Windows.Forms.PictureBox()
         Me.PictureBox61 = New System.Windows.Forms.PictureBox()
         Me.PictureBox62 = New System.Windows.Forms.PictureBox()
@@ -118,6 +113,7 @@ Partial Class MainGame
         Me.PictureBox76 = New System.Windows.Forms.PictureBox()
         Me.PictureBox77 = New System.Windows.Forms.PictureBox()
         Me.PictureBox78 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.PictureBox41 = New System.Windows.Forms.PictureBox()
         Me.PictureBox42 = New System.Windows.Forms.PictureBox()
         Me.PictureBox43 = New System.Windows.Forms.PictureBox()
@@ -137,6 +133,7 @@ Partial Class MainGame
         Me.PictureBox57 = New System.Windows.Forms.PictureBox()
         Me.PictureBox58 = New System.Windows.Forms.PictureBox()
         Me.PictureBox59 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
@@ -156,6 +153,7 @@ Partial Class MainGame
         Me.PictureBox38 = New System.Windows.Forms.PictureBox()
         Me.PictureBox39 = New System.Windows.Forms.PictureBox()
         Me.PictureBox40 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.PictureBox20 = New System.Windows.Forms.PictureBox()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
@@ -175,23 +173,18 @@ Partial Class MainGame
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.PictureBox139 = New System.Windows.Forms.PictureBox()
         Me.PictureBox138 = New System.Windows.Forms.PictureBox()
         Me.PictureBox137 = New System.Windows.Forms.PictureBox()
         Me.PictureBox136 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox11.SuspendLayout()
-        Me.GroupBox10.SuspendLayout()
-        Me.GroupBox9.SuspendLayout()
-        Me.GroupBox8.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         CType(Me.PictureBox117, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox118, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox119, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -211,6 +204,7 @@ Partial Class MainGame
         CType(Me.PictureBox133, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox134, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox135, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox10.SuspendLayout()
         CType(Me.PictureBox98, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox99, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox100, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -230,6 +224,7 @@ Partial Class MainGame
         CType(Me.PictureBox114, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox115, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox116, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox9.SuspendLayout()
         CType(Me.PictureBox79, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox80, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox81, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -249,6 +244,7 @@ Partial Class MainGame
         CType(Me.PictureBox95, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox96, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox97, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox8.SuspendLayout()
         CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox62, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -268,6 +264,7 @@ Partial Class MainGame
         CType(Me.PictureBox76, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox77, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox78, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox7.SuspendLayout()
         CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -287,6 +284,7 @@ Partial Class MainGame
         CType(Me.PictureBox57, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox59, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox6.SuspendLayout()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -306,6 +304,7 @@ Partial Class MainGame
         CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox5.SuspendLayout()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -325,10 +324,12 @@ Partial Class MainGame
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox4.SuspendLayout()
         CType(Me.PictureBox139, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox138, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox137, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox136, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -344,6 +345,7 @@ Partial Class MainGame
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Show_deck)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.CheckBox3)
@@ -355,6 +357,15 @@ Partial Class MainGame
         Me.GroupBox1.Size = New System.Drawing.Size(664, 46)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
+        '
+        'Show_deck
+        '
+        Me.Show_deck.Location = New System.Drawing.Point(270, 16)
+        Me.Show_deck.Name = "Show_deck"
+        Me.Show_deck.Size = New System.Drawing.Size(58, 21)
+        Me.Show_deck.TabIndex = 6
+        Me.Show_deck.Text = "Show All Deck"
+        Me.Show_deck.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -397,7 +408,7 @@ Partial Class MainGame
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(241, 19)
+        Me.CheckBox1.Location = New System.Drawing.Point(177, 19)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(87, 17)
         Me.CheckBox1.TabIndex = 1
@@ -449,203 +460,6 @@ Partial Class MainGame
         Me.GroupBox11.TabIndex = 27
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "135-99"
-        Me.GroupBox11.Visible = False
-        '
-        'GroupBox10
-        '
-        Me.GroupBox10.Controls.Add(Me.PictureBox98)
-        Me.GroupBox10.Controls.Add(Me.PictureBox99)
-        Me.GroupBox10.Controls.Add(Me.PictureBox100)
-        Me.GroupBox10.Controls.Add(Me.PictureBox101)
-        Me.GroupBox10.Controls.Add(Me.PictureBox102)
-        Me.GroupBox10.Controls.Add(Me.PictureBox103)
-        Me.GroupBox10.Controls.Add(Me.PictureBox104)
-        Me.GroupBox10.Controls.Add(Me.PictureBox105)
-        Me.GroupBox10.Controls.Add(Me.PictureBox106)
-        Me.GroupBox10.Controls.Add(Me.PictureBox107)
-        Me.GroupBox10.Controls.Add(Me.PictureBox108)
-        Me.GroupBox10.Controls.Add(Me.PictureBox109)
-        Me.GroupBox10.Controls.Add(Me.PictureBox110)
-        Me.GroupBox10.Controls.Add(Me.PictureBox111)
-        Me.GroupBox10.Controls.Add(Me.PictureBox112)
-        Me.GroupBox10.Controls.Add(Me.PictureBox113)
-        Me.GroupBox10.Controls.Add(Me.PictureBox114)
-        Me.GroupBox10.Controls.Add(Me.PictureBox115)
-        Me.GroupBox10.Controls.Add(Me.PictureBox116)
-        Me.GroupBox10.Location = New System.Drawing.Point(476, 143)
-        Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(88, 511)
-        Me.GroupBox10.TabIndex = 26
-        Me.GroupBox10.TabStop = False
-        Me.GroupBox10.Text = "116-98"
-        Me.GroupBox10.Visible = False
-        '
-        'GroupBox9
-        '
-        Me.GroupBox9.Controls.Add(Me.PictureBox79)
-        Me.GroupBox9.Controls.Add(Me.PictureBox80)
-        Me.GroupBox9.Controls.Add(Me.PictureBox81)
-        Me.GroupBox9.Controls.Add(Me.PictureBox82)
-        Me.GroupBox9.Controls.Add(Me.PictureBox83)
-        Me.GroupBox9.Controls.Add(Me.PictureBox84)
-        Me.GroupBox9.Controls.Add(Me.PictureBox85)
-        Me.GroupBox9.Controls.Add(Me.PictureBox86)
-        Me.GroupBox9.Controls.Add(Me.PictureBox87)
-        Me.GroupBox9.Controls.Add(Me.PictureBox88)
-        Me.GroupBox9.Controls.Add(Me.PictureBox89)
-        Me.GroupBox9.Controls.Add(Me.PictureBox90)
-        Me.GroupBox9.Controls.Add(Me.PictureBox91)
-        Me.GroupBox9.Controls.Add(Me.PictureBox92)
-        Me.GroupBox9.Controls.Add(Me.PictureBox93)
-        Me.GroupBox9.Controls.Add(Me.PictureBox94)
-        Me.GroupBox9.Controls.Add(Me.PictureBox95)
-        Me.GroupBox9.Controls.Add(Me.PictureBox96)
-        Me.GroupBox9.Controls.Add(Me.PictureBox97)
-        Me.GroupBox9.Location = New System.Drawing.Point(382, 143)
-        Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(88, 511)
-        Me.GroupBox9.TabIndex = 25
-        Me.GroupBox9.TabStop = False
-        Me.GroupBox9.Text = "97-61"
-        Me.GroupBox9.Visible = False
-        '
-        'GroupBox8
-        '
-        Me.GroupBox8.Controls.Add(Me.PictureBox60)
-        Me.GroupBox8.Controls.Add(Me.PictureBox61)
-        Me.GroupBox8.Controls.Add(Me.PictureBox62)
-        Me.GroupBox8.Controls.Add(Me.PictureBox63)
-        Me.GroupBox8.Controls.Add(Me.PictureBox64)
-        Me.GroupBox8.Controls.Add(Me.PictureBox65)
-        Me.GroupBox8.Controls.Add(Me.PictureBox66)
-        Me.GroupBox8.Controls.Add(Me.PictureBox67)
-        Me.GroupBox8.Controls.Add(Me.PictureBox68)
-        Me.GroupBox8.Controls.Add(Me.PictureBox69)
-        Me.GroupBox8.Controls.Add(Me.PictureBox70)
-        Me.GroupBox8.Controls.Add(Me.PictureBox71)
-        Me.GroupBox8.Controls.Add(Me.PictureBox72)
-        Me.GroupBox8.Controls.Add(Me.PictureBox73)
-        Me.GroupBox8.Controls.Add(Me.PictureBox74)
-        Me.GroupBox8.Controls.Add(Me.PictureBox75)
-        Me.GroupBox8.Controls.Add(Me.PictureBox76)
-        Me.GroupBox8.Controls.Add(Me.PictureBox77)
-        Me.GroupBox8.Controls.Add(Me.PictureBox78)
-        Me.GroupBox8.Location = New System.Drawing.Point(288, 143)
-        Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(88, 511)
-        Me.GroupBox8.TabIndex = 24
-        Me.GroupBox8.TabStop = False
-        Me.GroupBox8.Text = "78-60"
-        Me.GroupBox8.Visible = False
-        '
-        'GroupBox7
-        '
-        Me.GroupBox7.Controls.Add(Me.PictureBox41)
-        Me.GroupBox7.Controls.Add(Me.PictureBox42)
-        Me.GroupBox7.Controls.Add(Me.PictureBox43)
-        Me.GroupBox7.Controls.Add(Me.PictureBox44)
-        Me.GroupBox7.Controls.Add(Me.PictureBox45)
-        Me.GroupBox7.Controls.Add(Me.PictureBox46)
-        Me.GroupBox7.Controls.Add(Me.PictureBox47)
-        Me.GroupBox7.Controls.Add(Me.PictureBox48)
-        Me.GroupBox7.Controls.Add(Me.PictureBox49)
-        Me.GroupBox7.Controls.Add(Me.PictureBox50)
-        Me.GroupBox7.Controls.Add(Me.PictureBox51)
-        Me.GroupBox7.Controls.Add(Me.PictureBox52)
-        Me.GroupBox7.Controls.Add(Me.PictureBox53)
-        Me.GroupBox7.Controls.Add(Me.PictureBox54)
-        Me.GroupBox7.Controls.Add(Me.PictureBox55)
-        Me.GroupBox7.Controls.Add(Me.PictureBox56)
-        Me.GroupBox7.Controls.Add(Me.PictureBox57)
-        Me.GroupBox7.Controls.Add(Me.PictureBox58)
-        Me.GroupBox7.Controls.Add(Me.PictureBox59)
-        Me.GroupBox7.Location = New System.Drawing.Point(194, 143)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(88, 511)
-        Me.GroupBox7.TabIndex = 23
-        Me.GroupBox7.TabStop = False
-        Me.GroupBox7.Text = "59-41"
-        Me.GroupBox7.Visible = False
-        '
-        'GroupBox6
-        '
-        Me.GroupBox6.Controls.Add(Me.PictureBox22)
-        Me.GroupBox6.Controls.Add(Me.PictureBox23)
-        Me.GroupBox6.Controls.Add(Me.PictureBox24)
-        Me.GroupBox6.Controls.Add(Me.PictureBox25)
-        Me.GroupBox6.Controls.Add(Me.PictureBox26)
-        Me.GroupBox6.Controls.Add(Me.PictureBox27)
-        Me.GroupBox6.Controls.Add(Me.PictureBox28)
-        Me.GroupBox6.Controls.Add(Me.PictureBox29)
-        Me.GroupBox6.Controls.Add(Me.PictureBox30)
-        Me.GroupBox6.Controls.Add(Me.PictureBox31)
-        Me.GroupBox6.Controls.Add(Me.PictureBox32)
-        Me.GroupBox6.Controls.Add(Me.PictureBox33)
-        Me.GroupBox6.Controls.Add(Me.PictureBox34)
-        Me.GroupBox6.Controls.Add(Me.PictureBox35)
-        Me.GroupBox6.Controls.Add(Me.PictureBox36)
-        Me.GroupBox6.Controls.Add(Me.PictureBox37)
-        Me.GroupBox6.Controls.Add(Me.PictureBox38)
-        Me.GroupBox6.Controls.Add(Me.PictureBox39)
-        Me.GroupBox6.Controls.Add(Me.PictureBox40)
-        Me.GroupBox6.Location = New System.Drawing.Point(100, 143)
-        Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(88, 511)
-        Me.GroupBox6.TabIndex = 22
-        Me.GroupBox6.TabStop = False
-        Me.GroupBox6.Text = "40-22"
-        Me.GroupBox6.Visible = False
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Controls.Add(Me.PictureBox21)
-        Me.GroupBox5.Controls.Add(Me.PictureBox20)
-        Me.GroupBox5.Controls.Add(Me.PictureBox19)
-        Me.GroupBox5.Controls.Add(Me.PictureBox18)
-        Me.GroupBox5.Controls.Add(Me.PictureBox17)
-        Me.GroupBox5.Controls.Add(Me.PictureBox16)
-        Me.GroupBox5.Controls.Add(Me.PictureBox15)
-        Me.GroupBox5.Controls.Add(Me.PictureBox14)
-        Me.GroupBox5.Controls.Add(Me.PictureBox13)
-        Me.GroupBox5.Controls.Add(Me.PictureBox12)
-        Me.GroupBox5.Controls.Add(Me.PictureBox11)
-        Me.GroupBox5.Controls.Add(Me.PictureBox10)
-        Me.GroupBox5.Controls.Add(Me.PictureBox9)
-        Me.GroupBox5.Controls.Add(Me.PictureBox8)
-        Me.GroupBox5.Controls.Add(Me.PictureBox7)
-        Me.GroupBox5.Controls.Add(Me.PictureBox6)
-        Me.GroupBox5.Controls.Add(Me.PictureBox5)
-        Me.GroupBox5.Controls.Add(Me.PictureBox4)
-        Me.GroupBox5.Controls.Add(Me.PictureBox3)
-        Me.GroupBox5.Location = New System.Drawing.Point(6, 143)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(88, 511)
-        Me.GroupBox5.TabIndex = 2
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "3-21"
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.PictureBox139)
-        Me.GroupBox4.Controls.Add(Me.PictureBox138)
-        Me.GroupBox4.Controls.Add(Me.PictureBox137)
-        Me.GroupBox4.Controls.Add(Me.PictureBox136)
-        Me.GroupBox4.Location = New System.Drawing.Point(287, 19)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(371, 118)
-        Me.GroupBox4.TabIndex = 1
-        Me.GroupBox4.TabStop = False
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.PictureBox2)
-        Me.GroupBox3.Controls.Add(Me.PictureBox1)
-        Me.GroupBox3.Location = New System.Drawing.Point(6, 19)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(241, 118)
-        Me.GroupBox3.TabIndex = 0
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "X/24"
         '
         'PictureBox117
         '
@@ -835,6 +649,34 @@ Partial Class MainGame
         Me.PictureBox135.TabIndex = 5
         Me.PictureBox135.TabStop = False
         '
+        'GroupBox10
+        '
+        Me.GroupBox10.Controls.Add(Me.PictureBox98)
+        Me.GroupBox10.Controls.Add(Me.PictureBox99)
+        Me.GroupBox10.Controls.Add(Me.PictureBox100)
+        Me.GroupBox10.Controls.Add(Me.PictureBox101)
+        Me.GroupBox10.Controls.Add(Me.PictureBox102)
+        Me.GroupBox10.Controls.Add(Me.PictureBox103)
+        Me.GroupBox10.Controls.Add(Me.PictureBox104)
+        Me.GroupBox10.Controls.Add(Me.PictureBox105)
+        Me.GroupBox10.Controls.Add(Me.PictureBox106)
+        Me.GroupBox10.Controls.Add(Me.PictureBox107)
+        Me.GroupBox10.Controls.Add(Me.PictureBox108)
+        Me.GroupBox10.Controls.Add(Me.PictureBox109)
+        Me.GroupBox10.Controls.Add(Me.PictureBox110)
+        Me.GroupBox10.Controls.Add(Me.PictureBox111)
+        Me.GroupBox10.Controls.Add(Me.PictureBox112)
+        Me.GroupBox10.Controls.Add(Me.PictureBox113)
+        Me.GroupBox10.Controls.Add(Me.PictureBox114)
+        Me.GroupBox10.Controls.Add(Me.PictureBox115)
+        Me.GroupBox10.Controls.Add(Me.PictureBox116)
+        Me.GroupBox10.Location = New System.Drawing.Point(476, 143)
+        Me.GroupBox10.Name = "GroupBox10"
+        Me.GroupBox10.Size = New System.Drawing.Size(88, 511)
+        Me.GroupBox10.TabIndex = 26
+        Me.GroupBox10.TabStop = False
+        Me.GroupBox10.Text = "116-98"
+        '
         'PictureBox98
         '
         Me.PictureBox98.BackColor = System.Drawing.SystemColors.Control
@@ -1022,6 +864,34 @@ Partial Class MainGame
         Me.PictureBox116.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox116.TabIndex = 5
         Me.PictureBox116.TabStop = False
+        '
+        'GroupBox9
+        '
+        Me.GroupBox9.Controls.Add(Me.PictureBox79)
+        Me.GroupBox9.Controls.Add(Me.PictureBox80)
+        Me.GroupBox9.Controls.Add(Me.PictureBox81)
+        Me.GroupBox9.Controls.Add(Me.PictureBox82)
+        Me.GroupBox9.Controls.Add(Me.PictureBox83)
+        Me.GroupBox9.Controls.Add(Me.PictureBox84)
+        Me.GroupBox9.Controls.Add(Me.PictureBox85)
+        Me.GroupBox9.Controls.Add(Me.PictureBox86)
+        Me.GroupBox9.Controls.Add(Me.PictureBox87)
+        Me.GroupBox9.Controls.Add(Me.PictureBox88)
+        Me.GroupBox9.Controls.Add(Me.PictureBox89)
+        Me.GroupBox9.Controls.Add(Me.PictureBox90)
+        Me.GroupBox9.Controls.Add(Me.PictureBox91)
+        Me.GroupBox9.Controls.Add(Me.PictureBox92)
+        Me.GroupBox9.Controls.Add(Me.PictureBox93)
+        Me.GroupBox9.Controls.Add(Me.PictureBox94)
+        Me.GroupBox9.Controls.Add(Me.PictureBox95)
+        Me.GroupBox9.Controls.Add(Me.PictureBox96)
+        Me.GroupBox9.Controls.Add(Me.PictureBox97)
+        Me.GroupBox9.Location = New System.Drawing.Point(382, 143)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(88, 511)
+        Me.GroupBox9.TabIndex = 25
+        Me.GroupBox9.TabStop = False
+        Me.GroupBox9.Text = "97-61"
         '
         'PictureBox79
         '
@@ -1211,6 +1081,34 @@ Partial Class MainGame
         Me.PictureBox97.TabIndex = 5
         Me.PictureBox97.TabStop = False
         '
+        'GroupBox8
+        '
+        Me.GroupBox8.Controls.Add(Me.PictureBox60)
+        Me.GroupBox8.Controls.Add(Me.PictureBox61)
+        Me.GroupBox8.Controls.Add(Me.PictureBox62)
+        Me.GroupBox8.Controls.Add(Me.PictureBox63)
+        Me.GroupBox8.Controls.Add(Me.PictureBox64)
+        Me.GroupBox8.Controls.Add(Me.PictureBox65)
+        Me.GroupBox8.Controls.Add(Me.PictureBox66)
+        Me.GroupBox8.Controls.Add(Me.PictureBox67)
+        Me.GroupBox8.Controls.Add(Me.PictureBox68)
+        Me.GroupBox8.Controls.Add(Me.PictureBox69)
+        Me.GroupBox8.Controls.Add(Me.PictureBox70)
+        Me.GroupBox8.Controls.Add(Me.PictureBox71)
+        Me.GroupBox8.Controls.Add(Me.PictureBox72)
+        Me.GroupBox8.Controls.Add(Me.PictureBox73)
+        Me.GroupBox8.Controls.Add(Me.PictureBox74)
+        Me.GroupBox8.Controls.Add(Me.PictureBox75)
+        Me.GroupBox8.Controls.Add(Me.PictureBox76)
+        Me.GroupBox8.Controls.Add(Me.PictureBox77)
+        Me.GroupBox8.Controls.Add(Me.PictureBox78)
+        Me.GroupBox8.Location = New System.Drawing.Point(288, 143)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(88, 511)
+        Me.GroupBox8.TabIndex = 24
+        Me.GroupBox8.TabStop = False
+        Me.GroupBox8.Text = "78-60"
+        '
         'PictureBox60
         '
         Me.PictureBox60.BackColor = System.Drawing.SystemColors.Control
@@ -1398,6 +1296,34 @@ Partial Class MainGame
         Me.PictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox78.TabIndex = 5
         Me.PictureBox78.TabStop = False
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.PictureBox41)
+        Me.GroupBox7.Controls.Add(Me.PictureBox42)
+        Me.GroupBox7.Controls.Add(Me.PictureBox43)
+        Me.GroupBox7.Controls.Add(Me.PictureBox44)
+        Me.GroupBox7.Controls.Add(Me.PictureBox45)
+        Me.GroupBox7.Controls.Add(Me.PictureBox46)
+        Me.GroupBox7.Controls.Add(Me.PictureBox47)
+        Me.GroupBox7.Controls.Add(Me.PictureBox48)
+        Me.GroupBox7.Controls.Add(Me.PictureBox49)
+        Me.GroupBox7.Controls.Add(Me.PictureBox50)
+        Me.GroupBox7.Controls.Add(Me.PictureBox51)
+        Me.GroupBox7.Controls.Add(Me.PictureBox52)
+        Me.GroupBox7.Controls.Add(Me.PictureBox53)
+        Me.GroupBox7.Controls.Add(Me.PictureBox54)
+        Me.GroupBox7.Controls.Add(Me.PictureBox55)
+        Me.GroupBox7.Controls.Add(Me.PictureBox56)
+        Me.GroupBox7.Controls.Add(Me.PictureBox57)
+        Me.GroupBox7.Controls.Add(Me.PictureBox58)
+        Me.GroupBox7.Controls.Add(Me.PictureBox59)
+        Me.GroupBox7.Location = New System.Drawing.Point(194, 143)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(88, 511)
+        Me.GroupBox7.TabIndex = 23
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "59-41"
         '
         'PictureBox41
         '
@@ -1587,6 +1513,34 @@ Partial Class MainGame
         Me.PictureBox59.TabIndex = 5
         Me.PictureBox59.TabStop = False
         '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.PictureBox22)
+        Me.GroupBox6.Controls.Add(Me.PictureBox23)
+        Me.GroupBox6.Controls.Add(Me.PictureBox24)
+        Me.GroupBox6.Controls.Add(Me.PictureBox25)
+        Me.GroupBox6.Controls.Add(Me.PictureBox26)
+        Me.GroupBox6.Controls.Add(Me.PictureBox27)
+        Me.GroupBox6.Controls.Add(Me.PictureBox28)
+        Me.GroupBox6.Controls.Add(Me.PictureBox29)
+        Me.GroupBox6.Controls.Add(Me.PictureBox30)
+        Me.GroupBox6.Controls.Add(Me.PictureBox31)
+        Me.GroupBox6.Controls.Add(Me.PictureBox32)
+        Me.GroupBox6.Controls.Add(Me.PictureBox33)
+        Me.GroupBox6.Controls.Add(Me.PictureBox34)
+        Me.GroupBox6.Controls.Add(Me.PictureBox35)
+        Me.GroupBox6.Controls.Add(Me.PictureBox36)
+        Me.GroupBox6.Controls.Add(Me.PictureBox37)
+        Me.GroupBox6.Controls.Add(Me.PictureBox38)
+        Me.GroupBox6.Controls.Add(Me.PictureBox39)
+        Me.GroupBox6.Controls.Add(Me.PictureBox40)
+        Me.GroupBox6.Location = New System.Drawing.Point(100, 143)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(88, 511)
+        Me.GroupBox6.TabIndex = 22
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "40-22"
+        '
         'PictureBox22
         '
         Me.PictureBox22.BackColor = System.Drawing.SystemColors.Control
@@ -1774,6 +1728,34 @@ Partial Class MainGame
         Me.PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox40.TabIndex = 5
         Me.PictureBox40.TabStop = False
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.PictureBox21)
+        Me.GroupBox5.Controls.Add(Me.PictureBox20)
+        Me.GroupBox5.Controls.Add(Me.PictureBox19)
+        Me.GroupBox5.Controls.Add(Me.PictureBox18)
+        Me.GroupBox5.Controls.Add(Me.PictureBox17)
+        Me.GroupBox5.Controls.Add(Me.PictureBox16)
+        Me.GroupBox5.Controls.Add(Me.PictureBox15)
+        Me.GroupBox5.Controls.Add(Me.PictureBox14)
+        Me.GroupBox5.Controls.Add(Me.PictureBox13)
+        Me.GroupBox5.Controls.Add(Me.PictureBox12)
+        Me.GroupBox5.Controls.Add(Me.PictureBox11)
+        Me.GroupBox5.Controls.Add(Me.PictureBox10)
+        Me.GroupBox5.Controls.Add(Me.PictureBox9)
+        Me.GroupBox5.Controls.Add(Me.PictureBox8)
+        Me.GroupBox5.Controls.Add(Me.PictureBox7)
+        Me.GroupBox5.Controls.Add(Me.PictureBox6)
+        Me.GroupBox5.Controls.Add(Me.PictureBox5)
+        Me.GroupBox5.Controls.Add(Me.PictureBox4)
+        Me.GroupBox5.Controls.Add(Me.PictureBox3)
+        Me.GroupBox5.Location = New System.Drawing.Point(6, 143)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(88, 511)
+        Me.GroupBox5.TabIndex = 2
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "3-21"
         '
         'PictureBox21
         '
@@ -1963,6 +1945,18 @@ Partial Class MainGame
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.PictureBox139)
+        Me.GroupBox4.Controls.Add(Me.PictureBox138)
+        Me.GroupBox4.Controls.Add(Me.PictureBox137)
+        Me.GroupBox4.Controls.Add(Me.PictureBox136)
+        Me.GroupBox4.Location = New System.Drawing.Point(287, 19)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(371, 118)
+        Me.GroupBox4.TabIndex = 1
+        Me.GroupBox4.TabStop = False
+        '
         'PictureBox139
         '
         Me.PictureBox139.Location = New System.Drawing.Point(289, 19)
@@ -1999,9 +1993,19 @@ Partial Class MainGame
         Me.PictureBox136.TabIndex = 2
         Me.PictureBox136.TabStop = False
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.PictureBox2)
+        Me.GroupBox3.Controls.Add(Me.PictureBox1)
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 19)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(241, 118)
+        Me.GroupBox3.TabIndex = 0
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "X/24"
+        '
         'PictureBox2
         '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(100, 19)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(73, 91)
@@ -2032,14 +2036,6 @@ Partial Class MainGame
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox11.ResumeLayout(False)
-        Me.GroupBox10.ResumeLayout(False)
-        Me.GroupBox9.ResumeLayout(False)
-        Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox6.ResumeLayout(False)
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
         CType(Me.PictureBox117, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox118, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox119, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2059,6 +2055,7 @@ Partial Class MainGame
         CType(Me.PictureBox133, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox134, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox135, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox10.ResumeLayout(False)
         CType(Me.PictureBox98, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox99, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox100, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2078,6 +2075,7 @@ Partial Class MainGame
         CType(Me.PictureBox114, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox115, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox116, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox9.ResumeLayout(False)
         CType(Me.PictureBox79, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox80, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox81, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2097,6 +2095,7 @@ Partial Class MainGame
         CType(Me.PictureBox95, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox96, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox97, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox8.ResumeLayout(False)
         CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox62, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2116,6 +2115,7 @@ Partial Class MainGame
         CType(Me.PictureBox76, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox77, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox78, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox7.ResumeLayout(False)
         CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2135,6 +2135,7 @@ Partial Class MainGame
         CType(Me.PictureBox57, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox59, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox6.ResumeLayout(False)
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2154,6 +2155,7 @@ Partial Class MainGame
         CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox5.ResumeLayout(False)
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2173,10 +2175,12 @@ Partial Class MainGame
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox4.ResumeLayout(False)
         CType(Me.PictureBox139, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox138, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox137, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox136, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -2340,4 +2344,5 @@ Partial Class MainGame
     Friend WithEvents PictureBox138 As PictureBox
     Friend WithEvents PictureBox137 As PictureBox
     Friend WithEvents PictureBox136 As PictureBox
+    Friend WithEvents Show_deck As Button
 End Class

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBSolitaire", "VBSolitaire\VBSolitaire.vbproj", "{BFADF017-A2EC-4005-8EE3-414F25E4FF83}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Test site", "Test site\Test site.vbproj", "{53AB7E34-7F3C-4652-B936-E54E79A84719}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BFADF017-A2EC-4005-8EE3-414F25E4FF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFADF017-A2EC-4005-8EE3-414F25E4FF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFADF017-A2EC-4005-8EE3-414F25E4FF83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53AB7E34-7F3C-4652-B936-E54E79A84719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53AB7E34-7F3C-4652-B936-E54E79A84719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53AB7E34-7F3C-4652-B936-E54E79A84719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53AB7E34-7F3C-4652-B936-E54E79A84719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
