@@ -83,6 +83,7 @@ Partial Class MainMenu
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"In Order"})
         Me.ComboBox1.Location = New System.Drawing.Point(88, 22)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(161, 21)
@@ -93,9 +94,9 @@ Partial Class MainMenu
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(6, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 13)
+        Me.Label2.Size = New System.Drawing.Size(29, 13)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Card Per Draw"
+        Me.Label2.Text = "Rule"
         '
         'GroupBox1
         '
