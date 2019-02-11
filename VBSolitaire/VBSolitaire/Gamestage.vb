@@ -229,7 +229,7 @@
         For i = 0 To num - 1
             Dim rannum As Integer = rng.Next(0, PulledPool.Count)
             If cover Then
-                out.Add(PulledPool(rannum) + "F")
+                out.Add(PulledPool(rannum) + "")
             Else
                 out.Add(PulledPool(rannum))
             End If
@@ -258,6 +258,7 @@
     End Sub
 
     Public Sub Move_card()
+
         Dim temp As String
         Dim row As String = Selected_card1(0)
         Dim location As Integer = Selected_card1(1) - 1

@@ -72,7 +72,21 @@
 
     End Sub
 
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
 
+        Dim card() As String = {"R1", "2"}
+
+        select_card(card)
+
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+
+        Dim card() As String = {"R1", "3"}
+
+        select_card(card)
+
+    End Sub
 
     Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click
 
@@ -372,6 +386,7 @@
     End Sub
 
     Public Sub DisplayPerRow(Row As Integer)
+
         If Row = 1 Then
             If Stage.Row1.Count <> 0 Then
                 Dim count As Integer = 1
@@ -526,8 +541,13 @@
                 Else
                     pb21("")
                 End If
+
+            Else
+                pb3("")
             End If
+
         ElseIf Row = 2 Then
+
             If Stage.Row2.Count <> 0 Then
                 Dim count As Integer = 1
 
@@ -663,7 +683,8 @@
                     pb22("")
                 End If
                 count += 1
-
+            Else
+                pb40("")
             End If
         ElseIf Row = 3 Then
             If Stage.Row3.Count <> 0 Then
@@ -801,7 +822,8 @@
                     pb41("")
                 End If
                 count += 1
-
+            Else
+                pb59("")
             End If
         ElseIf Row = 4 Then
             If Stage.Row4.Count <> 0 Then
@@ -939,7 +961,8 @@
                     pb60("")
                 End If
                 count += 1
-
+            Else
+                pb78("")
             End If
         ElseIf Row = 5 Then
             If Stage.Row5.Count <> 0 Then
@@ -1077,7 +1100,8 @@
                     pb79("")
                 End If
                 count += 1
-
+            Else
+                pb97("")
             End If
         ElseIf Row = 6 Then
             If Stage.Row6.Count <> 0 Then
@@ -1215,7 +1239,8 @@
                     pb98("")
                 End If
                 count += 1
-
+            Else
+                pb116("")
             End If
         ElseIf Row = 7 Then
             If Stage.Row7.Count <> 0 Then
@@ -1353,7 +1378,8 @@
                     pb117("")
                 End If
                 count += 1
-
+            Else
+                pb135("")
             End If
         End If
     End Sub
@@ -1598,7 +1624,7 @@
         ElseIf card = "QSWL" Then
             PictureBox3.Image = My.Resources.QSwL
         Else
-            PictureBox3.Image = Nothing
+            PictureBox3.Image = My.Resources.BackBlack
         End If
     End Sub
 
@@ -10218,7 +10244,7 @@
         ElseIf card = "QSWL" Then
             PictureBox40.Image = My.Resources.QSwL
         Else
-            PictureBox40.Image = Nothing
+            PictureBox40.Image = My.Resources.BackBlack
         End If
     End Sub
 

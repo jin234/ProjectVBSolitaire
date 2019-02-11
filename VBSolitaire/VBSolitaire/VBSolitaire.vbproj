@@ -460,5 +460,11 @@
   <ItemGroup>
     <None Include="Resources\ASClear.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackTras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackBlack.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
