@@ -2038,6 +2038,7 @@ Partial Class MainGame
         '
         'Timer1
         '
+        Me.Timer1.Interval = 1000
         '
         'MainGame
         '
