@@ -13,14 +13,17 @@
     Dim _Deck As New ArrayList
     Dim _Deck_Open As New ArrayList
 
-    Dim _FillC As New ArrayList
-    Dim _FillS As New ArrayList
-    Dim _FillH As New ArrayList
-    Dim _FillD As New ArrayList
+    Dim _Row8 As New ArrayList
+    Dim _Row9 As New ArrayList
+    Dim _Row10 As New ArrayList
+    Dim _Row11 As New ArrayList
 
     Dim _Condition_cardselected As Boolean
     Dim _selected_card1() As String
     Dim _selected_card2() As String
+
+    Dim _Game_Move() As Integer
+    Dim _Game_Step() As Integer
 
     Public Property PulledPool1 As ArrayList
         Get
@@ -112,39 +115,39 @@
         End Set
     End Property
 
-    Public Property FillC As ArrayList
+    Public Property Row8 As ArrayList
         Get
-            Return _FillC
+            Return _Row8
         End Get
         Set(value As ArrayList)
-            _FillC = value
+            _Row8 = value
         End Set
     End Property
 
-    Public Property FillS As ArrayList
+    Public Property Row9 As ArrayList
         Get
-            Return _FillS
+            Return _Row9
         End Get
         Set(value As ArrayList)
-            _FillS = value
+            _Row9 = value
         End Set
     End Property
 
-    Public Property FillH As ArrayList
+    Public Property Row10 As ArrayList
         Get
-            Return _FillH
+            Return _Row10
         End Get
         Set(value As ArrayList)
-            _FillH = value
+            _Row10 = value
         End Set
     End Property
 
-    Public Property FillD As ArrayList
+    Public Property Row11 As ArrayList
         Get
-            Return _FillD
+            Return _Row11
         End Get
         Set(value As ArrayList)
-            _FillD = value
+            _Row11 = value
         End Set
     End Property
 
@@ -175,6 +178,24 @@
         End Set
     End Property
 
+    Public Property Game_Move As Integer()
+        Get
+            Return _Game_Move
+        End Get
+        Set(value As Integer())
+            _Game_Move = value
+        End Set
+    End Property
+
+    Public Property Game_Step As Integer()
+        Get
+            Return _Game_Step
+        End Get
+        Set(value As Integer())
+            _Game_Step = value
+        End Set
+    End Property
+
     Public Sub New()
 
     End Sub
@@ -189,26 +210,30 @@
 
         PulledPool.AddRange(Full_Card)
 
-        Pull_from_Deck(1, "Row1")
-        Pull_from_Deck(2, "Row2")
-        Pull_from_Deck(3, "Row3")
-        Pull_from_Deck(4, "Row4")
-        Pull_from_Deck(5, "Row5")
-        Pull_from_Deck(6, "Row6")
-        Pull_from_Deck(7, "Row7")
-        Deck = PulledPool
-        'Pull_from_Deck(24, "Deck")
+        Pull_from_Deck(1, "Row1", True)
+        Pull_from_Deck(2, "Row2", True)
+        Pull_from_Deck(3, "Row3", True)
+        Pull_from_Deck(4, "Row4", True)
+        Pull_from_Deck(5, "Row5", True)
+        Pull_from_Deck(6, "Row6", True)
+        Pull_from_Deck(7, "Row7", True)
+        Pull_from_Deck(24, "Deck", False)
 
     End Sub
 
-    Public Sub Pull_from_Deck(num As Integer, deck_name As String)
+    Public Sub Pull_from_Deck(num As Integer, deck_name As String, cover As Boolean)
         Dim rng As New Random()
 
         Dim out As New ArrayList
 
         For i = 0 To num - 1
             Dim rannum As Integer = rng.Next(0, PulledPool.Count)
-            out.Add(PulledPool(rannum))
+            If cover Then
+                out.Add(PulledPool(rannum) + "F")
+            Else
+                out.Add(PulledPool(rannum))
+            End If
+
             PulledPool.RemoveAt(rannum)
         Next
 
@@ -240,23 +265,35 @@
             temp = Row1(location)
             Row1.RemoveAt(location)
         ElseIf row = "R2" Then
-            temp = Row1(location)
+            temp = Row2(location)
             Row2.RemoveAt(location)
         ElseIf row = ("R3") Then
-            temp = Row1(location)
+            temp = Row3(location)
             Row3.RemoveAt(location)
         ElseIf row = ("R4") Then
-            temp = Row1(location)
+            temp = Row4(location)
             Row4.RemoveAt(location)
         ElseIf row = ("R5") Then
-            temp = Row1(location)
+            temp = Row5(location)
             Row5.RemoveAt(location)
         ElseIf row = ("R6") Then
-            temp = Row1(location)
+            temp = Row6(location)
             Row6.RemoveAt(location)
         ElseIf row = ("R7") Then
-            temp = Row1(location)
+            temp = Row7(location)
             Row7.RemoveAt(location)
+        ElseIf row = ("R8") Then
+            temp = Row8(location)
+            Row8.RemoveAt(location)
+        ElseIf row = ("R9") Then
+            temp = Row9(location)
+            Row9.RemoveAt(location)
+        ElseIf row = ("R10") Then
+            temp = Row10(location)
+            Row10.RemoveAt(location)
+        ElseIf row = ("R11") Then
+            temp = Row11(location)
+            Row11.RemoveAt(location)
         End If
 
         row = Selected_card2(0)
@@ -274,11 +311,44 @@
             Row6.Add(temp)
         ElseIf row = ("R7") Then
             Row7.Add(temp)
+        ElseIf row = ("R8") Then
+            Row8.Add(temp)
+        ElseIf row = ("R9") Then
+            Row9.Add(temp)
+        ElseIf row = ("R10") Then
+            Row10.Add(temp)
+        ElseIf row = ("R11") Then
+            Row11.Add(temp)
         End If
 
     End Sub
 
     Public Sub card_selected(card As String())
+
+        Dim row As String = card(0)
+        If row = "R1" And Row1.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R2" And Row2.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R3" And Row3.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R4" And Row4.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R5" And Row5.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R6" And Row6.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R7" And Row7.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R8" And Row8.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R9" And Row9.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R10" And Row10.Count = 0 Then
+            Exit Sub
+        ElseIf row = "R11" And Row11.Count = 0 Then
+            Exit Sub
+        End If
 
         If _Condition_cardselected = False Then
             _Condition_cardselected = True
@@ -372,32 +442,32 @@
                 Dim temp As String
                 temp = Row2(location)
                 Row2.RemoveAt(location)
-                Row2.Insert(location, temp.TrimEnd("WL"))
+                Row2.Insert(location, temp.Substring(0, temp.Length - 2))
             ElseIf row = ("R3") Then
                 Dim temp As String
                 temp = Row3(location)
                 Row3.RemoveAt(location)
-                Row3.Insert(location, temp.TrimEnd("WL"))
+                Row3.Insert(location, temp.Substring(0, temp.Length - 2))
             ElseIf row = ("R4") Then
                 Dim temp As String
                 temp = Row4(location)
                 Row4.RemoveAt(location)
-                Row4.Insert(location, temp.TrimEnd("WL"))
+                Row4.Insert(location, temp.Substring(0, temp.Length - 2))
             ElseIf row = ("R5") Then
                 Dim temp As String
                 temp = Row5(location)
                 Row5.RemoveAt(location)
-                Row5.Insert(location, temp.TrimEnd("WL"))
+                Row5.Insert(location, temp.Substring(0, temp.Length - 2))
             ElseIf row = ("R6") Then
                 Dim temp As String
                 temp = Row6(location)
                 Row6.RemoveAt(location)
-                Row6.Insert(location, temp.TrimEnd("WL"))
+                Row6.Insert(location, temp.Substring(0, temp.Length - 2))
             ElseIf row = ("R7") Then
                 Dim temp As String
                 temp = Row7(location)
                 Row7.RemoveAt(location)
-                Row7.Insert(location, temp.TrimEnd("WL"))
+                Row7.Insert(location, temp.Substring(0, temp.Length - 2))
             End If
         End If
     End Sub
