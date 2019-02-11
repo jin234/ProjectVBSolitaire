@@ -300,6 +300,9 @@
         ElseIf row = ("R11") Then
             temp = Row11(location)
             Row11.RemoveAt(location)
+        ElseIf row = ("TD") Then
+            temp = Deck_Open(location)
+            Deck_Open.RemoveAt(location)
         End If
 
         row = Selected_card2(0)
@@ -325,6 +328,8 @@
             Row10.Add(temp)
         ElseIf row = ("R11") Then
             Row11.Add(temp)
+        ElseIf row = ("TD") Then
+            Deck_Open.Add(temp)
         End If
 
     End Sub
@@ -443,6 +448,31 @@
                 temp = Row7(location)
                 Row7.RemoveAt(location)
                 Row7.Insert(location, temp + "WL")
+            ElseIf row = ("R8") Then
+                Dim temp As String
+                temp = Row8(location)
+                Row8.RemoveAt(location)
+                Row8.Insert(location, temp + "WL")
+            ElseIf row = ("R9") Then
+                Dim temp As String
+                temp = Row9(location)
+                Row9.RemoveAt(location)
+                Row9.Insert(location, temp + "WL")
+            ElseIf row = ("R10") Then
+                Dim temp As String
+                temp = Row10(location)
+                Row10.RemoveAt(location)
+                Row10.Insert(location, temp + "WL")
+            ElseIf row = ("R11") Then
+                Dim temp As String
+                temp = Row11(location)
+                Row11.RemoveAt(location)
+                Row11.Insert(location, temp + "WL")
+            ElseIf row = ("TD") Then
+                Dim temp As String
+                temp = Deck_Open(location)
+                Deck_Open.RemoveAt(location)
+                Deck_Open.Insert(location, temp + "WL")
             End If
         Else
             If row = ("R1") Then
@@ -480,6 +510,31 @@
                 temp = Row7(location)
                 Row7.RemoveAt(location)
                 Row7.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("R8") Then
+                Dim temp As String
+                temp = Row8(location)
+                Row8.RemoveAt(location)
+                Row8.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("R9") Then
+                Dim temp As String
+                temp = Row9(location)
+                Row9.RemoveAt(location)
+                Row9.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("R10") Then
+                Dim temp As String
+                temp = Row10(location)
+                Row10.RemoveAt(location)
+                Row10.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("R11") Then
+                Dim temp As String
+                temp = Row11(location)
+                Row11.RemoveAt(location)
+                Row11.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("TD") Then
+                Dim temp As String
+                temp = Deck_Open(location)
+                Deck_Open.RemoveAt(location)
+                Deck_Open.Insert(location, temp.Substring(0, temp.Length - 2))
             End If
         End If
     End Sub

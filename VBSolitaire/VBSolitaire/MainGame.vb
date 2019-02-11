@@ -84,10 +84,10 @@
         DisplayPerRow(6)
         DisplayPerRow(7)
 
-        DisplayFill("C")
-        DisplayFill("S")
-        DisplayFill("H")
-        DisplayFill("D")
+        DisplayPerRow(8)
+        DisplayPerRow(9)
+        DisplayPerRow(10)
+        DisplayPerRow(11)
 
     End Sub
 
@@ -1328,33 +1328,64 @@
             Else
                 pb135("")
             End If
+        ElseIf Row = 8 Then
+            If Stage.Row8.Count <> 0 Then
+
+                pb136(Stage.Row8(Stage.Row8.Count - 1))
+            Else
+                pb136("")
+            End If
         End If
     End Sub
 
-    Public Sub DisplayFill(Row As String)
-        If Row = "C" Then
-
-        ElseIf Row = "S" Then
-
-        ElseIf Row = "H" Then
-
-        ElseIf Row = "D" Then
-
-        End If
-    End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Stage.Open_deck()
         Display()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
 
-        Dim card() As String = {"TD", "0"}
+        Dim card() As String = {"TD", Stage.Deck_Open.Count}
 
         select_card(card)
 
     End Sub
+
+    Private Sub PictureBox136_Click(sender As Object, e As EventArgs) Handles PictureBox136.Click
+
+        Dim card() As String = {"R8", "1"}
+
+        select_card(card)
+
+    End Sub
+    Private Sub PictureBox137_Click(sender As Object, e As EventArgs) Handles PictureBox137.Click
+
+        Dim card() As String = {"R9", "1"}
+
+        select_card(card)
+
+    End Sub
+    Private Sub PictureBox138_Click(sender As Object, e As EventArgs) Handles PictureBox138.Click
+
+        Dim card() As String = {"R10", "1"}
+
+        select_card(card)
+
+    End Sub
+    Private Sub PictureBox139_Click(sender As Object, e As EventArgs) Handles PictureBox139.Click
+
+        Dim card() As String = {"R11", "1"}
+
+        select_card(card)
+
+    End Sub
+
+
+
+
+
+
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
 
@@ -33538,6 +33569,934 @@
             PictureBox135.Image = My.Resources.QSwL
         Else
             PictureBox135.Image = Nothing
+        End If
+    End Sub
+
+
+    Public Sub pb136(card As String)
+
+        PictureBox136.Visible = True
+
+        If card.Contains("F") Then
+            PictureBox136.Image = My.Resources.Back
+        ElseIf card = "10C" Then
+            PictureBox136.Image = My.Resources._10C
+        ElseIf card = "10CWL" Then
+            PictureBox136.Image = My.Resources._10CwL
+        ElseIf card = "10D" Then
+            PictureBox136.Image = My.Resources._10D
+        ElseIf card = "10DWL" Then
+            PictureBox136.Image = My.Resources._10DwL
+        ElseIf card = "10H" Then
+            PictureBox136.Image = My.Resources._10H
+        ElseIf card = "10HWL" Then
+            PictureBox136.Image = My.Resources._10HwL
+        ElseIf card = "10S" Then
+            PictureBox136.Image = My.Resources._10S
+        ElseIf card = "10SWL" Then
+            PictureBox136.Image = My.Resources._10SwL
+
+        ElseIf card = "2C" Then
+            PictureBox136.Image = My.Resources._2C
+        ElseIf card = "2CWL" Then
+            PictureBox136.Image = My.Resources._2CwL
+        ElseIf card = "2D" Then
+            PictureBox136.Image = My.Resources._2D
+        ElseIf card = "2DWL" Then
+            PictureBox136.Image = My.Resources._2DwL
+        ElseIf card = "2H" Then
+            PictureBox136.Image = My.Resources._2H
+        ElseIf card = "2HWL" Then
+            PictureBox136.Image = My.Resources._2HwL
+        ElseIf card = "2S" Then
+            PictureBox136.Image = My.Resources._2S
+        ElseIf card = "2SWL" Then
+            PictureBox136.Image = My.Resources._2SwL
+
+        ElseIf card = "3C" Then
+            PictureBox136.Image = My.Resources._3C
+        ElseIf card = "3CWL" Then
+            PictureBox136.Image = My.Resources._3CwL
+        ElseIf card = "3D" Then
+            PictureBox136.Image = My.Resources._3D
+        ElseIf card = "3DWL" Then
+            PictureBox136.Image = My.Resources._3DwL
+        ElseIf card = "3H" Then
+            PictureBox136.Image = My.Resources._3H
+        ElseIf card = "3HWL" Then
+            PictureBox136.Image = My.Resources._3HwL
+        ElseIf card = "3S" Then
+            PictureBox136.Image = My.Resources._3S
+        ElseIf card = "3SWL" Then
+            PictureBox136.Image = My.Resources._3SwL
+
+        ElseIf card = "4C" Then
+            PictureBox136.Image = My.Resources._4C
+        ElseIf card = "4CWL" Then
+            PictureBox136.Image = My.Resources._4CwL
+        ElseIf card = "4D" Then
+            PictureBox136.Image = My.Resources._4D
+        ElseIf card = "4DWL" Then
+            PictureBox136.Image = My.Resources._4DwL
+        ElseIf card = "4H" Then
+            PictureBox136.Image = My.Resources._4H
+        ElseIf card = "4HWL" Then
+            PictureBox136.Image = My.Resources._4HwL
+        ElseIf card = "4S" Then
+            PictureBox136.Image = My.Resources._4S
+        ElseIf card = "4SWL" Then
+            PictureBox136.Image = My.Resources._4SwL
+
+        ElseIf card = "5C" Then
+            PictureBox136.Image = My.Resources._5C
+        ElseIf card = "5CWL" Then
+            PictureBox136.Image = My.Resources._5CwL
+        ElseIf card = "5D" Then
+            PictureBox136.Image = My.Resources._5D
+        ElseIf card = "5DWL" Then
+            PictureBox136.Image = My.Resources._5DwL
+        ElseIf card = "5H" Then
+            PictureBox136.Image = My.Resources._5H
+        ElseIf card = "5HWL" Then
+            PictureBox136.Image = My.Resources._5HwL
+        ElseIf card = "5S" Then
+            PictureBox136.Image = My.Resources._5S
+        ElseIf card = "5SWL" Then
+            PictureBox136.Image = My.Resources._5SwL
+
+        ElseIf card = "6C" Then
+            PictureBox136.Image = My.Resources._6C
+        ElseIf card = "6CWL" Then
+            PictureBox136.Image = My.Resources._6CwL
+        ElseIf card = "6D" Then
+            PictureBox136.Image = My.Resources._6D
+        ElseIf card = "6DWL" Then
+            PictureBox136.Image = My.Resources._6DwL
+        ElseIf card = "6H" Then
+            PictureBox136.Image = My.Resources._6H
+        ElseIf card = "6HWL" Then
+            PictureBox136.Image = My.Resources._6HwL
+        ElseIf card = "6S" Then
+            PictureBox136.Image = My.Resources._6S
+        ElseIf card = "6SWL" Then
+            PictureBox136.Image = My.Resources._6SwL
+
+        ElseIf card = "7C" Then
+            PictureBox136.Image = My.Resources._7C
+        ElseIf card = "7CWL" Then
+            PictureBox136.Image = My.Resources._7CwL
+        ElseIf card = "7D" Then
+            PictureBox136.Image = My.Resources._7D
+        ElseIf card = "7DWL" Then
+            PictureBox136.Image = My.Resources._7DwL
+        ElseIf card = "7H" Then
+            PictureBox136.Image = My.Resources._7H
+        ElseIf card = "7HWL" Then
+            PictureBox136.Image = My.Resources._7HwL
+        ElseIf card = "7S" Then
+            PictureBox136.Image = My.Resources._7S
+        ElseIf card = "7SWL" Then
+            PictureBox136.Image = My.Resources._7SwL
+
+        ElseIf card = "8C" Then
+            PictureBox136.Image = My.Resources._8C
+        ElseIf card = "8CWL" Then
+            PictureBox136.Image = My.Resources._8CwL
+        ElseIf card = "8D" Then
+            PictureBox136.Image = My.Resources._8D
+        ElseIf card = "8DWL" Then
+            PictureBox136.Image = My.Resources._8DwL
+        ElseIf card = "8H" Then
+            PictureBox136.Image = My.Resources._8H
+        ElseIf card = "8HWL" Then
+            PictureBox136.Image = My.Resources._8HwL
+        ElseIf card = "8S" Then
+            PictureBox136.Image = My.Resources._8S
+        ElseIf card = "8SWL" Then
+            PictureBox136.Image = My.Resources._8SwL
+
+        ElseIf card = "9C" Then
+            PictureBox136.Image = My.Resources._9C
+        ElseIf card = "9CWL" Then
+            PictureBox136.Image = My.Resources._9CwL
+        ElseIf card = "9D" Then
+            PictureBox136.Image = My.Resources._9D
+        ElseIf card = "9DWL" Then
+            PictureBox136.Image = My.Resources._9DwL
+        ElseIf card = "9H" Then
+            PictureBox136.Image = My.Resources._9H
+        ElseIf card = "9HWL" Then
+            PictureBox136.Image = My.Resources._9HwL
+        ElseIf card = "9S" Then
+            PictureBox136.Image = My.Resources._9S
+        ElseIf card = "9SWL" Then
+            PictureBox136.Image = My.Resources._9SwL
+
+        ElseIf card = "AC" Then
+            PictureBox136.Image = My.Resources.AC
+        ElseIf card = "ACWL" Then
+            PictureBox136.Image = My.Resources.ACwL
+        ElseIf card = "AD" Then
+            PictureBox136.Image = My.Resources.AD
+        ElseIf card = "ADWL" Then
+            PictureBox136.Image = My.Resources.ADwL
+        ElseIf card = "AH" Then
+            PictureBox136.Image = My.Resources.AH
+        ElseIf card = "AHWL" Then
+            PictureBox136.Image = My.Resources.AHwL
+        ElseIf card = "AS" Then
+            PictureBox136.Image = My.Resources._AS
+        ElseIf card = "ASWL" Then
+            PictureBox136.Image = My.Resources.ASwL
+
+        ElseIf card = "JC" Then
+            PictureBox136.Image = My.Resources.JC
+        ElseIf card = "JCWL" Then
+            PictureBox136.Image = My.Resources.JCwL
+        ElseIf card = "JD" Then
+            PictureBox136.Image = My.Resources.JD
+        ElseIf card = "JDWL" Then
+            PictureBox136.Image = My.Resources.JDwL
+        ElseIf card = "JH" Then
+            PictureBox136.Image = My.Resources.JH
+        ElseIf card = "JHWL" Then
+            PictureBox136.Image = My.Resources.JHwL
+        ElseIf card = "JS" Then
+            PictureBox136.Image = My.Resources.JS
+        ElseIf card = "JSWL" Then
+            PictureBox136.Image = My.Resources.JSwL
+
+        ElseIf card = "KC" Then
+            PictureBox136.Image = My.Resources.KC
+        ElseIf card = "KCWL" Then
+            PictureBox136.Image = My.Resources.KCwL
+        ElseIf card = "KD" Then
+            PictureBox136.Image = My.Resources.KD
+        ElseIf card = "KDWL" Then
+            PictureBox136.Image = My.Resources.KDwL
+        ElseIf card = "KH" Then
+            PictureBox136.Image = My.Resources.KH
+        ElseIf card = "KHWL" Then
+            PictureBox136.Image = My.Resources.KHwL
+        ElseIf card = "KS" Then
+            PictureBox136.Image = My.Resources.KS
+        ElseIf card = "KSWL" Then
+            PictureBox136.Image = My.Resources.KSwL
+
+        ElseIf card = "QC" Then
+            PictureBox136.Image = My.Resources.QC
+        ElseIf card = "QCWL" Then
+            PictureBox136.Image = My.Resources.QCwL
+        ElseIf card = "QD" Then
+            PictureBox136.Image = My.Resources.QD
+        ElseIf card = "QDWL" Then
+            PictureBox136.Image = My.Resources.QDwL
+        ElseIf card = "QH" Then
+            PictureBox136.Image = My.Resources.QH
+        ElseIf card = "QHWL" Then
+            PictureBox136.Image = My.Resources.QHwL
+        ElseIf card = "QS" Then
+            PictureBox136.Image = My.Resources.QS
+        ElseIf card = "QSWL" Then
+            PictureBox136.Image = My.Resources.QSwL
+        Else
+            PictureBox136.Image = Nothing
+        End If
+    End Sub
+
+
+    Public Sub pb137(card As String)
+
+        PictureBox137.Visible = True
+
+        If card.Contains("F") Then
+            PictureBox137.Image = My.Resources.Back
+        ElseIf card = "10C" Then
+            PictureBox137.Image = My.Resources._10C
+        ElseIf card = "10CWL" Then
+            PictureBox137.Image = My.Resources._10CwL
+        ElseIf card = "10D" Then
+            PictureBox137.Image = My.Resources._10D
+        ElseIf card = "10DWL" Then
+            PictureBox137.Image = My.Resources._10DwL
+        ElseIf card = "10H" Then
+            PictureBox137.Image = My.Resources._10H
+        ElseIf card = "10HWL" Then
+            PictureBox137.Image = My.Resources._10HwL
+        ElseIf card = "10S" Then
+            PictureBox137.Image = My.Resources._10S
+        ElseIf card = "10SWL" Then
+            PictureBox137.Image = My.Resources._10SwL
+
+        ElseIf card = "2C" Then
+            PictureBox137.Image = My.Resources._2C
+        ElseIf card = "2CWL" Then
+            PictureBox137.Image = My.Resources._2CwL
+        ElseIf card = "2D" Then
+            PictureBox137.Image = My.Resources._2D
+        ElseIf card = "2DWL" Then
+            PictureBox137.Image = My.Resources._2DwL
+        ElseIf card = "2H" Then
+            PictureBox137.Image = My.Resources._2H
+        ElseIf card = "2HWL" Then
+            PictureBox137.Image = My.Resources._2HwL
+        ElseIf card = "2S" Then
+            PictureBox137.Image = My.Resources._2S
+        ElseIf card = "2SWL" Then
+            PictureBox137.Image = My.Resources._2SwL
+
+        ElseIf card = "3C" Then
+            PictureBox137.Image = My.Resources._3C
+        ElseIf card = "3CWL" Then
+            PictureBox137.Image = My.Resources._3CwL
+        ElseIf card = "3D" Then
+            PictureBox137.Image = My.Resources._3D
+        ElseIf card = "3DWL" Then
+            PictureBox137.Image = My.Resources._3DwL
+        ElseIf card = "3H" Then
+            PictureBox137.Image = My.Resources._3H
+        ElseIf card = "3HWL" Then
+            PictureBox137.Image = My.Resources._3HwL
+        ElseIf card = "3S" Then
+            PictureBox137.Image = My.Resources._3S
+        ElseIf card = "3SWL" Then
+            PictureBox137.Image = My.Resources._3SwL
+
+        ElseIf card = "4C" Then
+            PictureBox137.Image = My.Resources._4C
+        ElseIf card = "4CWL" Then
+            PictureBox137.Image = My.Resources._4CwL
+        ElseIf card = "4D" Then
+            PictureBox137.Image = My.Resources._4D
+        ElseIf card = "4DWL" Then
+            PictureBox137.Image = My.Resources._4DwL
+        ElseIf card = "4H" Then
+            PictureBox137.Image = My.Resources._4H
+        ElseIf card = "4HWL" Then
+            PictureBox137.Image = My.Resources._4HwL
+        ElseIf card = "4S" Then
+            PictureBox137.Image = My.Resources._4S
+        ElseIf card = "4SWL" Then
+            PictureBox137.Image = My.Resources._4SwL
+
+        ElseIf card = "5C" Then
+            PictureBox137.Image = My.Resources._5C
+        ElseIf card = "5CWL" Then
+            PictureBox137.Image = My.Resources._5CwL
+        ElseIf card = "5D" Then
+            PictureBox137.Image = My.Resources._5D
+        ElseIf card = "5DWL" Then
+            PictureBox137.Image = My.Resources._5DwL
+        ElseIf card = "5H" Then
+            PictureBox137.Image = My.Resources._5H
+        ElseIf card = "5HWL" Then
+            PictureBox137.Image = My.Resources._5HwL
+        ElseIf card = "5S" Then
+            PictureBox137.Image = My.Resources._5S
+        ElseIf card = "5SWL" Then
+            PictureBox137.Image = My.Resources._5SwL
+
+        ElseIf card = "6C" Then
+            PictureBox137.Image = My.Resources._6C
+        ElseIf card = "6CWL" Then
+            PictureBox137.Image = My.Resources._6CwL
+        ElseIf card = "6D" Then
+            PictureBox137.Image = My.Resources._6D
+        ElseIf card = "6DWL" Then
+            PictureBox137.Image = My.Resources._6DwL
+        ElseIf card = "6H" Then
+            PictureBox137.Image = My.Resources._6H
+        ElseIf card = "6HWL" Then
+            PictureBox137.Image = My.Resources._6HwL
+        ElseIf card = "6S" Then
+            PictureBox137.Image = My.Resources._6S
+        ElseIf card = "6SWL" Then
+            PictureBox137.Image = My.Resources._6SwL
+
+        ElseIf card = "7C" Then
+            PictureBox137.Image = My.Resources._7C
+        ElseIf card = "7CWL" Then
+            PictureBox137.Image = My.Resources._7CwL
+        ElseIf card = "7D" Then
+            PictureBox137.Image = My.Resources._7D
+        ElseIf card = "7DWL" Then
+            PictureBox137.Image = My.Resources._7DwL
+        ElseIf card = "7H" Then
+            PictureBox137.Image = My.Resources._7H
+        ElseIf card = "7HWL" Then
+            PictureBox137.Image = My.Resources._7HwL
+        ElseIf card = "7S" Then
+            PictureBox137.Image = My.Resources._7S
+        ElseIf card = "7SWL" Then
+            PictureBox137.Image = My.Resources._7SwL
+
+        ElseIf card = "8C" Then
+            PictureBox137.Image = My.Resources._8C
+        ElseIf card = "8CWL" Then
+            PictureBox137.Image = My.Resources._8CwL
+        ElseIf card = "8D" Then
+            PictureBox137.Image = My.Resources._8D
+        ElseIf card = "8DWL" Then
+            PictureBox137.Image = My.Resources._8DwL
+        ElseIf card = "8H" Then
+            PictureBox137.Image = My.Resources._8H
+        ElseIf card = "8HWL" Then
+            PictureBox137.Image = My.Resources._8HwL
+        ElseIf card = "8S" Then
+            PictureBox137.Image = My.Resources._8S
+        ElseIf card = "8SWL" Then
+            PictureBox137.Image = My.Resources._8SwL
+
+        ElseIf card = "9C" Then
+            PictureBox137.Image = My.Resources._9C
+        ElseIf card = "9CWL" Then
+            PictureBox137.Image = My.Resources._9CwL
+        ElseIf card = "9D" Then
+            PictureBox137.Image = My.Resources._9D
+        ElseIf card = "9DWL" Then
+            PictureBox137.Image = My.Resources._9DwL
+        ElseIf card = "9H" Then
+            PictureBox137.Image = My.Resources._9H
+        ElseIf card = "9HWL" Then
+            PictureBox137.Image = My.Resources._9HwL
+        ElseIf card = "9S" Then
+            PictureBox137.Image = My.Resources._9S
+        ElseIf card = "9SWL" Then
+            PictureBox137.Image = My.Resources._9SwL
+
+        ElseIf card = "AC" Then
+            PictureBox137.Image = My.Resources.AC
+        ElseIf card = "ACWL" Then
+            PictureBox137.Image = My.Resources.ACwL
+        ElseIf card = "AD" Then
+            PictureBox137.Image = My.Resources.AD
+        ElseIf card = "ADWL" Then
+            PictureBox137.Image = My.Resources.ADwL
+        ElseIf card = "AH" Then
+            PictureBox137.Image = My.Resources.AH
+        ElseIf card = "AHWL" Then
+            PictureBox137.Image = My.Resources.AHwL
+        ElseIf card = "AS" Then
+            PictureBox137.Image = My.Resources._AS
+        ElseIf card = "ASWL" Then
+            PictureBox137.Image = My.Resources.ASwL
+
+        ElseIf card = "JC" Then
+            PictureBox137.Image = My.Resources.JC
+        ElseIf card = "JCWL" Then
+            PictureBox137.Image = My.Resources.JCwL
+        ElseIf card = "JD" Then
+            PictureBox137.Image = My.Resources.JD
+        ElseIf card = "JDWL" Then
+            PictureBox137.Image = My.Resources.JDwL
+        ElseIf card = "JH" Then
+            PictureBox137.Image = My.Resources.JH
+        ElseIf card = "JHWL" Then
+            PictureBox137.Image = My.Resources.JHwL
+        ElseIf card = "JS" Then
+            PictureBox137.Image = My.Resources.JS
+        ElseIf card = "JSWL" Then
+            PictureBox137.Image = My.Resources.JSwL
+
+        ElseIf card = "KC" Then
+            PictureBox137.Image = My.Resources.KC
+        ElseIf card = "KCWL" Then
+            PictureBox137.Image = My.Resources.KCwL
+        ElseIf card = "KD" Then
+            PictureBox137.Image = My.Resources.KD
+        ElseIf card = "KDWL" Then
+            PictureBox137.Image = My.Resources.KDwL
+        ElseIf card = "KH" Then
+            PictureBox137.Image = My.Resources.KH
+        ElseIf card = "KHWL" Then
+            PictureBox137.Image = My.Resources.KHwL
+        ElseIf card = "KS" Then
+            PictureBox137.Image = My.Resources.KS
+        ElseIf card = "KSWL" Then
+            PictureBox137.Image = My.Resources.KSwL
+
+        ElseIf card = "QC" Then
+            PictureBox137.Image = My.Resources.QC
+        ElseIf card = "QCWL" Then
+            PictureBox137.Image = My.Resources.QCwL
+        ElseIf card = "QD" Then
+            PictureBox137.Image = My.Resources.QD
+        ElseIf card = "QDWL" Then
+            PictureBox137.Image = My.Resources.QDwL
+        ElseIf card = "QH" Then
+            PictureBox137.Image = My.Resources.QH
+        ElseIf card = "QHWL" Then
+            PictureBox137.Image = My.Resources.QHwL
+        ElseIf card = "QS" Then
+            PictureBox137.Image = My.Resources.QS
+        ElseIf card = "QSWL" Then
+            PictureBox137.Image = My.Resources.QSwL
+        Else
+            PictureBox137.Image = Nothing
+        End If
+    End Sub
+
+
+    Public Sub pb138(card As String)
+
+        PictureBox138.Visible = True
+
+        If card.Contains("F") Then
+            PictureBox138.Image = My.Resources.Back
+        ElseIf card = "10C" Then
+            PictureBox138.Image = My.Resources._10C
+        ElseIf card = "10CWL" Then
+            PictureBox138.Image = My.Resources._10CwL
+        ElseIf card = "10D" Then
+            PictureBox138.Image = My.Resources._10D
+        ElseIf card = "10DWL" Then
+            PictureBox138.Image = My.Resources._10DwL
+        ElseIf card = "10H" Then
+            PictureBox138.Image = My.Resources._10H
+        ElseIf card = "10HWL" Then
+            PictureBox138.Image = My.Resources._10HwL
+        ElseIf card = "10S" Then
+            PictureBox138.Image = My.Resources._10S
+        ElseIf card = "10SWL" Then
+            PictureBox138.Image = My.Resources._10SwL
+
+        ElseIf card = "2C" Then
+            PictureBox138.Image = My.Resources._2C
+        ElseIf card = "2CWL" Then
+            PictureBox138.Image = My.Resources._2CwL
+        ElseIf card = "2D" Then
+            PictureBox138.Image = My.Resources._2D
+        ElseIf card = "2DWL" Then
+            PictureBox138.Image = My.Resources._2DwL
+        ElseIf card = "2H" Then
+            PictureBox138.Image = My.Resources._2H
+        ElseIf card = "2HWL" Then
+            PictureBox138.Image = My.Resources._2HwL
+        ElseIf card = "2S" Then
+            PictureBox138.Image = My.Resources._2S
+        ElseIf card = "2SWL" Then
+            PictureBox138.Image = My.Resources._2SwL
+
+        ElseIf card = "3C" Then
+            PictureBox138.Image = My.Resources._3C
+        ElseIf card = "3CWL" Then
+            PictureBox138.Image = My.Resources._3CwL
+        ElseIf card = "3D" Then
+            PictureBox138.Image = My.Resources._3D
+        ElseIf card = "3DWL" Then
+            PictureBox138.Image = My.Resources._3DwL
+        ElseIf card = "3H" Then
+            PictureBox138.Image = My.Resources._3H
+        ElseIf card = "3HWL" Then
+            PictureBox138.Image = My.Resources._3HwL
+        ElseIf card = "3S" Then
+            PictureBox138.Image = My.Resources._3S
+        ElseIf card = "3SWL" Then
+            PictureBox138.Image = My.Resources._3SwL
+
+        ElseIf card = "4C" Then
+            PictureBox138.Image = My.Resources._4C
+        ElseIf card = "4CWL" Then
+            PictureBox138.Image = My.Resources._4CwL
+        ElseIf card = "4D" Then
+            PictureBox138.Image = My.Resources._4D
+        ElseIf card = "4DWL" Then
+            PictureBox138.Image = My.Resources._4DwL
+        ElseIf card = "4H" Then
+            PictureBox138.Image = My.Resources._4H
+        ElseIf card = "4HWL" Then
+            PictureBox138.Image = My.Resources._4HwL
+        ElseIf card = "4S" Then
+            PictureBox138.Image = My.Resources._4S
+        ElseIf card = "4SWL" Then
+            PictureBox138.Image = My.Resources._4SwL
+
+        ElseIf card = "5C" Then
+            PictureBox138.Image = My.Resources._5C
+        ElseIf card = "5CWL" Then
+            PictureBox138.Image = My.Resources._5CwL
+        ElseIf card = "5D" Then
+            PictureBox138.Image = My.Resources._5D
+        ElseIf card = "5DWL" Then
+            PictureBox138.Image = My.Resources._5DwL
+        ElseIf card = "5H" Then
+            PictureBox138.Image = My.Resources._5H
+        ElseIf card = "5HWL" Then
+            PictureBox138.Image = My.Resources._5HwL
+        ElseIf card = "5S" Then
+            PictureBox138.Image = My.Resources._5S
+        ElseIf card = "5SWL" Then
+            PictureBox138.Image = My.Resources._5SwL
+
+        ElseIf card = "6C" Then
+            PictureBox138.Image = My.Resources._6C
+        ElseIf card = "6CWL" Then
+            PictureBox138.Image = My.Resources._6CwL
+        ElseIf card = "6D" Then
+            PictureBox138.Image = My.Resources._6D
+        ElseIf card = "6DWL" Then
+            PictureBox138.Image = My.Resources._6DwL
+        ElseIf card = "6H" Then
+            PictureBox138.Image = My.Resources._6H
+        ElseIf card = "6HWL" Then
+            PictureBox138.Image = My.Resources._6HwL
+        ElseIf card = "6S" Then
+            PictureBox138.Image = My.Resources._6S
+        ElseIf card = "6SWL" Then
+            PictureBox138.Image = My.Resources._6SwL
+
+        ElseIf card = "7C" Then
+            PictureBox138.Image = My.Resources._7C
+        ElseIf card = "7CWL" Then
+            PictureBox138.Image = My.Resources._7CwL
+        ElseIf card = "7D" Then
+            PictureBox138.Image = My.Resources._7D
+        ElseIf card = "7DWL" Then
+            PictureBox138.Image = My.Resources._7DwL
+        ElseIf card = "7H" Then
+            PictureBox138.Image = My.Resources._7H
+        ElseIf card = "7HWL" Then
+            PictureBox138.Image = My.Resources._7HwL
+        ElseIf card = "7S" Then
+            PictureBox138.Image = My.Resources._7S
+        ElseIf card = "7SWL" Then
+            PictureBox138.Image = My.Resources._7SwL
+
+        ElseIf card = "8C" Then
+            PictureBox138.Image = My.Resources._8C
+        ElseIf card = "8CWL" Then
+            PictureBox138.Image = My.Resources._8CwL
+        ElseIf card = "8D" Then
+            PictureBox138.Image = My.Resources._8D
+        ElseIf card = "8DWL" Then
+            PictureBox138.Image = My.Resources._8DwL
+        ElseIf card = "8H" Then
+            PictureBox138.Image = My.Resources._8H
+        ElseIf card = "8HWL" Then
+            PictureBox138.Image = My.Resources._8HwL
+        ElseIf card = "8S" Then
+            PictureBox138.Image = My.Resources._8S
+        ElseIf card = "8SWL" Then
+            PictureBox138.Image = My.Resources._8SwL
+
+        ElseIf card = "9C" Then
+            PictureBox138.Image = My.Resources._9C
+        ElseIf card = "9CWL" Then
+            PictureBox138.Image = My.Resources._9CwL
+        ElseIf card = "9D" Then
+            PictureBox138.Image = My.Resources._9D
+        ElseIf card = "9DWL" Then
+            PictureBox138.Image = My.Resources._9DwL
+        ElseIf card = "9H" Then
+            PictureBox138.Image = My.Resources._9H
+        ElseIf card = "9HWL" Then
+            PictureBox138.Image = My.Resources._9HwL
+        ElseIf card = "9S" Then
+            PictureBox138.Image = My.Resources._9S
+        ElseIf card = "9SWL" Then
+            PictureBox138.Image = My.Resources._9SwL
+
+        ElseIf card = "AC" Then
+            PictureBox138.Image = My.Resources.AC
+        ElseIf card = "ACWL" Then
+            PictureBox138.Image = My.Resources.ACwL
+        ElseIf card = "AD" Then
+            PictureBox138.Image = My.Resources.AD
+        ElseIf card = "ADWL" Then
+            PictureBox138.Image = My.Resources.ADwL
+        ElseIf card = "AH" Then
+            PictureBox138.Image = My.Resources.AH
+        ElseIf card = "AHWL" Then
+            PictureBox138.Image = My.Resources.AHwL
+        ElseIf card = "AS" Then
+            PictureBox138.Image = My.Resources._AS
+        ElseIf card = "ASWL" Then
+            PictureBox138.Image = My.Resources.ASwL
+
+        ElseIf card = "JC" Then
+            PictureBox138.Image = My.Resources.JC
+        ElseIf card = "JCWL" Then
+            PictureBox138.Image = My.Resources.JCwL
+        ElseIf card = "JD" Then
+            PictureBox138.Image = My.Resources.JD
+        ElseIf card = "JDWL" Then
+            PictureBox138.Image = My.Resources.JDwL
+        ElseIf card = "JH" Then
+            PictureBox138.Image = My.Resources.JH
+        ElseIf card = "JHWL" Then
+            PictureBox138.Image = My.Resources.JHwL
+        ElseIf card = "JS" Then
+            PictureBox138.Image = My.Resources.JS
+        ElseIf card = "JSWL" Then
+            PictureBox138.Image = My.Resources.JSwL
+
+        ElseIf card = "KC" Then
+            PictureBox138.Image = My.Resources.KC
+        ElseIf card = "KCWL" Then
+            PictureBox138.Image = My.Resources.KCwL
+        ElseIf card = "KD" Then
+            PictureBox138.Image = My.Resources.KD
+        ElseIf card = "KDWL" Then
+            PictureBox138.Image = My.Resources.KDwL
+        ElseIf card = "KH" Then
+            PictureBox138.Image = My.Resources.KH
+        ElseIf card = "KHWL" Then
+            PictureBox138.Image = My.Resources.KHwL
+        ElseIf card = "KS" Then
+            PictureBox138.Image = My.Resources.KS
+        ElseIf card = "KSWL" Then
+            PictureBox138.Image = My.Resources.KSwL
+
+        ElseIf card = "QC" Then
+            PictureBox138.Image = My.Resources.QC
+        ElseIf card = "QCWL" Then
+            PictureBox138.Image = My.Resources.QCwL
+        ElseIf card = "QD" Then
+            PictureBox138.Image = My.Resources.QD
+        ElseIf card = "QDWL" Then
+            PictureBox138.Image = My.Resources.QDwL
+        ElseIf card = "QH" Then
+            PictureBox138.Image = My.Resources.QH
+        ElseIf card = "QHWL" Then
+            PictureBox138.Image = My.Resources.QHwL
+        ElseIf card = "QS" Then
+            PictureBox138.Image = My.Resources.QS
+        ElseIf card = "QSWL" Then
+            PictureBox138.Image = My.Resources.QSwL
+        Else
+            PictureBox138.Image = Nothing
+        End If
+    End Sub
+
+
+    Public Sub pb139(card As String)
+
+        PictureBox139.Visible = True
+
+        If card.Contains("F") Then
+            PictureBox139.Image = My.Resources.Back
+        ElseIf card = "10C" Then
+            PictureBox139.Image = My.Resources._10C
+        ElseIf card = "10CWL" Then
+            PictureBox139.Image = My.Resources._10CwL
+        ElseIf card = "10D" Then
+            PictureBox139.Image = My.Resources._10D
+        ElseIf card = "10DWL" Then
+            PictureBox139.Image = My.Resources._10DwL
+        ElseIf card = "10H" Then
+            PictureBox139.Image = My.Resources._10H
+        ElseIf card = "10HWL" Then
+            PictureBox139.Image = My.Resources._10HwL
+        ElseIf card = "10S" Then
+            PictureBox139.Image = My.Resources._10S
+        ElseIf card = "10SWL" Then
+            PictureBox139.Image = My.Resources._10SwL
+
+        ElseIf card = "2C" Then
+            PictureBox139.Image = My.Resources._2C
+        ElseIf card = "2CWL" Then
+            PictureBox139.Image = My.Resources._2CwL
+        ElseIf card = "2D" Then
+            PictureBox139.Image = My.Resources._2D
+        ElseIf card = "2DWL" Then
+            PictureBox139.Image = My.Resources._2DwL
+        ElseIf card = "2H" Then
+            PictureBox139.Image = My.Resources._2H
+        ElseIf card = "2HWL" Then
+            PictureBox139.Image = My.Resources._2HwL
+        ElseIf card = "2S" Then
+            PictureBox139.Image = My.Resources._2S
+        ElseIf card = "2SWL" Then
+            PictureBox139.Image = My.Resources._2SwL
+
+        ElseIf card = "3C" Then
+            PictureBox139.Image = My.Resources._3C
+        ElseIf card = "3CWL" Then
+            PictureBox139.Image = My.Resources._3CwL
+        ElseIf card = "3D" Then
+            PictureBox139.Image = My.Resources._3D
+        ElseIf card = "3DWL" Then
+            PictureBox139.Image = My.Resources._3DwL
+        ElseIf card = "3H" Then
+            PictureBox139.Image = My.Resources._3H
+        ElseIf card = "3HWL" Then
+            PictureBox139.Image = My.Resources._3HwL
+        ElseIf card = "3S" Then
+            PictureBox139.Image = My.Resources._3S
+        ElseIf card = "3SWL" Then
+            PictureBox139.Image = My.Resources._3SwL
+
+        ElseIf card = "4C" Then
+            PictureBox139.Image = My.Resources._4C
+        ElseIf card = "4CWL" Then
+            PictureBox139.Image = My.Resources._4CwL
+        ElseIf card = "4D" Then
+            PictureBox139.Image = My.Resources._4D
+        ElseIf card = "4DWL" Then
+            PictureBox139.Image = My.Resources._4DwL
+        ElseIf card = "4H" Then
+            PictureBox139.Image = My.Resources._4H
+        ElseIf card = "4HWL" Then
+            PictureBox139.Image = My.Resources._4HwL
+        ElseIf card = "4S" Then
+            PictureBox139.Image = My.Resources._4S
+        ElseIf card = "4SWL" Then
+            PictureBox139.Image = My.Resources._4SwL
+
+        ElseIf card = "5C" Then
+            PictureBox139.Image = My.Resources._5C
+        ElseIf card = "5CWL" Then
+            PictureBox139.Image = My.Resources._5CwL
+        ElseIf card = "5D" Then
+            PictureBox139.Image = My.Resources._5D
+        ElseIf card = "5DWL" Then
+            PictureBox139.Image = My.Resources._5DwL
+        ElseIf card = "5H" Then
+            PictureBox139.Image = My.Resources._5H
+        ElseIf card = "5HWL" Then
+            PictureBox139.Image = My.Resources._5HwL
+        ElseIf card = "5S" Then
+            PictureBox139.Image = My.Resources._5S
+        ElseIf card = "5SWL" Then
+            PictureBox139.Image = My.Resources._5SwL
+
+        ElseIf card = "6C" Then
+            PictureBox139.Image = My.Resources._6C
+        ElseIf card = "6CWL" Then
+            PictureBox139.Image = My.Resources._6CwL
+        ElseIf card = "6D" Then
+            PictureBox139.Image = My.Resources._6D
+        ElseIf card = "6DWL" Then
+            PictureBox139.Image = My.Resources._6DwL
+        ElseIf card = "6H" Then
+            PictureBox139.Image = My.Resources._6H
+        ElseIf card = "6HWL" Then
+            PictureBox139.Image = My.Resources._6HwL
+        ElseIf card = "6S" Then
+            PictureBox139.Image = My.Resources._6S
+        ElseIf card = "6SWL" Then
+            PictureBox139.Image = My.Resources._6SwL
+
+        ElseIf card = "7C" Then
+            PictureBox139.Image = My.Resources._7C
+        ElseIf card = "7CWL" Then
+            PictureBox139.Image = My.Resources._7CwL
+        ElseIf card = "7D" Then
+            PictureBox139.Image = My.Resources._7D
+        ElseIf card = "7DWL" Then
+            PictureBox139.Image = My.Resources._7DwL
+        ElseIf card = "7H" Then
+            PictureBox139.Image = My.Resources._7H
+        ElseIf card = "7HWL" Then
+            PictureBox139.Image = My.Resources._7HwL
+        ElseIf card = "7S" Then
+            PictureBox139.Image = My.Resources._7S
+        ElseIf card = "7SWL" Then
+            PictureBox139.Image = My.Resources._7SwL
+
+        ElseIf card = "8C" Then
+            PictureBox139.Image = My.Resources._8C
+        ElseIf card = "8CWL" Then
+            PictureBox139.Image = My.Resources._8CwL
+        ElseIf card = "8D" Then
+            PictureBox139.Image = My.Resources._8D
+        ElseIf card = "8DWL" Then
+            PictureBox139.Image = My.Resources._8DwL
+        ElseIf card = "8H" Then
+            PictureBox139.Image = My.Resources._8H
+        ElseIf card = "8HWL" Then
+            PictureBox139.Image = My.Resources._8HwL
+        ElseIf card = "8S" Then
+            PictureBox139.Image = My.Resources._8S
+        ElseIf card = "8SWL" Then
+            PictureBox139.Image = My.Resources._8SwL
+
+        ElseIf card = "9C" Then
+            PictureBox139.Image = My.Resources._9C
+        ElseIf card = "9CWL" Then
+            PictureBox139.Image = My.Resources._9CwL
+        ElseIf card = "9D" Then
+            PictureBox139.Image = My.Resources._9D
+        ElseIf card = "9DWL" Then
+            PictureBox139.Image = My.Resources._9DwL
+        ElseIf card = "9H" Then
+            PictureBox139.Image = My.Resources._9H
+        ElseIf card = "9HWL" Then
+            PictureBox139.Image = My.Resources._9HwL
+        ElseIf card = "9S" Then
+            PictureBox139.Image = My.Resources._9S
+        ElseIf card = "9SWL" Then
+            PictureBox139.Image = My.Resources._9SwL
+
+        ElseIf card = "AC" Then
+            PictureBox139.Image = My.Resources.AC
+        ElseIf card = "ACWL" Then
+            PictureBox139.Image = My.Resources.ACwL
+        ElseIf card = "AD" Then
+            PictureBox139.Image = My.Resources.AD
+        ElseIf card = "ADWL" Then
+            PictureBox139.Image = My.Resources.ADwL
+        ElseIf card = "AH" Then
+            PictureBox139.Image = My.Resources.AH
+        ElseIf card = "AHWL" Then
+            PictureBox139.Image = My.Resources.AHwL
+        ElseIf card = "AS" Then
+            PictureBox139.Image = My.Resources._AS
+        ElseIf card = "ASWL" Then
+            PictureBox139.Image = My.Resources.ASwL
+
+        ElseIf card = "JC" Then
+            PictureBox139.Image = My.Resources.JC
+        ElseIf card = "JCWL" Then
+            PictureBox139.Image = My.Resources.JCwL
+        ElseIf card = "JD" Then
+            PictureBox139.Image = My.Resources.JD
+        ElseIf card = "JDWL" Then
+            PictureBox139.Image = My.Resources.JDwL
+        ElseIf card = "JH" Then
+            PictureBox139.Image = My.Resources.JH
+        ElseIf card = "JHWL" Then
+            PictureBox139.Image = My.Resources.JHwL
+        ElseIf card = "JS" Then
+            PictureBox139.Image = My.Resources.JS
+        ElseIf card = "JSWL" Then
+            PictureBox139.Image = My.Resources.JSwL
+
+        ElseIf card = "KC" Then
+            PictureBox139.Image = My.Resources.KC
+        ElseIf card = "KCWL" Then
+            PictureBox139.Image = My.Resources.KCwL
+        ElseIf card = "KD" Then
+            PictureBox139.Image = My.Resources.KD
+        ElseIf card = "KDWL" Then
+            PictureBox139.Image = My.Resources.KDwL
+        ElseIf card = "KH" Then
+            PictureBox139.Image = My.Resources.KH
+        ElseIf card = "KHWL" Then
+            PictureBox139.Image = My.Resources.KHwL
+        ElseIf card = "KS" Then
+            PictureBox139.Image = My.Resources.KS
+        ElseIf card = "KSWL" Then
+            PictureBox139.Image = My.Resources.KSwL
+
+        ElseIf card = "QC" Then
+            PictureBox139.Image = My.Resources.QC
+        ElseIf card = "QCWL" Then
+            PictureBox139.Image = My.Resources.QCwL
+        ElseIf card = "QD" Then
+            PictureBox139.Image = My.Resources.QD
+        ElseIf card = "QDWL" Then
+            PictureBox139.Image = My.Resources.QDwL
+        ElseIf card = "QH" Then
+            PictureBox139.Image = My.Resources.QH
+        ElseIf card = "QHWL" Then
+            PictureBox139.Image = My.Resources.QHwL
+        ElseIf card = "QS" Then
+            PictureBox139.Image = My.Resources.QS
+        ElseIf card = "QSWL" Then
+            PictureBox139.Image = My.Resources.QSwL
+        Else
+            PictureBox139.Image = Nothing
         End If
     End Sub
 
