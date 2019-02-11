@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class Gamestage
 
-    Dim constr As String = "Server=(LocalDB)\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\MiniMart.mdf" 'use datadirectory when file in project
+    Dim constr As String = "Server=(LocalDB)\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\Game.mdf"
     Dim conn As New SqlConnection(constr)
 
     Dim Full_Card() As String = {"AC", "AD", "AH", "AS", "2C", "2D", "2H", "2S", "3C", "3D", "3H", "3S", "4C", "4D", "4H", "4S", "5C", "5D", "5H", "5S", "6C", "6D", "6H", "6S", "7C", "7D", "7H", "7S", "8C", "8D", "8H", "8S", "9C", "9D", "9H", "9S", "10C", "10D", "10H", "10S", "JC", "JD", "JH", "JS", "QC", "QD", "QH", "QS", "KC", "KD", "KH", "KS"}
@@ -394,8 +394,6 @@ Public Class Gamestage
 
                     'Add to DB?
                     'แปลง arraylist to string?
-                    _Game_Move += 1
-                    _Game_Step += 1
                     Dim R1 As String = ""
                     For i = 0 To _Row1.Count - 1
                         R1 += TryCast(_Row1.Item(i), String)
@@ -450,11 +448,11 @@ Public Class Gamestage
                     Next
                     conn.Open()
                     Dim sql As String = "Insert into Step 
-                                     Values (@step, @row1, @row2, @row3, @row4, 
-                                             @row5, @row6, @row7, @deck, @odeck, 
-                                             @row8, @row9, @row10, @row11)"
+                                         Values (@step, @row1, @row2, @row3, @row4, 
+                                                 @row5, @row6, @row7, @deck, @odeck, 
+                                                 @row8, @row9, @row10, @row11)"
                     Dim cmd As New SqlCommand(sql, conn)
-                    cmd.Parameters.AddWithValue("step", _Game_Step)
+                    cmd.Parameters.AddWithValue("step", Game_Step)
                     cmd.Parameters.AddWithValue("row1", R1)
                     cmd.Parameters.AddWithValue("row2", R2)
                     cmd.Parameters.AddWithValue("row3", R3)
@@ -468,7 +466,11 @@ Public Class Gamestage
                     cmd.Parameters.AddWithValue("row9", R9)
                     cmd.Parameters.AddWithValue("row10", R10)
                     cmd.Parameters.AddWithValue("row11", R11)
-                    cmd.ExecuteNonQuery()
+                    If cmd.ExecuteNonQuery = 1 Then
+                        MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
+                    Else
+                        MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
+                    End If
                     conn.Close()
                     'Add to DB?
 
@@ -811,5 +813,19 @@ Public Class Gamestage
             End If
         End If
     End Sub
+
+    Public Function ShowData()
+        conn.Open()
+        Dim sql As String = "Select * 
+                             From Score
+                             Order by 2, 3"
+        Dim cmd As New SqlCommand(sql, conn)
+        Dim adapt As New SqlDataAdapter(cmd)
+        Dim data As New DataSet()
+        adapt.Fill(data, "score")
+        Dim dude As DataTable = data.Tables("score")
+        conn.Close()
+        Return dude
+    End Function
 
 End Class
