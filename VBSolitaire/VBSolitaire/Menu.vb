@@ -8,4 +8,11 @@
         MainGame.Show()
     End Sub
 
+    Private Sub btnRe_Click(sender As Object, e As EventArgs) Handles btnRe.Click
+        'Showdata()'
+    End Sub
+
+    Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
+        MainGame.Show()
+    End Sub
 End Class
