@@ -182,6 +182,7 @@ Partial Class MainGame
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox11.SuspendLayout()
@@ -345,6 +346,7 @@ Partial Class MainGame
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Show_deck)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -360,7 +362,7 @@ Partial Class MainGame
         '
         'Show_deck
         '
-        Me.Show_deck.Location = New System.Drawing.Point(270, 16)
+        Me.Show_deck.Location = New System.Drawing.Point(308, 16)
         Me.Show_deck.Name = "Show_deck"
         Me.Show_deck.Size = New System.Drawing.Size(58, 21)
         Me.Show_deck.TabIndex = 6
@@ -388,7 +390,7 @@ Partial Class MainGame
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(456, 19)
+        Me.CheckBox3.Location = New System.Drawing.Point(465, 19)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(74, 17)
         Me.CheckBox3.TabIndex = 3
@@ -398,17 +400,17 @@ Partial Class MainGame
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(334, 19)
+        Me.CheckBox2.Location = New System.Drawing.Point(372, 19)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(116, 17)
+        Me.CheckBox2.Size = New System.Drawing.Size(89, 17)
         Me.CheckBox2.TabIndex = 2
-        Me.CheckBox2.Text = "No move Condition"
+        Me.CheckBox2.Text = "NO-Condition"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(177, 19)
+        Me.CheckBox1.Location = New System.Drawing.Point(215, 19)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(87, 17)
         Me.CheckBox1.TabIndex = 1
@@ -2024,6 +2026,16 @@ Partial Class MainGame
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Button2
+        '
+        Me.Button2.Enabled = False
+        Me.Button2.Location = New System.Drawing.Point(144, 15)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(58, 21)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Undo"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'MainGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2346,4 +2358,5 @@ Partial Class MainGame
     Friend WithEvents PictureBox137 As PictureBox
     Friend WithEvents PictureBox136 As PictureBox
     Friend WithEvents Show_deck As Button
+    Friend WithEvents Button2 As Button
 End Class

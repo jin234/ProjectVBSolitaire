@@ -232,7 +232,7 @@
         For i = 0 To num - 1
             Dim rannum As Integer = rng.Next(0, PulledPool.Count)
             If cover Then
-                out.Add(PulledPool(rannum) + "")
+                out.Add(PulledPool(rannum) + "F")
             Else
                 out.Add(PulledPool(rannum))
             End If
@@ -398,6 +398,89 @@
         Return True
         Return False
     End Function
+
+    Public Sub Flip_card()
+
+        If Row1.Count > 0 Then
+            If Row1(Row1.Count - 1).Contains("F") Then
+                Row1(Row1.Count - 1) = Row1(Row1.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row2.Count > 0 Then
+            If Row2(Row2.Count - 1).Contains("F") Then
+                Row2(Row2.Count - 1) = Row2(Row2.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row3.Count > 0 Then
+            If Row3(Row3.Count - 1).Contains("F") Then
+                Row3(Row3.Count - 1) = Row3(Row3.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row4.Count > 0 Then
+            If Row4(Row4.Count - 1).Contains("F") Then
+                Row4(Row4.Count - 1) = Row4(Row4.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row5.Count > 0 Then
+            If Row5(Row5.Count - 1).Contains("F") Then
+                Row5(Row5.Count - 1) = Row5(Row5.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row6.Count > 0 Then
+            If Row6(Row6.Count - 1).Contains("F") Then
+                Row6(Row6.Count - 1) = Row6(Row6.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row7.Count > 0 Then
+            If Row7(Row7.Count - 1).Contains("F") Then
+                Row7(Row7.Count - 1) = Row7(Row7.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row8.Count > 0 Then
+            If Row8(Row8.Count - 1).Contains("F") Then
+                Row8(Row8.Count - 1) = Row8(Row8.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row9.Count > 0 Then
+            If Row9(Row9.Count - 1).Contains("F") Then
+                Row9(Row9.Count - 1) = Row9(Row9.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row10.Count > 0 Then
+            If Row10(Row10.Count - 1).Contains("F") Then
+                Row10(Row10.Count - 1) = Row10(Row10.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row11.Count > 0 Then
+            If Row11(Row11.Count - 1).Contains("F") Then
+                Row11(Row11.Count - 1) = Row11(Row11.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+
+
+    End Sub
 
     Public Sub Open_deck()
         If _Deck.Count = 0 Then

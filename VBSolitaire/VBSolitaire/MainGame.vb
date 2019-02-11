@@ -3,6 +3,7 @@
     Dim Stage As Gamestage = New Gamestage
 
     Private Sub MainGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CheckBox1_CheckedChanged(sender, e)
         Stage.Generate_Game()
         Display()
         MessageBox.Show("init")
@@ -72,7 +73,7 @@
     End Sub
 
     Public Sub Display()
-
+        Stage.Flip_card()
         DisplayDeck()
         DisplayDeckopen()
 
@@ -1330,10 +1331,27 @@
             End If
         ElseIf Row = 8 Then
             If Stage.Row8.Count <> 0 Then
-
                 pb136(Stage.Row8(Stage.Row8.Count - 1))
             Else
                 pb136("")
+            End If
+        ElseIf Row = 9 Then
+            If Stage.Row9.Count <> 0 Then
+                pb137(Stage.Row9(Stage.Row9.Count - 1))
+            Else
+                pb137("")
+            End If
+        ElseIf Row = 10 Then
+            If Stage.Row10.Count <> 0 Then
+                pb138(Stage.Row10(Stage.Row10.Count - 1))
+            Else
+                pb138("")
+            End If
+        ElseIf Row = 11 Then
+            If Stage.Row11.Count <> 0 Then
+                pb139(Stage.Row11(Stage.Row11.Count - 1))
+            Else
+                pb139("")
             End If
         End If
     End Sub
@@ -1354,28 +1372,28 @@
 
     Private Sub PictureBox136_Click(sender As Object, e As EventArgs) Handles PictureBox136.Click
 
-        Dim card() As String = {"R8", "1"}
+        Dim card() As String = {"R8", Stage.Row8.Count}
 
         select_card(card)
 
     End Sub
     Private Sub PictureBox137_Click(sender As Object, e As EventArgs) Handles PictureBox137.Click
 
-        Dim card() As String = {"R9", "1"}
+        Dim card() As String = {"R9", Stage.Row9.Count}
 
         select_card(card)
 
     End Sub
     Private Sub PictureBox138_Click(sender As Object, e As EventArgs) Handles PictureBox138.Click
 
-        Dim card() As String = {"R10", "1"}
+        Dim card() As String = {"R10", Stage.Row10.Count}
 
         select_card(card)
 
     End Sub
     Private Sub PictureBox139_Click(sender As Object, e As EventArgs) Handles PictureBox139.Click
 
-        Dim card() As String = {"R11", "1"}
+        Dim card() As String = {"R11", Stage.Row11.Count}
 
         select_card(card)
 
@@ -34500,8 +34518,35 @@
         End If
     End Sub
 
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            Show_deck.Visible = True
+            CheckBox2.Visible = True
+            CheckBox3.Visible = True
 
+            GroupBox3.Text = "X/24"
+            GroupBox5.Text = "3-21"
+            GroupBox6.Text = "40-22"
+            GroupBox7.Text = "59-41"
+            GroupBox8.Text = "78-60"
+            GroupBox9.Text = "97-79"
+            GroupBox10.Text = "116-98"
+            GroupBox11.Text = "135-117"
 
+        Else
 
+            Show_deck.Visible = False
+            CheckBox2.Visible = False
+            CheckBox3.Visible = False
 
+            GroupBox3.Text = ""
+            GroupBox5.Text = ""
+            GroupBox6.Text = ""
+            GroupBox7.Text = ""
+            GroupBox8.Text = ""
+            GroupBox9.Text = ""
+            GroupBox10.Text = ""
+            GroupBox11.Text = ""
+        End If
+    End Sub
 End Class
