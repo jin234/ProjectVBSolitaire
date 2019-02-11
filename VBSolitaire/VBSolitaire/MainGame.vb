@@ -63,59 +63,6 @@
 
     End Sub
 
-
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-
-        Dim card() As String = {"R1", "1"}
-
-        select_card(card)
-
-    End Sub
-
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
-
-        Dim card() As String = {"R1", "2"}
-
-        select_card(card)
-
-    End Sub
-
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-
-        Dim card() As String = {"R1", "3"}
-
-        select_card(card)
-
-    End Sub
-
-    Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click
-
-        Dim card() As String = {"R2", "1"}
-
-        select_card(card)
-
-    End Sub
-
-    Private Sub PictureBox39_Click(sender As Object, e As EventArgs) Handles PictureBox39.Click
-
-        Dim card() As String = {"R2", "2"}
-        select_card(card)
-
-    End Sub
-
-    Private Sub PictureBox38_Click(sender As Object, e As EventArgs) Handles PictureBox38.Click
-
-        Dim card() As String = {"R2", "3"}
-        select_card(card)
-
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Stage.Open_deck()
-        Display()
-    End Sub
-
     Public Sub select_card(card As String())
 
         Stage.card_selected(card)
@@ -1396,6 +1343,1222 @@
         End If
     End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Stage.Open_deck()
+        Display()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+        Dim card() As String = {"TD", "0"}
+
+        select_card(card)
+
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+
+        Dim card() As String = {"R1", "1"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+
+        Dim card() As String = {"R1", "2"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+
+        Dim card() As String = {"R1", "3"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+
+        Dim card() As String = {"R1", "4"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+
+        Dim card() As String = {"R1", "5"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+
+        Dim card() As String = {"R1", "6"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+
+        Dim card() As String = {"R1", "7"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+
+        Dim card() As String = {"R1", "8"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
+
+        Dim card() As String = {"R1", "9"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
+
+        Dim card() As String = {"R1", "10"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
+
+        Dim card() As String = {"R1", "11"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles PictureBox14.Click
+
+        Dim card() As String = {"R1", "12"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox15_Click(sender As Object, e As EventArgs) Handles PictureBox15.Click
+
+        Dim card() As String = {"R1", "13"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox16_Click(sender As Object, e As EventArgs) Handles PictureBox16.Click
+
+        Dim card() As String = {"R1", "14"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox17_Click(sender As Object, e As EventArgs) Handles PictureBox17.Click
+
+        Dim card() As String = {"R1", "15"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox18_Click(sender As Object, e As EventArgs) Handles PictureBox18.Click
+
+        Dim card() As String = {"R1", "16"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox19_Click(sender As Object, e As EventArgs) Handles PictureBox19.Click
+
+        Dim card() As String = {"R1", "17"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox20_Click(sender As Object, e As EventArgs) Handles PictureBox20.Click
+
+        Dim card() As String = {"R1", "18"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox21_Click(sender As Object, e As EventArgs) Handles PictureBox21.Click
+
+        Dim card() As String = {"R1", "19"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click
+
+        Dim card() As String = {"R2", "1"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox39_Click(sender As Object, e As EventArgs) Handles PictureBox39.Click
+
+        Dim card() As String = {"R2", "2"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox38_Click(sender As Object, e As EventArgs) Handles PictureBox38.Click
+
+        Dim card() As String = {"R2", "3"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox37_Click(sender As Object, e As EventArgs) Handles PictureBox37.Click
+
+        Dim card() As String = {"R2", "4"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox36_Click(sender As Object, e As EventArgs) Handles PictureBox36.Click
+
+        Dim card() As String = {"R2", "5"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox35_Click(sender As Object, e As EventArgs) Handles PictureBox35.Click
+
+        Dim card() As String = {"R2", "6"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox34_Click(sender As Object, e As EventArgs) Handles PictureBox34.Click
+
+        Dim card() As String = {"R2", "7"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox33_Click(sender As Object, e As EventArgs) Handles PictureBox33.Click
+
+        Dim card() As String = {"R2", "8"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox32_Click(sender As Object, e As EventArgs) Handles PictureBox32.Click
+
+        Dim card() As String = {"R2", "9"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox31_Click(sender As Object, e As EventArgs) Handles PictureBox31.Click
+
+        Dim card() As String = {"R2", "10"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox30_Click(sender As Object, e As EventArgs) Handles PictureBox30.Click
+
+        Dim card() As String = {"R2", "11"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox29_Click(sender As Object, e As EventArgs) Handles PictureBox29.Click
+
+        Dim card() As String = {"R2", "12"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox28_Click(sender As Object, e As EventArgs) Handles PictureBox28.Click
+
+        Dim card() As String = {"R2", "13"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox27_Click(sender As Object, e As EventArgs) Handles PictureBox27.Click
+
+        Dim card() As String = {"R2", "14"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox26_Click(sender As Object, e As EventArgs) Handles PictureBox26.Click
+
+        Dim card() As String = {"R2", "15"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox25_Click(sender As Object, e As EventArgs) Handles PictureBox25.Click
+
+        Dim card() As String = {"R2", "16"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox24_Click(sender As Object, e As EventArgs) Handles PictureBox24.Click
+
+        Dim card() As String = {"R2", "17"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox23_Click(sender As Object, e As EventArgs) Handles PictureBox23.Click
+
+        Dim card() As String = {"R2", "18"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox22_Click(sender As Object, e As EventArgs) Handles PictureBox22.Click
+
+        Dim card() As String = {"R2", "19"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox59_Click(sender As Object, e As EventArgs) Handles PictureBox59.Click
+
+        Dim card() As String = {"R3", "1"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox58_Click(sender As Object, e As EventArgs) Handles PictureBox58.Click
+
+        Dim card() As String = {"R3", "2"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox57_Click(sender As Object, e As EventArgs) Handles PictureBox57.Click
+
+        Dim card() As String = {"R3", "3"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox56_Click(sender As Object, e As EventArgs) Handles PictureBox56.Click
+
+        Dim card() As String = {"R3", "4"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox55_Click(sender As Object, e As EventArgs) Handles PictureBox55.Click
+
+        Dim card() As String = {"R3", "5"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox54_Click(sender As Object, e As EventArgs) Handles PictureBox54.Click
+
+        Dim card() As String = {"R3", "6"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox53_Click(sender As Object, e As EventArgs) Handles PictureBox53.Click
+
+        Dim card() As String = {"R3", "7"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox52_Click(sender As Object, e As EventArgs) Handles PictureBox52.Click
+
+        Dim card() As String = {"R3", "8"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox51_Click(sender As Object, e As EventArgs) Handles PictureBox51.Click
+
+        Dim card() As String = {"R3", "9"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox50_Click(sender As Object, e As EventArgs) Handles PictureBox50.Click
+
+        Dim card() As String = {"R3", "10"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox49_Click(sender As Object, e As EventArgs) Handles PictureBox49.Click
+
+        Dim card() As String = {"R3", "11"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox48_Click(sender As Object, e As EventArgs) Handles PictureBox48.Click
+
+        Dim card() As String = {"R3", "12"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox47_Click(sender As Object, e As EventArgs) Handles PictureBox47.Click
+
+        Dim card() As String = {"R3", "13"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox46_Click(sender As Object, e As EventArgs) Handles PictureBox46.Click
+
+        Dim card() As String = {"R3", "14"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox45_Click(sender As Object, e As EventArgs) Handles PictureBox45.Click
+
+        Dim card() As String = {"R3", "15"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox44_Click(sender As Object, e As EventArgs) Handles PictureBox44.Click
+
+        Dim card() As String = {"R3", "16"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox43_Click(sender As Object, e As EventArgs) Handles PictureBox43.Click
+
+        Dim card() As String = {"R3", "17"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox42_Click(sender As Object, e As EventArgs) Handles PictureBox42.Click
+
+        Dim card() As String = {"R3", "18"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox41_Click(sender As Object, e As EventArgs) Handles PictureBox41.Click
+
+        Dim card() As String = {"R3", "19"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox78_Click(sender As Object, e As EventArgs) Handles PictureBox78.Click
+
+        Dim card() As String = {"R4", "1"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox77_Click(sender As Object, e As EventArgs) Handles PictureBox77.Click
+
+        Dim card() As String = {"R4", "2"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox76_Click(sender As Object, e As EventArgs) Handles PictureBox76.Click
+
+        Dim card() As String = {"R4", "3"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox75_Click(sender As Object, e As EventArgs) Handles PictureBox75.Click
+
+        Dim card() As String = {"R4", "4"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox74_Click(sender As Object, e As EventArgs) Handles PictureBox74.Click
+
+        Dim card() As String = {"R4", "5"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox73_Click(sender As Object, e As EventArgs) Handles PictureBox73.Click
+
+        Dim card() As String = {"R4", "6"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox72_Click(sender As Object, e As EventArgs) Handles PictureBox72.Click
+
+        Dim card() As String = {"R4", "7"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox71_Click(sender As Object, e As EventArgs) Handles PictureBox71.Click
+
+        Dim card() As String = {"R4", "8"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox70_Click(sender As Object, e As EventArgs) Handles PictureBox70.Click
+
+        Dim card() As String = {"R4", "9"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox69_Click(sender As Object, e As EventArgs) Handles PictureBox69.Click
+
+        Dim card() As String = {"R4", "10"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox68_Click(sender As Object, e As EventArgs) Handles PictureBox68.Click
+
+        Dim card() As String = {"R4", "11"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox67_Click(sender As Object, e As EventArgs) Handles PictureBox67.Click
+
+        Dim card() As String = {"R4", "12"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox66_Click(sender As Object, e As EventArgs) Handles PictureBox66.Click
+
+        Dim card() As String = {"R4", "13"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox65_Click(sender As Object, e As EventArgs) Handles PictureBox65.Click
+
+        Dim card() As String = {"R4", "14"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox64_Click(sender As Object, e As EventArgs) Handles PictureBox64.Click
+
+        Dim card() As String = {"R4", "15"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox63_Click(sender As Object, e As EventArgs) Handles PictureBox63.Click
+
+        Dim card() As String = {"R4", "16"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox62_Click(sender As Object, e As EventArgs) Handles PictureBox62.Click
+
+        Dim card() As String = {"R4", "17"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox61_Click(sender As Object, e As EventArgs) Handles PictureBox61.Click
+
+        Dim card() As String = {"R4", "18"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox60_Click(sender As Object, e As EventArgs) Handles PictureBox60.Click
+
+        Dim card() As String = {"R4", "19"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox97_Click(sender As Object, e As EventArgs) Handles PictureBox97.Click
+
+        Dim card() As String = {"R5", "1"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox96_Click(sender As Object, e As EventArgs) Handles PictureBox96.Click
+
+        Dim card() As String = {"R5", "2"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox95_Click(sender As Object, e As EventArgs) Handles PictureBox95.Click
+
+        Dim card() As String = {"R5", "3"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox94_Click(sender As Object, e As EventArgs) Handles PictureBox94.Click
+
+        Dim card() As String = {"R5", "4"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox93_Click(sender As Object, e As EventArgs) Handles PictureBox93.Click
+
+        Dim card() As String = {"R5", "5"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox92_Click(sender As Object, e As EventArgs) Handles PictureBox92.Click
+
+        Dim card() As String = {"R5", "6"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox91_Click(sender As Object, e As EventArgs) Handles PictureBox91.Click
+
+        Dim card() As String = {"R5", "7"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox90_Click(sender As Object, e As EventArgs) Handles PictureBox90.Click
+
+        Dim card() As String = {"R5", "8"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox89_Click(sender As Object, e As EventArgs) Handles PictureBox89.Click
+
+        Dim card() As String = {"R5", "9"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox88_Click(sender As Object, e As EventArgs) Handles PictureBox88.Click
+
+        Dim card() As String = {"R5", "10"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox87_Click(sender As Object, e As EventArgs) Handles PictureBox87.Click
+
+        Dim card() As String = {"R5", "11"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox86_Click(sender As Object, e As EventArgs) Handles PictureBox86.Click
+
+        Dim card() As String = {"R5", "12"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox85_Click(sender As Object, e As EventArgs) Handles PictureBox85.Click
+
+        Dim card() As String = {"R5", "13"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox84_Click(sender As Object, e As EventArgs) Handles PictureBox84.Click
+
+        Dim card() As String = {"R5", "14"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox83_Click(sender As Object, e As EventArgs) Handles PictureBox83.Click
+
+        Dim card() As String = {"R5", "15"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox82_Click(sender As Object, e As EventArgs) Handles PictureBox82.Click
+
+        Dim card() As String = {"R5", "16"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox81_Click(sender As Object, e As EventArgs) Handles PictureBox81.Click
+
+        Dim card() As String = {"R5", "17"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox80_Click(sender As Object, e As EventArgs) Handles PictureBox80.Click
+
+        Dim card() As String = {"R5", "18"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox79_Click(sender As Object, e As EventArgs) Handles PictureBox79.Click
+
+        Dim card() As String = {"R5", "19"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox116_Click(sender As Object, e As EventArgs) Handles PictureBox116.Click
+
+        Dim card() As String = {"R6", "1"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox115_Click(sender As Object, e As EventArgs) Handles PictureBox115.Click
+
+        Dim card() As String = {"R6", "2"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox114_Click(sender As Object, e As EventArgs) Handles PictureBox114.Click
+
+        Dim card() As String = {"R6", "3"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox113_Click(sender As Object, e As EventArgs) Handles PictureBox113.Click
+
+        Dim card() As String = {"R6", "4"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox112_Click(sender As Object, e As EventArgs) Handles PictureBox112.Click
+
+        Dim card() As String = {"R6", "5"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox111_Click(sender As Object, e As EventArgs) Handles PictureBox111.Click
+
+        Dim card() As String = {"R6", "6"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox110_Click(sender As Object, e As EventArgs) Handles PictureBox110.Click
+
+        Dim card() As String = {"R6", "7"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox109_Click(sender As Object, e As EventArgs) Handles PictureBox109.Click
+
+        Dim card() As String = {"R6", "8"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox108_Click(sender As Object, e As EventArgs) Handles PictureBox108.Click
+
+        Dim card() As String = {"R6", "9"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox107_Click(sender As Object, e As EventArgs) Handles PictureBox107.Click
+
+        Dim card() As String = {"R6", "10"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox106_Click(sender As Object, e As EventArgs) Handles PictureBox106.Click
+
+        Dim card() As String = {"R6", "11"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox105_Click(sender As Object, e As EventArgs) Handles PictureBox105.Click
+
+        Dim card() As String = {"R6", "12"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox104_Click(sender As Object, e As EventArgs) Handles PictureBox104.Click
+
+        Dim card() As String = {"R6", "13"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox103_Click(sender As Object, e As EventArgs) Handles PictureBox103.Click
+
+        Dim card() As String = {"R6", "14"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox102_Click(sender As Object, e As EventArgs) Handles PictureBox102.Click
+
+        Dim card() As String = {"R6", "15"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox101_Click(sender As Object, e As EventArgs) Handles PictureBox101.Click
+
+        Dim card() As String = {"R6", "16"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox100_Click(sender As Object, e As EventArgs) Handles PictureBox100.Click
+
+        Dim card() As String = {"R6", "17"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox99_Click(sender As Object, e As EventArgs) Handles PictureBox99.Click
+
+        Dim card() As String = {"R6", "18"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox98_Click(sender As Object, e As EventArgs) Handles PictureBox98.Click
+
+        Dim card() As String = {"R6", "19"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox135_Click(sender As Object, e As EventArgs) Handles PictureBox135.Click
+
+        Dim card() As String = {"R7", "1"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox134_Click(sender As Object, e As EventArgs) Handles PictureBox134.Click
+
+        Dim card() As String = {"R7", "2"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox133_Click(sender As Object, e As EventArgs) Handles PictureBox133.Click
+
+        Dim card() As String = {"R7", "3"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox132_Click(sender As Object, e As EventArgs) Handles PictureBox132.Click
+
+        Dim card() As String = {"R7", "4"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox131_Click(sender As Object, e As EventArgs) Handles PictureBox131.Click
+
+        Dim card() As String = {"R7", "5"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox130_Click(sender As Object, e As EventArgs) Handles PictureBox130.Click
+
+        Dim card() As String = {"R7", "6"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox129_Click(sender As Object, e As EventArgs) Handles PictureBox129.Click
+
+        Dim card() As String = {"R7", "7"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox128_Click(sender As Object, e As EventArgs) Handles PictureBox128.Click
+
+        Dim card() As String = {"R7", "8"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox127_Click(sender As Object, e As EventArgs) Handles PictureBox127.Click
+
+        Dim card() As String = {"R7", "9"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox126_Click(sender As Object, e As EventArgs) Handles PictureBox126.Click
+
+        Dim card() As String = {"R7", "10"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox125_Click(sender As Object, e As EventArgs) Handles PictureBox125.Click
+
+        Dim card() As String = {"R7", "11"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox124_Click(sender As Object, e As EventArgs) Handles PictureBox124.Click
+
+        Dim card() As String = {"R7", "12"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox123_Click(sender As Object, e As EventArgs) Handles PictureBox123.Click
+
+        Dim card() As String = {"R7", "13"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox122_Click(sender As Object, e As EventArgs) Handles PictureBox122.Click
+
+        Dim card() As String = {"R7", "14"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox121_Click(sender As Object, e As EventArgs) Handles PictureBox121.Click
+
+        Dim card() As String = {"R7", "15"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox120_Click(sender As Object, e As EventArgs) Handles PictureBox120.Click
+
+        Dim card() As String = {"R7", "16"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox119_Click(sender As Object, e As EventArgs) Handles PictureBox119.Click
+
+        Dim card() As String = {"R7", "17"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox118_Click(sender As Object, e As EventArgs) Handles PictureBox118.Click
+
+        Dim card() As String = {"R7", "18"}
+
+        select_card(card)
+
+    End Sub
+
+
+    Private Sub PictureBox117_Click(sender As Object, e As EventArgs) Handles PictureBox117.Click
+
+        Dim card() As String = {"R7", "19"}
+
+        select_card(card)
+
+    End Sub
+
+
+
+
+
+
+
+
 
     Public Sub pb3(card As String)
 
@@ -1624,7 +2787,7 @@
         ElseIf card = "QSWL" Then
             PictureBox3.Image = My.Resources.QSwL
         Else
-            PictureBox3.Image = My.Resources.BackBlack
+            PictureBox3.Image = Nothing
         End If
     End Sub
 
@@ -10244,7 +11407,7 @@
         ElseIf card = "QSWL" Then
             PictureBox40.Image = My.Resources.QSwL
         Else
-            PictureBox40.Image = My.Resources.BackBlack
+            PictureBox40.Image = Nothing
         End If
     End Sub
 
