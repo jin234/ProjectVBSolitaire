@@ -1,16 +1,33 @@
 ﻿Public Class MainGame
-
+    Dim TimerCounter As Integer = 0
+    Dim Min As Integer = 0
+    Dim Hour As Integer = 0
     Dim Stage As Gamestage = New Gamestage
 
     Private Sub MainGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Timer1.Start()
         CheckBox1_CheckedChanged(sender, e)
         Stage.Generate_Game()
         Display()
         MessageBox.Show("init")
     End Sub
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        TimerCounter = TimerCounter + 1
+        If TimerCounter >= 59 Then
+            TimerCounter = 0
+            Min = Min + 1
+            If Min >= 59 Then
+                Min = 0
+                Hour = Hour + 1
+            End If
+        End If
+        Label2.Text = (Hour.ToString("00") & " : " & Min.ToString("00") & " : " & TimerCounter.ToString("00"))
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MainMenu.Show()
+        Timer1.Stop()
     End Sub
 
     Private Sub Show_deck_Click(sender As Object, e As EventArgs) Handles Show_deck.Click
@@ -34549,4 +34566,6 @@
             GroupBox11.Text = ""
         End If
     End Sub
+
+
 End Class

@@ -26,6 +26,7 @@ Partial Class MainGame
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainGame))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Show_deck = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -182,7 +183,6 @@ Partial Class MainGame
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox11.SuspendLayout()
@@ -359,6 +359,16 @@ Partial Class MainGame
         Me.GroupBox1.Size = New System.Drawing.Size(664, 46)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.Enabled = False
+        Me.Button2.Location = New System.Drawing.Point(144, 15)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(58, 21)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Undo"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Show_deck
         '
@@ -2026,15 +2036,8 @@ Partial Class MainGame
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Button2
+        'Timer1
         '
-        Me.Button2.Enabled = False
-        Me.Button2.Location = New System.Drawing.Point(144, 15)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(58, 21)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Undo"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'MainGame
         '

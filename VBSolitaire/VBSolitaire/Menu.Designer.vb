@@ -36,6 +36,7 @@ Partial Class MainMenu
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnRe = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -54,10 +55,10 @@ Partial Class MainMenu
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 48.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(148, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(440, 79)
+        Me.Label1.Size = New System.Drawing.Size(531, 73)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Kondike Solitaire "
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -161,15 +162,16 @@ Partial Class MainMenu
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Monotype Corsiva", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(164, 16)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(123, 33)
+        Me.Label5.Size = New System.Drawing.Size(158, 31)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "leaderboard"
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.btnRe)
         Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.DataGridView1)
         Me.GroupBox3.Location = New System.Drawing.Point(364, 111)
@@ -177,6 +179,15 @@ Partial Class MainMenu
         Me.GroupBox3.Size = New System.Drawing.Size(424, 325)
         Me.GroupBox3.TabIndex = 10
         Me.GroupBox3.TabStop = False
+        '
+        'btnRe
+        '
+        Me.btnRe.Location = New System.Drawing.Point(13, 20)
+        Me.btnRe.Name = "btnRe"
+        Me.btnRe.Size = New System.Drawing.Size(75, 23)
+        Me.btnRe.TabIndex = 10
+        Me.btnRe.Text = "Refresh"
+        Me.btnRe.UseVisualStyleBackColor = True
         '
         'MainMenu
         '
@@ -217,4 +228,5 @@ Partial Class MainMenu
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents btnRe As Button
 End Class
