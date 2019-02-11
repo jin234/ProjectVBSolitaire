@@ -2,6 +2,7 @@
 
     Dim Full_Card() As String = {"AC", "AD", "AH", "AS", "2C", "2D", "2H", "2S", "3C", "3D", "3H", "3S", "4C", "4D", "4H", "4S", "5C", "5D", "5H", "5S", "6C", "6D", "6H", "6S", "7C", "7D", "7H", "7S", "8C", "8D", "8H", "8S", "9C", "9D", "9H", "9S", "10C", "10D", "10H", "10S", "JC", "JD", "JH", "JS", "QC", "QD", "QH", "QS", "KC", "KD", "KH", "KS"}
     Dim PulledPool As New ArrayList
+
     Dim _Row1 As New ArrayList
     Dim _Row2 As New ArrayList
     Dim _Row3 As New ArrayList
@@ -22,8 +23,8 @@
     Dim _selected_card1() As String
     Dim _selected_card2() As String
 
-    Dim _Game_Move() As Integer
-    Dim _Game_Step() As Integer
+    Dim _Game_Move As Integer
+    Dim _Game_Step As Integer
 
     Public Property PulledPool1 As ArrayList
         Get
@@ -178,20 +179,20 @@
         End Set
     End Property
 
-    Public Property Game_Move As Integer()
+    Public Property Game_Move As Integer
         Get
             Return _Game_Move
         End Get
-        Set(value As Integer())
+        Set(value As Integer)
             _Game_Move = value
         End Set
     End Property
 
-    Public Property Game_Step As Integer()
+    Public Property Game_Step As Integer
         Get
             Return _Game_Step
         End Get
-        Set(value As Integer())
+        Set(value As Integer)
             _Game_Step = value
         End Set
     End Property
@@ -218,6 +219,8 @@
         Pull_from_Deck(6, "Row6", True)
         Pull_from_Deck(7, "Row7", True)
         Pull_from_Deck(24, "Deck", False)
+        Game_Move = 0
+        Game_Step = 0
 
     End Sub
 
@@ -229,7 +232,7 @@
         For i = 0 To num - 1
             Dim rannum As Integer = rng.Next(0, PulledPool.Count)
             If cover Then
-                out.Add(PulledPool(rannum) + "")
+                out.Add(PulledPool(rannum) + "F")
             Else
                 out.Add(PulledPool(rannum))
             End If
@@ -262,6 +265,8 @@
         Dim temp As String
         Dim row As String = Selected_card1(0)
         Dim location As Integer = Selected_card1(1) - 1
+
+
         If row = "R1" Then
             temp = Row1(location)
             Row1.RemoveAt(location)
@@ -295,6 +300,9 @@
         ElseIf row = ("R11") Then
             temp = Row11(location)
             Row11.RemoveAt(location)
+        ElseIf row = ("TD") Then
+            temp = Deck_Open(location)
+            Deck_Open.RemoveAt(location)
         End If
 
         row = Selected_card2(0)
@@ -320,63 +328,159 @@
             Row10.Add(temp)
         ElseIf row = ("R11") Then
             Row11.Add(temp)
+        ElseIf row = ("TD") Then
+            Deck_Open.Add(temp)
         End If
 
     End Sub
 
     Public Sub card_selected(card As String())
 
-        Dim row As String = card(0)
-        If row = "R1" And Row1.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R2" And Row2.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R3" And Row3.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R4" And Row4.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R5" And Row5.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R6" And Row6.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R7" And Row7.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R8" And Row8.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R9" And Row9.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R10" And Row10.Count = 0 Then
-            Exit Sub
-        ElseIf row = "R11" And Row11.Count = 0 Then
-            Exit Sub
-        End If
+        If checkmove() Then
+            Dim row As String = card(0)
 
-        If _Condition_cardselected = False Then
-            _Condition_cardselected = True
-            _selected_card1 = card
-            Hilight_card(card, True)
-        Else
-            If _selected_card1(0) = card(0) And _selected_card1(1) = card(1) Then
-                _Condition_cardselected = False
-                _selected_card1(0) = ""
-                _selected_card1(1) = ""
-                Hilight_card(card, False)
+            If _Condition_cardselected = False Then
+                If row = "R1" And Row1.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R2" And Row2.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R3" And Row3.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R4" And Row4.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R5" And Row5.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R6" And Row6.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R7" And Row7.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R8" And Row8.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R9" And Row9.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R10" And Row10.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "R11" And Row11.Count = 0 Then
+                    Exit Sub
+                ElseIf row = "TD" And Deck_Open.Count = 0 Then
+                    Exit Sub
+                End If
+
+                _Condition_cardselected = True
+                _selected_card1 = card
+                Hilight_card(card, True)
             Else
-                _selected_card2 = card
-                Hilight_card(_selected_card1, False)
-                _Condition_cardselected = False
-                Move_card()
-                _selected_card1(0) = ""
-                _selected_card1(1) = ""
+
+                If _selected_card1(0) = card(0) And _selected_card1(1) = card(1) Then
+                    _Condition_cardselected = False
+                    _selected_card1(0) = ""
+                    _selected_card1(1) = ""
+                    Hilight_card(card, False)
+
+                Else
+
+                    _selected_card2 = card
+                    Hilight_card(_selected_card1, False)
+                    _Condition_cardselected = False
+                    Move_card()
+                    _selected_card1(0) = ""
+                    _selected_card1(1) = ""
+                End If
             End If
+            Game_Step += 1
+            Game_Move += 1
+
         End If
     End Sub
 
-    Public Function checkmove(deck_name As String)
+    Public Function checkmove()
 
         Return True
         Return False
     End Function
+
+    Public Sub Flip_card()
+
+        If Row1.Count > 0 Then
+            If Row1(Row1.Count - 1).Contains("F") Then
+                Row1(Row1.Count - 1) = Row1(Row1.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row2.Count > 0 Then
+            If Row2(Row2.Count - 1).Contains("F") Then
+                Row2(Row2.Count - 1) = Row2(Row2.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row3.Count > 0 Then
+            If Row3(Row3.Count - 1).Contains("F") Then
+                Row3(Row3.Count - 1) = Row3(Row3.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row4.Count > 0 Then
+            If Row4(Row4.Count - 1).Contains("F") Then
+                Row4(Row4.Count - 1) = Row4(Row4.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row5.Count > 0 Then
+            If Row5(Row5.Count - 1).Contains("F") Then
+                Row5(Row5.Count - 1) = Row5(Row5.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row6.Count > 0 Then
+            If Row6(Row6.Count - 1).Contains("F") Then
+                Row6(Row6.Count - 1) = Row6(Row6.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row7.Count > 0 Then
+            If Row7(Row7.Count - 1).Contains("F") Then
+                Row7(Row7.Count - 1) = Row7(Row7.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row8.Count > 0 Then
+            If Row8(Row8.Count - 1).Contains("F") Then
+                Row8(Row8.Count - 1) = Row8(Row8.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row9.Count > 0 Then
+            If Row9(Row9.Count - 1).Contains("F") Then
+                Row9(Row9.Count - 1) = Row9(Row9.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row10.Count > 0 Then
+            If Row10(Row10.Count - 1).Contains("F") Then
+                Row10(Row10.Count - 1) = Row10(Row10.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+        If Row11.Count > 0 Then
+            If Row11(Row11.Count - 1).Contains("F") Then
+                Row11(Row11.Count - 1) = Row11(Row11.Count - 1).Replace("F", "")
+            End If
+        End If
+
+
+
+
+    End Sub
 
     Public Sub Open_deck()
         If _Deck.Count = 0 Then
@@ -387,11 +491,6 @@
             _Deck.RemoveAt(0)
         End If
     End Sub
-
-
-
-
-
 
     Public Sub Hilight_card(card As String(), condition As Boolean)
         Dim location As Integer = card(1) - 1
@@ -432,6 +531,31 @@
                 temp = Row7(location)
                 Row7.RemoveAt(location)
                 Row7.Insert(location, temp + "WL")
+            ElseIf row = ("R8") Then
+                Dim temp As String
+                temp = Row8(location)
+                Row8.RemoveAt(location)
+                Row8.Insert(location, temp + "WL")
+            ElseIf row = ("R9") Then
+                Dim temp As String
+                temp = Row9(location)
+                Row9.RemoveAt(location)
+                Row9.Insert(location, temp + "WL")
+            ElseIf row = ("R10") Then
+                Dim temp As String
+                temp = Row10(location)
+                Row10.RemoveAt(location)
+                Row10.Insert(location, temp + "WL")
+            ElseIf row = ("R11") Then
+                Dim temp As String
+                temp = Row11(location)
+                Row11.RemoveAt(location)
+                Row11.Insert(location, temp + "WL")
+            ElseIf row = ("TD") Then
+                Dim temp As String
+                temp = Deck_Open(location)
+                Deck_Open.RemoveAt(location)
+                Deck_Open.Insert(location, temp + "WL")
             End If
         Else
             If row = ("R1") Then
@@ -469,6 +593,31 @@
                 temp = Row7(location)
                 Row7.RemoveAt(location)
                 Row7.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("R8") Then
+                Dim temp As String
+                temp = Row8(location)
+                Row8.RemoveAt(location)
+                Row8.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("R9") Then
+                Dim temp As String
+                temp = Row9(location)
+                Row9.RemoveAt(location)
+                Row9.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("R10") Then
+                Dim temp As String
+                temp = Row10(location)
+                Row10.RemoveAt(location)
+                Row10.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("R11") Then
+                Dim temp As String
+                temp = Row11(location)
+                Row11.RemoveAt(location)
+                Row11.Insert(location, temp.Substring(0, temp.Length - 2))
+            ElseIf row = ("TD") Then
+                Dim temp As String
+                temp = Deck_Open(location)
+                Deck_Open.RemoveAt(location)
+                Deck_Open.Insert(location, temp.Substring(0, temp.Length - 2))
             End If
         End If
     End Sub
