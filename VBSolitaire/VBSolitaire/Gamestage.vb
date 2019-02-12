@@ -613,7 +613,7 @@
     Public Function CardCon(cardA As String, cardB As String)
 
 
-        If card_to_num(cardA) - card_to_num(cardB) = -1 And card_to_char(cardA) = card_to_char(cardB) Then
+        If card_to_num(cardA) - card_to_num(cardB) = -1 Then
             Return True
         Else
             Return False

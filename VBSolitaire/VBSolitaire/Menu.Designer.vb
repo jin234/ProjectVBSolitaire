@@ -68,11 +68,13 @@ Partial Class MainMenu
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(13, 52)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.Size = New System.Drawing.Size(405, 263)
         Me.DataGridView1.TabIndex = 2
         '
         'btnContinue
         '
+        Me.btnContinue.Enabled = False
         Me.btnContinue.Location = New System.Drawing.Point(12, 116)
         Me.btnContinue.Name = "btnContinue"
         Me.btnContinue.Size = New System.Drawing.Size(346, 75)

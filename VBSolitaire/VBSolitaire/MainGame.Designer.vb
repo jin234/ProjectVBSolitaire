@@ -336,10 +336,10 @@ Partial Class MainGame
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(8, 18)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Enabled = False
+        Me.Button1.Location = New System.Drawing.Point(6, 15)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(176, 28)
+        Me.Button1.Size = New System.Drawing.Size(132, 23)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Return To Main Menu"
         Me.Button1.UseVisualStyleBackColor = True
@@ -353,31 +353,27 @@ Partial Class MainGame
         Me.GroupBox1.Controls.Add(Me.CheckBox2)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(11, -4)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, -3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(885, 57)
+        Me.GroupBox1.Size = New System.Drawing.Size(664, 46)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
         'Button2
         '
         Me.Button2.Enabled = False
-        Me.Button2.Location = New System.Drawing.Point(192, 18)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Location = New System.Drawing.Point(144, 15)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(77, 26)
+        Me.Button2.Size = New System.Drawing.Size(58, 21)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Undo"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Show_deck
         '
-        Me.Show_deck.Location = New System.Drawing.Point(486, 21)
-        Me.Show_deck.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Show_deck.Location = New System.Drawing.Point(364, 17)
         Me.Show_deck.Name = "Show_deck"
-        Me.Show_deck.Size = New System.Drawing.Size(110, 26)
+        Me.Show_deck.Size = New System.Drawing.Size(82, 21)
         Me.Show_deck.TabIndex = 6
         Me.Show_deck.Text = "Show All Deck"
         Me.Show_deck.UseVisualStyleBackColor = True
@@ -385,30 +381,27 @@ Partial Class MainGame
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(791, 25)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(593, 20)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 17)
+        Me.Label2.Size = New System.Drawing.Size(61, 13)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "00 : 00 : 00"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(727, 25)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(545, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 17)
+        Me.Label1.Size = New System.Drawing.Size(42, 13)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Timer : "
         '
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(604, 25)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox2.Location = New System.Drawing.Point(453, 20)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(115, 21)
+        Me.CheckBox2.Size = New System.Drawing.Size(89, 17)
         Me.CheckBox2.TabIndex = 2
         Me.CheckBox2.Text = "NO-Condition"
         Me.CheckBox2.UseVisualStyleBackColor = True
@@ -416,10 +409,9 @@ Partial Class MainGame
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(367, 25)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox1.Location = New System.Drawing.Point(275, 20)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(111, 21)
+        Me.CheckBox1.Size = New System.Drawing.Size(87, 17)
         Me.CheckBox1.TabIndex = 1
         Me.CheckBox1.Text = "Debug mode"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -435,11 +427,9 @@ Partial Class MainGame
         Me.GroupBox2.Controls.Add(Me.GroupBox5)
         Me.GroupBox2.Controls.Add(Me.GroupBox4)
         Me.GroupBox2.Controls.Add(Me.GroupBox3)
-        Me.GroupBox2.Location = New System.Drawing.Point(11, 60)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Location = New System.Drawing.Point(8, 49)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox2.Size = New System.Drawing.Size(885, 812)
+        Me.GroupBox2.Size = New System.Drawing.Size(664, 660)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Games"
@@ -465,11 +455,9 @@ Partial Class MainGame
         Me.GroupBox11.Controls.Add(Me.PictureBox133)
         Me.GroupBox11.Controls.Add(Me.PictureBox134)
         Me.GroupBox11.Controls.Add(Me.PictureBox135)
-        Me.GroupBox11.Location = New System.Drawing.Point(760, 176)
-        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox11.Location = New System.Drawing.Point(570, 143)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox11.Size = New System.Drawing.Size(117, 629)
+        Me.GroupBox11.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox11.TabIndex = 27
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "135-117"
@@ -477,10 +465,9 @@ Partial Class MainGame
         'PictureBox117
         '
         Me.PictureBox117.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox117.Location = New System.Drawing.Point(8, 506)
-        Me.PictureBox117.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox117.Location = New System.Drawing.Point(6, 411)
         Me.PictureBox117.Name = "PictureBox117"
-        Me.PictureBox117.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox117.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox117.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox117.TabIndex = 21
         Me.PictureBox117.TabStop = False
@@ -488,10 +475,9 @@ Partial Class MainGame
         'PictureBox118
         '
         Me.PictureBox118.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox118.Location = New System.Drawing.Point(8, 479)
-        Me.PictureBox118.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox118.Location = New System.Drawing.Point(6, 389)
         Me.PictureBox118.Name = "PictureBox118"
-        Me.PictureBox118.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox118.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox118.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox118.TabIndex = 20
         Me.PictureBox118.TabStop = False
@@ -499,10 +485,9 @@ Partial Class MainGame
         'PictureBox119
         '
         Me.PictureBox119.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox119.Location = New System.Drawing.Point(8, 452)
-        Me.PictureBox119.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox119.Location = New System.Drawing.Point(6, 367)
         Me.PictureBox119.Name = "PictureBox119"
-        Me.PictureBox119.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox119.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox119.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox119.TabIndex = 19
         Me.PictureBox119.TabStop = False
@@ -510,10 +495,9 @@ Partial Class MainGame
         'PictureBox120
         '
         Me.PictureBox120.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox120.Location = New System.Drawing.Point(8, 425)
-        Me.PictureBox120.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox120.Location = New System.Drawing.Point(6, 345)
         Me.PictureBox120.Name = "PictureBox120"
-        Me.PictureBox120.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox120.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox120.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox120.TabIndex = 18
         Me.PictureBox120.TabStop = False
@@ -521,10 +505,9 @@ Partial Class MainGame
         'PictureBox121
         '
         Me.PictureBox121.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox121.Location = New System.Drawing.Point(8, 398)
-        Me.PictureBox121.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox121.Location = New System.Drawing.Point(6, 323)
         Me.PictureBox121.Name = "PictureBox121"
-        Me.PictureBox121.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox121.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox121.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox121.TabIndex = 17
         Me.PictureBox121.TabStop = False
@@ -532,10 +515,9 @@ Partial Class MainGame
         'PictureBox122
         '
         Me.PictureBox122.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox122.Location = New System.Drawing.Point(8, 370)
-        Me.PictureBox122.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox122.Location = New System.Drawing.Point(6, 301)
         Me.PictureBox122.Name = "PictureBox122"
-        Me.PictureBox122.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox122.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox122.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox122.TabIndex = 16
         Me.PictureBox122.TabStop = False
@@ -543,10 +525,9 @@ Partial Class MainGame
         'PictureBox123
         '
         Me.PictureBox123.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox123.Location = New System.Drawing.Point(8, 343)
-        Me.PictureBox123.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox123.Location = New System.Drawing.Point(6, 279)
         Me.PictureBox123.Name = "PictureBox123"
-        Me.PictureBox123.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox123.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox123.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox123.TabIndex = 15
         Me.PictureBox123.TabStop = False
@@ -554,10 +535,9 @@ Partial Class MainGame
         'PictureBox124
         '
         Me.PictureBox124.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox124.Location = New System.Drawing.Point(8, 316)
-        Me.PictureBox124.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox124.Location = New System.Drawing.Point(6, 257)
         Me.PictureBox124.Name = "PictureBox124"
-        Me.PictureBox124.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox124.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox124.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox124.TabIndex = 14
         Me.PictureBox124.TabStop = False
@@ -565,10 +545,9 @@ Partial Class MainGame
         'PictureBox125
         '
         Me.PictureBox125.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox125.Location = New System.Drawing.Point(8, 289)
-        Me.PictureBox125.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox125.Location = New System.Drawing.Point(6, 235)
         Me.PictureBox125.Name = "PictureBox125"
-        Me.PictureBox125.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox125.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox125.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox125.TabIndex = 13
         Me.PictureBox125.TabStop = False
@@ -576,10 +555,9 @@ Partial Class MainGame
         'PictureBox126
         '
         Me.PictureBox126.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox126.Location = New System.Drawing.Point(8, 262)
-        Me.PictureBox126.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox126.Location = New System.Drawing.Point(6, 213)
         Me.PictureBox126.Name = "PictureBox126"
-        Me.PictureBox126.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox126.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox126.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox126.TabIndex = 12
         Me.PictureBox126.TabStop = False
@@ -587,10 +565,9 @@ Partial Class MainGame
         'PictureBox127
         '
         Me.PictureBox127.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox127.Location = New System.Drawing.Point(8, 235)
-        Me.PictureBox127.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox127.Location = New System.Drawing.Point(6, 191)
         Me.PictureBox127.Name = "PictureBox127"
-        Me.PictureBox127.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox127.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox127.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox127.TabIndex = 11
         Me.PictureBox127.TabStop = False
@@ -598,10 +575,9 @@ Partial Class MainGame
         'PictureBox128
         '
         Me.PictureBox128.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox128.Location = New System.Drawing.Point(8, 208)
-        Me.PictureBox128.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox128.Location = New System.Drawing.Point(6, 169)
         Me.PictureBox128.Name = "PictureBox128"
-        Me.PictureBox128.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox128.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox128.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox128.TabIndex = 10
         Me.PictureBox128.TabStop = False
@@ -609,10 +585,9 @@ Partial Class MainGame
         'PictureBox129
         '
         Me.PictureBox129.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox129.Location = New System.Drawing.Point(8, 181)
-        Me.PictureBox129.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox129.Location = New System.Drawing.Point(6, 147)
         Me.PictureBox129.Name = "PictureBox129"
-        Me.PictureBox129.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox129.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox129.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox129.TabIndex = 9
         Me.PictureBox129.TabStop = False
@@ -620,10 +595,9 @@ Partial Class MainGame
         'PictureBox130
         '
         Me.PictureBox130.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox130.Location = New System.Drawing.Point(8, 154)
-        Me.PictureBox130.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox130.Location = New System.Drawing.Point(6, 125)
         Me.PictureBox130.Name = "PictureBox130"
-        Me.PictureBox130.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox130.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox130.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox130.TabIndex = 8
         Me.PictureBox130.TabStop = False
@@ -631,10 +605,9 @@ Partial Class MainGame
         'PictureBox131
         '
         Me.PictureBox131.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox131.Location = New System.Drawing.Point(8, 127)
-        Me.PictureBox131.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox131.Location = New System.Drawing.Point(6, 103)
         Me.PictureBox131.Name = "PictureBox131"
-        Me.PictureBox131.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox131.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox131.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox131.TabIndex = 8
         Me.PictureBox131.TabStop = False
@@ -642,10 +615,9 @@ Partial Class MainGame
         'PictureBox132
         '
         Me.PictureBox132.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox132.Location = New System.Drawing.Point(8, 100)
-        Me.PictureBox132.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox132.Location = New System.Drawing.Point(6, 81)
         Me.PictureBox132.Name = "PictureBox132"
-        Me.PictureBox132.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox132.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox132.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox132.TabIndex = 7
         Me.PictureBox132.TabStop = False
@@ -653,30 +625,27 @@ Partial Class MainGame
         'PictureBox133
         '
         Me.PictureBox133.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox133.Location = New System.Drawing.Point(8, 73)
-        Me.PictureBox133.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox133.Location = New System.Drawing.Point(6, 59)
         Me.PictureBox133.Name = "PictureBox133"
-        Me.PictureBox133.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox133.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox133.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox133.TabIndex = 5
         Me.PictureBox133.TabStop = False
         '
         'PictureBox134
         '
-        Me.PictureBox134.Location = New System.Drawing.Point(8, 46)
-        Me.PictureBox134.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox134.Location = New System.Drawing.Point(6, 37)
         Me.PictureBox134.Name = "PictureBox134"
-        Me.PictureBox134.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox134.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox134.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox134.TabIndex = 6
         Me.PictureBox134.TabStop = False
         '
         'PictureBox135
         '
-        Me.PictureBox135.Location = New System.Drawing.Point(8, 18)
-        Me.PictureBox135.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox135.Location = New System.Drawing.Point(6, 15)
         Me.PictureBox135.Name = "PictureBox135"
-        Me.PictureBox135.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox135.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox135.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox135.TabIndex = 5
         Me.PictureBox135.TabStop = False
@@ -702,11 +671,9 @@ Partial Class MainGame
         Me.GroupBox10.Controls.Add(Me.PictureBox114)
         Me.GroupBox10.Controls.Add(Me.PictureBox115)
         Me.GroupBox10.Controls.Add(Me.PictureBox116)
-        Me.GroupBox10.Location = New System.Drawing.Point(635, 176)
-        Me.GroupBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox10.Location = New System.Drawing.Point(476, 143)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox10.Size = New System.Drawing.Size(117, 629)
+        Me.GroupBox10.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox10.TabIndex = 26
         Me.GroupBox10.TabStop = False
         Me.GroupBox10.Text = "116-98"
@@ -714,10 +681,9 @@ Partial Class MainGame
         'PictureBox98
         '
         Me.PictureBox98.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox98.Location = New System.Drawing.Point(8, 506)
-        Me.PictureBox98.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox98.Location = New System.Drawing.Point(6, 411)
         Me.PictureBox98.Name = "PictureBox98"
-        Me.PictureBox98.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox98.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox98.TabIndex = 21
         Me.PictureBox98.TabStop = False
@@ -725,10 +691,9 @@ Partial Class MainGame
         'PictureBox99
         '
         Me.PictureBox99.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox99.Location = New System.Drawing.Point(8, 479)
-        Me.PictureBox99.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox99.Location = New System.Drawing.Point(6, 389)
         Me.PictureBox99.Name = "PictureBox99"
-        Me.PictureBox99.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox99.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox99.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox99.TabIndex = 20
         Me.PictureBox99.TabStop = False
@@ -736,10 +701,9 @@ Partial Class MainGame
         'PictureBox100
         '
         Me.PictureBox100.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox100.Location = New System.Drawing.Point(8, 452)
-        Me.PictureBox100.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox100.Location = New System.Drawing.Point(6, 367)
         Me.PictureBox100.Name = "PictureBox100"
-        Me.PictureBox100.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox100.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox100.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox100.TabIndex = 19
         Me.PictureBox100.TabStop = False
@@ -747,10 +711,9 @@ Partial Class MainGame
         'PictureBox101
         '
         Me.PictureBox101.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox101.Location = New System.Drawing.Point(8, 425)
-        Me.PictureBox101.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox101.Location = New System.Drawing.Point(6, 345)
         Me.PictureBox101.Name = "PictureBox101"
-        Me.PictureBox101.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox101.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox101.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox101.TabIndex = 18
         Me.PictureBox101.TabStop = False
@@ -758,10 +721,9 @@ Partial Class MainGame
         'PictureBox102
         '
         Me.PictureBox102.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox102.Location = New System.Drawing.Point(8, 398)
-        Me.PictureBox102.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox102.Location = New System.Drawing.Point(6, 323)
         Me.PictureBox102.Name = "PictureBox102"
-        Me.PictureBox102.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox102.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox102.TabIndex = 17
         Me.PictureBox102.TabStop = False
@@ -769,10 +731,9 @@ Partial Class MainGame
         'PictureBox103
         '
         Me.PictureBox103.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox103.Location = New System.Drawing.Point(8, 370)
-        Me.PictureBox103.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox103.Location = New System.Drawing.Point(6, 301)
         Me.PictureBox103.Name = "PictureBox103"
-        Me.PictureBox103.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox103.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox103.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox103.TabIndex = 16
         Me.PictureBox103.TabStop = False
@@ -780,10 +741,9 @@ Partial Class MainGame
         'PictureBox104
         '
         Me.PictureBox104.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox104.Location = New System.Drawing.Point(8, 343)
-        Me.PictureBox104.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox104.Location = New System.Drawing.Point(6, 279)
         Me.PictureBox104.Name = "PictureBox104"
-        Me.PictureBox104.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox104.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox104.TabIndex = 15
         Me.PictureBox104.TabStop = False
@@ -791,10 +751,9 @@ Partial Class MainGame
         'PictureBox105
         '
         Me.PictureBox105.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox105.Location = New System.Drawing.Point(8, 316)
-        Me.PictureBox105.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox105.Location = New System.Drawing.Point(6, 257)
         Me.PictureBox105.Name = "PictureBox105"
-        Me.PictureBox105.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox105.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox105.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox105.TabIndex = 14
         Me.PictureBox105.TabStop = False
@@ -802,10 +761,9 @@ Partial Class MainGame
         'PictureBox106
         '
         Me.PictureBox106.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox106.Location = New System.Drawing.Point(8, 289)
-        Me.PictureBox106.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox106.Location = New System.Drawing.Point(6, 235)
         Me.PictureBox106.Name = "PictureBox106"
-        Me.PictureBox106.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox106.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox106.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox106.TabIndex = 13
         Me.PictureBox106.TabStop = False
@@ -813,10 +771,9 @@ Partial Class MainGame
         'PictureBox107
         '
         Me.PictureBox107.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox107.Location = New System.Drawing.Point(8, 262)
-        Me.PictureBox107.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox107.Location = New System.Drawing.Point(6, 213)
         Me.PictureBox107.Name = "PictureBox107"
-        Me.PictureBox107.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox107.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox107.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox107.TabIndex = 12
         Me.PictureBox107.TabStop = False
@@ -824,10 +781,9 @@ Partial Class MainGame
         'PictureBox108
         '
         Me.PictureBox108.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox108.Location = New System.Drawing.Point(8, 235)
-        Me.PictureBox108.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox108.Location = New System.Drawing.Point(6, 191)
         Me.PictureBox108.Name = "PictureBox108"
-        Me.PictureBox108.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox108.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox108.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox108.TabIndex = 11
         Me.PictureBox108.TabStop = False
@@ -835,10 +791,9 @@ Partial Class MainGame
         'PictureBox109
         '
         Me.PictureBox109.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox109.Location = New System.Drawing.Point(8, 208)
-        Me.PictureBox109.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox109.Location = New System.Drawing.Point(6, 169)
         Me.PictureBox109.Name = "PictureBox109"
-        Me.PictureBox109.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox109.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox109.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox109.TabIndex = 10
         Me.PictureBox109.TabStop = False
@@ -846,10 +801,9 @@ Partial Class MainGame
         'PictureBox110
         '
         Me.PictureBox110.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox110.Location = New System.Drawing.Point(8, 181)
-        Me.PictureBox110.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox110.Location = New System.Drawing.Point(6, 147)
         Me.PictureBox110.Name = "PictureBox110"
-        Me.PictureBox110.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox110.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox110.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox110.TabIndex = 9
         Me.PictureBox110.TabStop = False
@@ -857,10 +811,9 @@ Partial Class MainGame
         'PictureBox111
         '
         Me.PictureBox111.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox111.Location = New System.Drawing.Point(8, 154)
-        Me.PictureBox111.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox111.Location = New System.Drawing.Point(6, 125)
         Me.PictureBox111.Name = "PictureBox111"
-        Me.PictureBox111.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox111.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox111.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox111.TabIndex = 8
         Me.PictureBox111.TabStop = False
@@ -868,10 +821,9 @@ Partial Class MainGame
         'PictureBox112
         '
         Me.PictureBox112.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox112.Location = New System.Drawing.Point(8, 127)
-        Me.PictureBox112.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox112.Location = New System.Drawing.Point(6, 103)
         Me.PictureBox112.Name = "PictureBox112"
-        Me.PictureBox112.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox112.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox112.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox112.TabIndex = 8
         Me.PictureBox112.TabStop = False
@@ -879,10 +831,9 @@ Partial Class MainGame
         'PictureBox113
         '
         Me.PictureBox113.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox113.Location = New System.Drawing.Point(8, 100)
-        Me.PictureBox113.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox113.Location = New System.Drawing.Point(6, 81)
         Me.PictureBox113.Name = "PictureBox113"
-        Me.PictureBox113.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox113.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox113.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox113.TabIndex = 7
         Me.PictureBox113.TabStop = False
@@ -890,30 +841,27 @@ Partial Class MainGame
         'PictureBox114
         '
         Me.PictureBox114.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox114.Location = New System.Drawing.Point(8, 73)
-        Me.PictureBox114.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox114.Location = New System.Drawing.Point(6, 59)
         Me.PictureBox114.Name = "PictureBox114"
-        Me.PictureBox114.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox114.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox114.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox114.TabIndex = 5
         Me.PictureBox114.TabStop = False
         '
         'PictureBox115
         '
-        Me.PictureBox115.Location = New System.Drawing.Point(8, 46)
-        Me.PictureBox115.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox115.Location = New System.Drawing.Point(6, 37)
         Me.PictureBox115.Name = "PictureBox115"
-        Me.PictureBox115.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox115.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox115.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox115.TabIndex = 6
         Me.PictureBox115.TabStop = False
         '
         'PictureBox116
         '
-        Me.PictureBox116.Location = New System.Drawing.Point(8, 18)
-        Me.PictureBox116.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox116.Location = New System.Drawing.Point(6, 15)
         Me.PictureBox116.Name = "PictureBox116"
-        Me.PictureBox116.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox116.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox116.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox116.TabIndex = 5
         Me.PictureBox116.TabStop = False
@@ -939,11 +887,9 @@ Partial Class MainGame
         Me.GroupBox9.Controls.Add(Me.PictureBox95)
         Me.GroupBox9.Controls.Add(Me.PictureBox96)
         Me.GroupBox9.Controls.Add(Me.PictureBox97)
-        Me.GroupBox9.Location = New System.Drawing.Point(509, 176)
-        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox9.Location = New System.Drawing.Point(382, 143)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox9.Size = New System.Drawing.Size(117, 629)
+        Me.GroupBox9.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox9.TabIndex = 25
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "97-79"
@@ -951,10 +897,9 @@ Partial Class MainGame
         'PictureBox79
         '
         Me.PictureBox79.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox79.Location = New System.Drawing.Point(8, 506)
-        Me.PictureBox79.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox79.Location = New System.Drawing.Point(6, 411)
         Me.PictureBox79.Name = "PictureBox79"
-        Me.PictureBox79.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox79.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox79.TabIndex = 21
         Me.PictureBox79.TabStop = False
@@ -962,10 +907,9 @@ Partial Class MainGame
         'PictureBox80
         '
         Me.PictureBox80.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox80.Location = New System.Drawing.Point(8, 479)
-        Me.PictureBox80.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox80.Location = New System.Drawing.Point(6, 389)
         Me.PictureBox80.Name = "PictureBox80"
-        Me.PictureBox80.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox80.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox80.TabIndex = 20
         Me.PictureBox80.TabStop = False
@@ -973,10 +917,9 @@ Partial Class MainGame
         'PictureBox81
         '
         Me.PictureBox81.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox81.Location = New System.Drawing.Point(8, 452)
-        Me.PictureBox81.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox81.Location = New System.Drawing.Point(6, 367)
         Me.PictureBox81.Name = "PictureBox81"
-        Me.PictureBox81.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox81.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox81.TabIndex = 19
         Me.PictureBox81.TabStop = False
@@ -984,10 +927,9 @@ Partial Class MainGame
         'PictureBox82
         '
         Me.PictureBox82.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox82.Location = New System.Drawing.Point(8, 425)
-        Me.PictureBox82.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox82.Location = New System.Drawing.Point(6, 345)
         Me.PictureBox82.Name = "PictureBox82"
-        Me.PictureBox82.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox82.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox82.TabIndex = 18
         Me.PictureBox82.TabStop = False
@@ -995,10 +937,9 @@ Partial Class MainGame
         'PictureBox83
         '
         Me.PictureBox83.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox83.Location = New System.Drawing.Point(8, 398)
-        Me.PictureBox83.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox83.Location = New System.Drawing.Point(6, 323)
         Me.PictureBox83.Name = "PictureBox83"
-        Me.PictureBox83.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox83.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox83.TabIndex = 17
         Me.PictureBox83.TabStop = False
@@ -1006,10 +947,9 @@ Partial Class MainGame
         'PictureBox84
         '
         Me.PictureBox84.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox84.Location = New System.Drawing.Point(8, 370)
-        Me.PictureBox84.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox84.Location = New System.Drawing.Point(6, 301)
         Me.PictureBox84.Name = "PictureBox84"
-        Me.PictureBox84.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox84.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox84.TabIndex = 16
         Me.PictureBox84.TabStop = False
@@ -1017,10 +957,9 @@ Partial Class MainGame
         'PictureBox85
         '
         Me.PictureBox85.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox85.Location = New System.Drawing.Point(8, 343)
-        Me.PictureBox85.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox85.Location = New System.Drawing.Point(6, 279)
         Me.PictureBox85.Name = "PictureBox85"
-        Me.PictureBox85.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox85.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox85.TabIndex = 15
         Me.PictureBox85.TabStop = False
@@ -1028,10 +967,9 @@ Partial Class MainGame
         'PictureBox86
         '
         Me.PictureBox86.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox86.Location = New System.Drawing.Point(8, 316)
-        Me.PictureBox86.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox86.Location = New System.Drawing.Point(6, 257)
         Me.PictureBox86.Name = "PictureBox86"
-        Me.PictureBox86.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox86.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox86.TabIndex = 14
         Me.PictureBox86.TabStop = False
@@ -1039,10 +977,9 @@ Partial Class MainGame
         'PictureBox87
         '
         Me.PictureBox87.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox87.Location = New System.Drawing.Point(8, 289)
-        Me.PictureBox87.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox87.Location = New System.Drawing.Point(6, 235)
         Me.PictureBox87.Name = "PictureBox87"
-        Me.PictureBox87.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox87.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox87.TabIndex = 13
         Me.PictureBox87.TabStop = False
@@ -1050,10 +987,9 @@ Partial Class MainGame
         'PictureBox88
         '
         Me.PictureBox88.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox88.Location = New System.Drawing.Point(8, 262)
-        Me.PictureBox88.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox88.Location = New System.Drawing.Point(6, 213)
         Me.PictureBox88.Name = "PictureBox88"
-        Me.PictureBox88.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox88.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox88.TabIndex = 12
         Me.PictureBox88.TabStop = False
@@ -1061,10 +997,9 @@ Partial Class MainGame
         'PictureBox89
         '
         Me.PictureBox89.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox89.Location = New System.Drawing.Point(8, 235)
-        Me.PictureBox89.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox89.Location = New System.Drawing.Point(6, 191)
         Me.PictureBox89.Name = "PictureBox89"
-        Me.PictureBox89.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox89.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox89.TabIndex = 11
         Me.PictureBox89.TabStop = False
@@ -1072,10 +1007,9 @@ Partial Class MainGame
         'PictureBox90
         '
         Me.PictureBox90.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox90.Location = New System.Drawing.Point(8, 208)
-        Me.PictureBox90.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox90.Location = New System.Drawing.Point(6, 169)
         Me.PictureBox90.Name = "PictureBox90"
-        Me.PictureBox90.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox90.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox90.TabIndex = 10
         Me.PictureBox90.TabStop = False
@@ -1083,10 +1017,9 @@ Partial Class MainGame
         'PictureBox91
         '
         Me.PictureBox91.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox91.Location = New System.Drawing.Point(8, 181)
-        Me.PictureBox91.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox91.Location = New System.Drawing.Point(6, 147)
         Me.PictureBox91.Name = "PictureBox91"
-        Me.PictureBox91.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox91.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox91.TabIndex = 9
         Me.PictureBox91.TabStop = False
@@ -1094,10 +1027,9 @@ Partial Class MainGame
         'PictureBox92
         '
         Me.PictureBox92.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox92.Location = New System.Drawing.Point(8, 154)
-        Me.PictureBox92.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox92.Location = New System.Drawing.Point(6, 125)
         Me.PictureBox92.Name = "PictureBox92"
-        Me.PictureBox92.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox92.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox92.TabIndex = 8
         Me.PictureBox92.TabStop = False
@@ -1105,10 +1037,9 @@ Partial Class MainGame
         'PictureBox93
         '
         Me.PictureBox93.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox93.Location = New System.Drawing.Point(8, 127)
-        Me.PictureBox93.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox93.Location = New System.Drawing.Point(6, 103)
         Me.PictureBox93.Name = "PictureBox93"
-        Me.PictureBox93.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox93.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox93.TabIndex = 8
         Me.PictureBox93.TabStop = False
@@ -1116,10 +1047,9 @@ Partial Class MainGame
         'PictureBox94
         '
         Me.PictureBox94.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox94.Location = New System.Drawing.Point(8, 100)
-        Me.PictureBox94.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox94.Location = New System.Drawing.Point(6, 81)
         Me.PictureBox94.Name = "PictureBox94"
-        Me.PictureBox94.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox94.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox94.TabIndex = 7
         Me.PictureBox94.TabStop = False
@@ -1127,30 +1057,27 @@ Partial Class MainGame
         'PictureBox95
         '
         Me.PictureBox95.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox95.Location = New System.Drawing.Point(8, 73)
-        Me.PictureBox95.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox95.Location = New System.Drawing.Point(6, 59)
         Me.PictureBox95.Name = "PictureBox95"
-        Me.PictureBox95.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox95.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox95.TabIndex = 5
         Me.PictureBox95.TabStop = False
         '
         'PictureBox96
         '
-        Me.PictureBox96.Location = New System.Drawing.Point(8, 46)
-        Me.PictureBox96.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox96.Location = New System.Drawing.Point(6, 37)
         Me.PictureBox96.Name = "PictureBox96"
-        Me.PictureBox96.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox96.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox96.TabIndex = 6
         Me.PictureBox96.TabStop = False
         '
         'PictureBox97
         '
-        Me.PictureBox97.Location = New System.Drawing.Point(8, 18)
-        Me.PictureBox97.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox97.Location = New System.Drawing.Point(6, 15)
         Me.PictureBox97.Name = "PictureBox97"
-        Me.PictureBox97.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox97.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox97.TabIndex = 5
         Me.PictureBox97.TabStop = False
@@ -1176,11 +1103,9 @@ Partial Class MainGame
         Me.GroupBox8.Controls.Add(Me.PictureBox76)
         Me.GroupBox8.Controls.Add(Me.PictureBox77)
         Me.GroupBox8.Controls.Add(Me.PictureBox78)
-        Me.GroupBox8.Location = New System.Drawing.Point(384, 176)
-        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox8.Location = New System.Drawing.Point(288, 143)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox8.Size = New System.Drawing.Size(117, 629)
+        Me.GroupBox8.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox8.TabIndex = 24
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "78-60"
@@ -1188,10 +1113,9 @@ Partial Class MainGame
         'PictureBox60
         '
         Me.PictureBox60.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox60.Location = New System.Drawing.Point(8, 506)
-        Me.PictureBox60.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox60.Location = New System.Drawing.Point(6, 411)
         Me.PictureBox60.Name = "PictureBox60"
-        Me.PictureBox60.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox60.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox60.TabIndex = 21
         Me.PictureBox60.TabStop = False
@@ -1199,10 +1123,9 @@ Partial Class MainGame
         'PictureBox61
         '
         Me.PictureBox61.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox61.Location = New System.Drawing.Point(8, 479)
-        Me.PictureBox61.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox61.Location = New System.Drawing.Point(6, 389)
         Me.PictureBox61.Name = "PictureBox61"
-        Me.PictureBox61.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox61.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox61.TabIndex = 20
         Me.PictureBox61.TabStop = False
@@ -1210,10 +1133,9 @@ Partial Class MainGame
         'PictureBox62
         '
         Me.PictureBox62.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox62.Location = New System.Drawing.Point(8, 452)
-        Me.PictureBox62.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox62.Location = New System.Drawing.Point(6, 367)
         Me.PictureBox62.Name = "PictureBox62"
-        Me.PictureBox62.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox62.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox62.TabIndex = 19
         Me.PictureBox62.TabStop = False
@@ -1221,10 +1143,9 @@ Partial Class MainGame
         'PictureBox63
         '
         Me.PictureBox63.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox63.Location = New System.Drawing.Point(8, 425)
-        Me.PictureBox63.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox63.Location = New System.Drawing.Point(6, 345)
         Me.PictureBox63.Name = "PictureBox63"
-        Me.PictureBox63.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox63.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox63.TabIndex = 18
         Me.PictureBox63.TabStop = False
@@ -1232,10 +1153,9 @@ Partial Class MainGame
         'PictureBox64
         '
         Me.PictureBox64.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox64.Location = New System.Drawing.Point(8, 398)
-        Me.PictureBox64.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox64.Location = New System.Drawing.Point(6, 323)
         Me.PictureBox64.Name = "PictureBox64"
-        Me.PictureBox64.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox64.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox64.TabIndex = 17
         Me.PictureBox64.TabStop = False
@@ -1243,10 +1163,9 @@ Partial Class MainGame
         'PictureBox65
         '
         Me.PictureBox65.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox65.Location = New System.Drawing.Point(8, 370)
-        Me.PictureBox65.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox65.Location = New System.Drawing.Point(6, 301)
         Me.PictureBox65.Name = "PictureBox65"
-        Me.PictureBox65.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox65.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox65.TabIndex = 16
         Me.PictureBox65.TabStop = False
@@ -1254,10 +1173,9 @@ Partial Class MainGame
         'PictureBox66
         '
         Me.PictureBox66.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox66.Location = New System.Drawing.Point(8, 343)
-        Me.PictureBox66.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox66.Location = New System.Drawing.Point(6, 279)
         Me.PictureBox66.Name = "PictureBox66"
-        Me.PictureBox66.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox66.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox66.TabIndex = 15
         Me.PictureBox66.TabStop = False
@@ -1265,10 +1183,9 @@ Partial Class MainGame
         'PictureBox67
         '
         Me.PictureBox67.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox67.Location = New System.Drawing.Point(8, 316)
-        Me.PictureBox67.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox67.Location = New System.Drawing.Point(6, 257)
         Me.PictureBox67.Name = "PictureBox67"
-        Me.PictureBox67.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox67.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox67.TabIndex = 14
         Me.PictureBox67.TabStop = False
@@ -1276,10 +1193,9 @@ Partial Class MainGame
         'PictureBox68
         '
         Me.PictureBox68.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox68.Location = New System.Drawing.Point(8, 289)
-        Me.PictureBox68.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox68.Location = New System.Drawing.Point(6, 235)
         Me.PictureBox68.Name = "PictureBox68"
-        Me.PictureBox68.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox68.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox68.TabIndex = 13
         Me.PictureBox68.TabStop = False
@@ -1287,10 +1203,9 @@ Partial Class MainGame
         'PictureBox69
         '
         Me.PictureBox69.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox69.Location = New System.Drawing.Point(8, 262)
-        Me.PictureBox69.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox69.Location = New System.Drawing.Point(6, 213)
         Me.PictureBox69.Name = "PictureBox69"
-        Me.PictureBox69.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox69.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox69.TabIndex = 12
         Me.PictureBox69.TabStop = False
@@ -1298,10 +1213,9 @@ Partial Class MainGame
         'PictureBox70
         '
         Me.PictureBox70.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox70.Location = New System.Drawing.Point(8, 235)
-        Me.PictureBox70.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox70.Location = New System.Drawing.Point(6, 191)
         Me.PictureBox70.Name = "PictureBox70"
-        Me.PictureBox70.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox70.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox70.TabIndex = 11
         Me.PictureBox70.TabStop = False
@@ -1309,10 +1223,9 @@ Partial Class MainGame
         'PictureBox71
         '
         Me.PictureBox71.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox71.Location = New System.Drawing.Point(8, 208)
-        Me.PictureBox71.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox71.Location = New System.Drawing.Point(6, 169)
         Me.PictureBox71.Name = "PictureBox71"
-        Me.PictureBox71.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox71.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox71.TabIndex = 10
         Me.PictureBox71.TabStop = False
@@ -1320,10 +1233,9 @@ Partial Class MainGame
         'PictureBox72
         '
         Me.PictureBox72.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox72.Location = New System.Drawing.Point(8, 181)
-        Me.PictureBox72.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox72.Location = New System.Drawing.Point(6, 147)
         Me.PictureBox72.Name = "PictureBox72"
-        Me.PictureBox72.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox72.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox72.TabIndex = 9
         Me.PictureBox72.TabStop = False
@@ -1331,10 +1243,9 @@ Partial Class MainGame
         'PictureBox73
         '
         Me.PictureBox73.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox73.Location = New System.Drawing.Point(8, 154)
-        Me.PictureBox73.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox73.Location = New System.Drawing.Point(6, 125)
         Me.PictureBox73.Name = "PictureBox73"
-        Me.PictureBox73.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox73.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox73.TabIndex = 8
         Me.PictureBox73.TabStop = False
@@ -1342,10 +1253,9 @@ Partial Class MainGame
         'PictureBox74
         '
         Me.PictureBox74.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox74.Location = New System.Drawing.Point(8, 127)
-        Me.PictureBox74.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox74.Location = New System.Drawing.Point(6, 103)
         Me.PictureBox74.Name = "PictureBox74"
-        Me.PictureBox74.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox74.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox74.TabIndex = 8
         Me.PictureBox74.TabStop = False
@@ -1353,10 +1263,9 @@ Partial Class MainGame
         'PictureBox75
         '
         Me.PictureBox75.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox75.Location = New System.Drawing.Point(8, 100)
-        Me.PictureBox75.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox75.Location = New System.Drawing.Point(6, 81)
         Me.PictureBox75.Name = "PictureBox75"
-        Me.PictureBox75.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox75.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox75.TabIndex = 7
         Me.PictureBox75.TabStop = False
@@ -1364,30 +1273,27 @@ Partial Class MainGame
         'PictureBox76
         '
         Me.PictureBox76.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox76.Location = New System.Drawing.Point(8, 73)
-        Me.PictureBox76.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox76.Location = New System.Drawing.Point(6, 59)
         Me.PictureBox76.Name = "PictureBox76"
-        Me.PictureBox76.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox76.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox76.TabIndex = 5
         Me.PictureBox76.TabStop = False
         '
         'PictureBox77
         '
-        Me.PictureBox77.Location = New System.Drawing.Point(8, 46)
-        Me.PictureBox77.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox77.Location = New System.Drawing.Point(6, 37)
         Me.PictureBox77.Name = "PictureBox77"
-        Me.PictureBox77.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox77.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox77.TabIndex = 6
         Me.PictureBox77.TabStop = False
         '
         'PictureBox78
         '
-        Me.PictureBox78.Location = New System.Drawing.Point(8, 18)
-        Me.PictureBox78.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox78.Location = New System.Drawing.Point(6, 15)
         Me.PictureBox78.Name = "PictureBox78"
-        Me.PictureBox78.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox78.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox78.TabIndex = 5
         Me.PictureBox78.TabStop = False
@@ -1413,11 +1319,9 @@ Partial Class MainGame
         Me.GroupBox7.Controls.Add(Me.PictureBox57)
         Me.GroupBox7.Controls.Add(Me.PictureBox58)
         Me.GroupBox7.Controls.Add(Me.PictureBox59)
-        Me.GroupBox7.Location = New System.Drawing.Point(259, 176)
-        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox7.Location = New System.Drawing.Point(194, 143)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox7.Size = New System.Drawing.Size(117, 629)
+        Me.GroupBox7.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox7.TabIndex = 23
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "59-41"
@@ -1425,10 +1329,9 @@ Partial Class MainGame
         'PictureBox41
         '
         Me.PictureBox41.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox41.Location = New System.Drawing.Point(8, 506)
-        Me.PictureBox41.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox41.Location = New System.Drawing.Point(6, 411)
         Me.PictureBox41.Name = "PictureBox41"
-        Me.PictureBox41.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox41.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox41.TabIndex = 21
         Me.PictureBox41.TabStop = False
@@ -1436,10 +1339,9 @@ Partial Class MainGame
         'PictureBox42
         '
         Me.PictureBox42.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox42.Location = New System.Drawing.Point(8, 479)
-        Me.PictureBox42.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox42.Location = New System.Drawing.Point(6, 389)
         Me.PictureBox42.Name = "PictureBox42"
-        Me.PictureBox42.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox42.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox42.TabIndex = 20
         Me.PictureBox42.TabStop = False
@@ -1447,10 +1349,9 @@ Partial Class MainGame
         'PictureBox43
         '
         Me.PictureBox43.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox43.Location = New System.Drawing.Point(8, 452)
-        Me.PictureBox43.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox43.Location = New System.Drawing.Point(6, 367)
         Me.PictureBox43.Name = "PictureBox43"
-        Me.PictureBox43.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox43.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox43.TabIndex = 19
         Me.PictureBox43.TabStop = False
@@ -1458,10 +1359,9 @@ Partial Class MainGame
         'PictureBox44
         '
         Me.PictureBox44.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox44.Location = New System.Drawing.Point(8, 425)
-        Me.PictureBox44.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox44.Location = New System.Drawing.Point(6, 345)
         Me.PictureBox44.Name = "PictureBox44"
-        Me.PictureBox44.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox44.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox44.TabIndex = 18
         Me.PictureBox44.TabStop = False
@@ -1469,10 +1369,9 @@ Partial Class MainGame
         'PictureBox45
         '
         Me.PictureBox45.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox45.Location = New System.Drawing.Point(8, 398)
-        Me.PictureBox45.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox45.Location = New System.Drawing.Point(6, 323)
         Me.PictureBox45.Name = "PictureBox45"
-        Me.PictureBox45.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox45.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox45.TabIndex = 17
         Me.PictureBox45.TabStop = False
@@ -1480,10 +1379,9 @@ Partial Class MainGame
         'PictureBox46
         '
         Me.PictureBox46.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox46.Location = New System.Drawing.Point(8, 370)
-        Me.PictureBox46.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox46.Location = New System.Drawing.Point(6, 301)
         Me.PictureBox46.Name = "PictureBox46"
-        Me.PictureBox46.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox46.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox46.TabIndex = 16
         Me.PictureBox46.TabStop = False
@@ -1491,10 +1389,9 @@ Partial Class MainGame
         'PictureBox47
         '
         Me.PictureBox47.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox47.Location = New System.Drawing.Point(8, 343)
-        Me.PictureBox47.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox47.Location = New System.Drawing.Point(6, 279)
         Me.PictureBox47.Name = "PictureBox47"
-        Me.PictureBox47.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox47.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox47.TabIndex = 15
         Me.PictureBox47.TabStop = False
@@ -1502,10 +1399,9 @@ Partial Class MainGame
         'PictureBox48
         '
         Me.PictureBox48.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox48.Location = New System.Drawing.Point(8, 316)
-        Me.PictureBox48.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox48.Location = New System.Drawing.Point(6, 257)
         Me.PictureBox48.Name = "PictureBox48"
-        Me.PictureBox48.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox48.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox48.TabIndex = 14
         Me.PictureBox48.TabStop = False
@@ -1513,10 +1409,9 @@ Partial Class MainGame
         'PictureBox49
         '
         Me.PictureBox49.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox49.Location = New System.Drawing.Point(8, 289)
-        Me.PictureBox49.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox49.Location = New System.Drawing.Point(6, 235)
         Me.PictureBox49.Name = "PictureBox49"
-        Me.PictureBox49.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox49.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox49.TabIndex = 13
         Me.PictureBox49.TabStop = False
@@ -1524,10 +1419,9 @@ Partial Class MainGame
         'PictureBox50
         '
         Me.PictureBox50.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox50.Location = New System.Drawing.Point(8, 262)
-        Me.PictureBox50.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox50.Location = New System.Drawing.Point(6, 213)
         Me.PictureBox50.Name = "PictureBox50"
-        Me.PictureBox50.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox50.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox50.TabIndex = 12
         Me.PictureBox50.TabStop = False
@@ -1535,10 +1429,9 @@ Partial Class MainGame
         'PictureBox51
         '
         Me.PictureBox51.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox51.Location = New System.Drawing.Point(8, 235)
-        Me.PictureBox51.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox51.Location = New System.Drawing.Point(6, 191)
         Me.PictureBox51.Name = "PictureBox51"
-        Me.PictureBox51.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox51.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox51.TabIndex = 11
         Me.PictureBox51.TabStop = False
@@ -1546,10 +1439,9 @@ Partial Class MainGame
         'PictureBox52
         '
         Me.PictureBox52.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox52.Location = New System.Drawing.Point(8, 208)
-        Me.PictureBox52.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox52.Location = New System.Drawing.Point(6, 169)
         Me.PictureBox52.Name = "PictureBox52"
-        Me.PictureBox52.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox52.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox52.TabIndex = 10
         Me.PictureBox52.TabStop = False
@@ -1557,10 +1449,9 @@ Partial Class MainGame
         'PictureBox53
         '
         Me.PictureBox53.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox53.Location = New System.Drawing.Point(8, 181)
-        Me.PictureBox53.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox53.Location = New System.Drawing.Point(6, 147)
         Me.PictureBox53.Name = "PictureBox53"
-        Me.PictureBox53.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox53.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox53.TabIndex = 9
         Me.PictureBox53.TabStop = False
@@ -1568,10 +1459,9 @@ Partial Class MainGame
         'PictureBox54
         '
         Me.PictureBox54.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox54.Location = New System.Drawing.Point(8, 154)
-        Me.PictureBox54.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox54.Location = New System.Drawing.Point(6, 125)
         Me.PictureBox54.Name = "PictureBox54"
-        Me.PictureBox54.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox54.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox54.TabIndex = 8
         Me.PictureBox54.TabStop = False
@@ -1579,10 +1469,9 @@ Partial Class MainGame
         'PictureBox55
         '
         Me.PictureBox55.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox55.Location = New System.Drawing.Point(8, 127)
-        Me.PictureBox55.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox55.Location = New System.Drawing.Point(6, 103)
         Me.PictureBox55.Name = "PictureBox55"
-        Me.PictureBox55.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox55.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox55.TabIndex = 8
         Me.PictureBox55.TabStop = False
@@ -1590,10 +1479,9 @@ Partial Class MainGame
         'PictureBox56
         '
         Me.PictureBox56.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox56.Location = New System.Drawing.Point(8, 100)
-        Me.PictureBox56.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox56.Location = New System.Drawing.Point(6, 81)
         Me.PictureBox56.Name = "PictureBox56"
-        Me.PictureBox56.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox56.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox56.TabIndex = 7
         Me.PictureBox56.TabStop = False
@@ -1601,30 +1489,27 @@ Partial Class MainGame
         'PictureBox57
         '
         Me.PictureBox57.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox57.Location = New System.Drawing.Point(8, 73)
-        Me.PictureBox57.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox57.Location = New System.Drawing.Point(6, 59)
         Me.PictureBox57.Name = "PictureBox57"
-        Me.PictureBox57.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox57.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox57.TabIndex = 5
         Me.PictureBox57.TabStop = False
         '
         'PictureBox58
         '
-        Me.PictureBox58.Location = New System.Drawing.Point(8, 46)
-        Me.PictureBox58.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox58.Location = New System.Drawing.Point(6, 37)
         Me.PictureBox58.Name = "PictureBox58"
-        Me.PictureBox58.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox58.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox58.TabIndex = 6
         Me.PictureBox58.TabStop = False
         '
         'PictureBox59
         '
-        Me.PictureBox59.Location = New System.Drawing.Point(8, 18)
-        Me.PictureBox59.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox59.Location = New System.Drawing.Point(6, 15)
         Me.PictureBox59.Name = "PictureBox59"
-        Me.PictureBox59.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox59.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox59.TabIndex = 5
         Me.PictureBox59.TabStop = False
@@ -1650,11 +1535,9 @@ Partial Class MainGame
         Me.GroupBox6.Controls.Add(Me.PictureBox38)
         Me.GroupBox6.Controls.Add(Me.PictureBox39)
         Me.GroupBox6.Controls.Add(Me.PictureBox40)
-        Me.GroupBox6.Location = New System.Drawing.Point(133, 176)
-        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox6.Location = New System.Drawing.Point(100, 143)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox6.Size = New System.Drawing.Size(117, 629)
+        Me.GroupBox6.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox6.TabIndex = 22
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "40-22"
@@ -1662,10 +1545,9 @@ Partial Class MainGame
         'PictureBox22
         '
         Me.PictureBox22.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox22.Location = New System.Drawing.Point(8, 506)
-        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox22.Location = New System.Drawing.Point(6, 411)
         Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox22.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox22.TabIndex = 21
         Me.PictureBox22.TabStop = False
@@ -1673,10 +1555,9 @@ Partial Class MainGame
         'PictureBox23
         '
         Me.PictureBox23.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox23.Location = New System.Drawing.Point(8, 479)
-        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox23.Location = New System.Drawing.Point(6, 389)
         Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox23.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox23.TabIndex = 20
         Me.PictureBox23.TabStop = False
@@ -1684,10 +1565,9 @@ Partial Class MainGame
         'PictureBox24
         '
         Me.PictureBox24.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox24.Location = New System.Drawing.Point(8, 452)
-        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox24.Location = New System.Drawing.Point(6, 367)
         Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox24.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox24.TabIndex = 19
         Me.PictureBox24.TabStop = False
@@ -1695,10 +1575,9 @@ Partial Class MainGame
         'PictureBox25
         '
         Me.PictureBox25.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox25.Location = New System.Drawing.Point(8, 425)
-        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox25.Location = New System.Drawing.Point(6, 345)
         Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox25.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox25.TabIndex = 18
         Me.PictureBox25.TabStop = False
@@ -1706,10 +1585,9 @@ Partial Class MainGame
         'PictureBox26
         '
         Me.PictureBox26.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox26.Location = New System.Drawing.Point(8, 398)
-        Me.PictureBox26.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox26.Location = New System.Drawing.Point(6, 323)
         Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox26.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox26.TabIndex = 17
         Me.PictureBox26.TabStop = False
@@ -1717,10 +1595,9 @@ Partial Class MainGame
         'PictureBox27
         '
         Me.PictureBox27.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox27.Location = New System.Drawing.Point(8, 370)
-        Me.PictureBox27.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox27.Location = New System.Drawing.Point(6, 301)
         Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox27.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox27.TabIndex = 16
         Me.PictureBox27.TabStop = False
@@ -1728,10 +1605,9 @@ Partial Class MainGame
         'PictureBox28
         '
         Me.PictureBox28.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox28.Location = New System.Drawing.Point(8, 343)
-        Me.PictureBox28.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox28.Location = New System.Drawing.Point(6, 279)
         Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox28.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox28.TabIndex = 15
         Me.PictureBox28.TabStop = False
@@ -1739,10 +1615,9 @@ Partial Class MainGame
         'PictureBox29
         '
         Me.PictureBox29.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox29.Location = New System.Drawing.Point(8, 316)
-        Me.PictureBox29.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox29.Location = New System.Drawing.Point(6, 257)
         Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox29.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox29.TabIndex = 14
         Me.PictureBox29.TabStop = False
@@ -1750,10 +1625,9 @@ Partial Class MainGame
         'PictureBox30
         '
         Me.PictureBox30.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox30.Location = New System.Drawing.Point(8, 289)
-        Me.PictureBox30.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox30.Location = New System.Drawing.Point(6, 235)
         Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox30.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox30.TabIndex = 13
         Me.PictureBox30.TabStop = False
@@ -1761,10 +1635,9 @@ Partial Class MainGame
         'PictureBox31
         '
         Me.PictureBox31.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox31.Location = New System.Drawing.Point(8, 262)
-        Me.PictureBox31.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox31.Location = New System.Drawing.Point(6, 213)
         Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox31.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox31.TabIndex = 12
         Me.PictureBox31.TabStop = False
@@ -1772,10 +1645,9 @@ Partial Class MainGame
         'PictureBox32
         '
         Me.PictureBox32.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox32.Location = New System.Drawing.Point(8, 235)
-        Me.PictureBox32.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox32.Location = New System.Drawing.Point(6, 191)
         Me.PictureBox32.Name = "PictureBox32"
-        Me.PictureBox32.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox32.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox32.TabIndex = 11
         Me.PictureBox32.TabStop = False
@@ -1783,10 +1655,9 @@ Partial Class MainGame
         'PictureBox33
         '
         Me.PictureBox33.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox33.Location = New System.Drawing.Point(8, 208)
-        Me.PictureBox33.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox33.Location = New System.Drawing.Point(6, 169)
         Me.PictureBox33.Name = "PictureBox33"
-        Me.PictureBox33.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox33.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox33.TabIndex = 10
         Me.PictureBox33.TabStop = False
@@ -1794,10 +1665,9 @@ Partial Class MainGame
         'PictureBox34
         '
         Me.PictureBox34.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox34.Location = New System.Drawing.Point(8, 181)
-        Me.PictureBox34.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox34.Location = New System.Drawing.Point(6, 147)
         Me.PictureBox34.Name = "PictureBox34"
-        Me.PictureBox34.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox34.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox34.TabIndex = 9
         Me.PictureBox34.TabStop = False
@@ -1805,10 +1675,9 @@ Partial Class MainGame
         'PictureBox35
         '
         Me.PictureBox35.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox35.Location = New System.Drawing.Point(8, 154)
-        Me.PictureBox35.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox35.Location = New System.Drawing.Point(6, 125)
         Me.PictureBox35.Name = "PictureBox35"
-        Me.PictureBox35.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox35.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox35.TabIndex = 8
         Me.PictureBox35.TabStop = False
@@ -1816,10 +1685,9 @@ Partial Class MainGame
         'PictureBox36
         '
         Me.PictureBox36.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox36.Location = New System.Drawing.Point(8, 127)
-        Me.PictureBox36.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox36.Location = New System.Drawing.Point(6, 103)
         Me.PictureBox36.Name = "PictureBox36"
-        Me.PictureBox36.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox36.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox36.TabIndex = 8
         Me.PictureBox36.TabStop = False
@@ -1827,10 +1695,9 @@ Partial Class MainGame
         'PictureBox37
         '
         Me.PictureBox37.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox37.Location = New System.Drawing.Point(8, 100)
-        Me.PictureBox37.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox37.Location = New System.Drawing.Point(6, 81)
         Me.PictureBox37.Name = "PictureBox37"
-        Me.PictureBox37.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox37.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox37.TabIndex = 7
         Me.PictureBox37.TabStop = False
@@ -1838,30 +1705,27 @@ Partial Class MainGame
         'PictureBox38
         '
         Me.PictureBox38.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox38.Location = New System.Drawing.Point(8, 73)
-        Me.PictureBox38.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox38.Location = New System.Drawing.Point(6, 59)
         Me.PictureBox38.Name = "PictureBox38"
-        Me.PictureBox38.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox38.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox38.TabIndex = 5
         Me.PictureBox38.TabStop = False
         '
         'PictureBox39
         '
-        Me.PictureBox39.Location = New System.Drawing.Point(8, 46)
-        Me.PictureBox39.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox39.Location = New System.Drawing.Point(6, 37)
         Me.PictureBox39.Name = "PictureBox39"
-        Me.PictureBox39.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox39.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox39.TabIndex = 6
         Me.PictureBox39.TabStop = False
         '
         'PictureBox40
         '
-        Me.PictureBox40.Location = New System.Drawing.Point(8, 18)
-        Me.PictureBox40.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox40.Location = New System.Drawing.Point(6, 15)
         Me.PictureBox40.Name = "PictureBox40"
-        Me.PictureBox40.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox40.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox40.TabIndex = 5
         Me.PictureBox40.TabStop = False
@@ -1887,11 +1751,9 @@ Partial Class MainGame
         Me.GroupBox5.Controls.Add(Me.PictureBox5)
         Me.GroupBox5.Controls.Add(Me.PictureBox4)
         Me.GroupBox5.Controls.Add(Me.PictureBox3)
-        Me.GroupBox5.Location = New System.Drawing.Point(8, 176)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Location = New System.Drawing.Point(6, 143)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox5.Size = New System.Drawing.Size(117, 629)
+        Me.GroupBox5.Size = New System.Drawing.Size(88, 511)
         Me.GroupBox5.TabIndex = 2
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "3-21"
@@ -1899,10 +1761,9 @@ Partial Class MainGame
         'PictureBox21
         '
         Me.PictureBox21.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox21.Location = New System.Drawing.Point(8, 506)
-        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox21.Location = New System.Drawing.Point(6, 411)
         Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox21.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox21.TabIndex = 21
         Me.PictureBox21.TabStop = False
@@ -1910,10 +1771,9 @@ Partial Class MainGame
         'PictureBox20
         '
         Me.PictureBox20.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox20.Location = New System.Drawing.Point(8, 479)
-        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox20.Location = New System.Drawing.Point(6, 389)
         Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox20.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox20.TabIndex = 20
         Me.PictureBox20.TabStop = False
@@ -1921,10 +1781,9 @@ Partial Class MainGame
         'PictureBox19
         '
         Me.PictureBox19.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox19.Location = New System.Drawing.Point(8, 452)
-        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox19.Location = New System.Drawing.Point(6, 367)
         Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox19.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox19.TabIndex = 19
         Me.PictureBox19.TabStop = False
@@ -1932,10 +1791,9 @@ Partial Class MainGame
         'PictureBox18
         '
         Me.PictureBox18.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox18.Location = New System.Drawing.Point(8, 425)
-        Me.PictureBox18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox18.Location = New System.Drawing.Point(6, 345)
         Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox18.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox18.TabIndex = 18
         Me.PictureBox18.TabStop = False
@@ -1943,10 +1801,9 @@ Partial Class MainGame
         'PictureBox17
         '
         Me.PictureBox17.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox17.Location = New System.Drawing.Point(8, 398)
-        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox17.Location = New System.Drawing.Point(6, 323)
         Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox17.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox17.TabIndex = 17
         Me.PictureBox17.TabStop = False
@@ -1954,10 +1811,9 @@ Partial Class MainGame
         'PictureBox16
         '
         Me.PictureBox16.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox16.Location = New System.Drawing.Point(8, 370)
-        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox16.Location = New System.Drawing.Point(6, 301)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox16.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox16.TabIndex = 16
         Me.PictureBox16.TabStop = False
@@ -1965,10 +1821,9 @@ Partial Class MainGame
         'PictureBox15
         '
         Me.PictureBox15.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox15.Location = New System.Drawing.Point(8, 343)
-        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox15.Location = New System.Drawing.Point(6, 279)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox15.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox15.TabIndex = 15
         Me.PictureBox15.TabStop = False
@@ -1976,10 +1831,9 @@ Partial Class MainGame
         'PictureBox14
         '
         Me.PictureBox14.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox14.Location = New System.Drawing.Point(8, 316)
-        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox14.Location = New System.Drawing.Point(6, 257)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox14.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox14.TabIndex = 14
         Me.PictureBox14.TabStop = False
@@ -1987,10 +1841,9 @@ Partial Class MainGame
         'PictureBox13
         '
         Me.PictureBox13.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox13.Location = New System.Drawing.Point(8, 289)
-        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox13.Location = New System.Drawing.Point(6, 235)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox13.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox13.TabIndex = 13
         Me.PictureBox13.TabStop = False
@@ -1998,10 +1851,9 @@ Partial Class MainGame
         'PictureBox12
         '
         Me.PictureBox12.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox12.Location = New System.Drawing.Point(8, 262)
-        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox12.Location = New System.Drawing.Point(6, 213)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox12.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox12.TabIndex = 12
         Me.PictureBox12.TabStop = False
@@ -2009,10 +1861,9 @@ Partial Class MainGame
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox11.Location = New System.Drawing.Point(8, 235)
-        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox11.Location = New System.Drawing.Point(6, 191)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox11.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox11.TabIndex = 11
         Me.PictureBox11.TabStop = False
@@ -2020,10 +1871,9 @@ Partial Class MainGame
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox10.Location = New System.Drawing.Point(8, 208)
-        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox10.Location = New System.Drawing.Point(6, 169)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox10.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox10.TabIndex = 10
         Me.PictureBox10.TabStop = False
@@ -2031,10 +1881,9 @@ Partial Class MainGame
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox9.Location = New System.Drawing.Point(8, 181)
-        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox9.Location = New System.Drawing.Point(6, 147)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox9.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox9.TabIndex = 9
         Me.PictureBox9.TabStop = False
@@ -2042,10 +1891,9 @@ Partial Class MainGame
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox8.Location = New System.Drawing.Point(8, 154)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox8.Location = New System.Drawing.Point(6, 125)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox8.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox8.TabIndex = 8
         Me.PictureBox8.TabStop = False
@@ -2053,10 +1901,9 @@ Partial Class MainGame
         'PictureBox7
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox7.Location = New System.Drawing.Point(8, 127)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox7.Location = New System.Drawing.Point(6, 103)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox7.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox7.TabIndex = 8
         Me.PictureBox7.TabStop = False
@@ -2064,10 +1911,9 @@ Partial Class MainGame
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox6.Location = New System.Drawing.Point(8, 100)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox6.Location = New System.Drawing.Point(6, 81)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox6.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 7
         Me.PictureBox6.TabStop = False
@@ -2075,20 +1921,18 @@ Partial Class MainGame
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox5.Location = New System.Drawing.Point(8, 73)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox5.Location = New System.Drawing.Point(6, 59)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox5.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 5
         Me.PictureBox5.TabStop = False
         '
         'PictureBox4
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(8, 46)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox4.Location = New System.Drawing.Point(6, 37)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox4.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 6
         Me.PictureBox4.TabStop = False
@@ -2096,10 +1940,9 @@ Partial Class MainGame
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(8, 18)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Location = New System.Drawing.Point(6, 15)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox3.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
@@ -2110,50 +1953,44 @@ Partial Class MainGame
         Me.GroupBox4.Controls.Add(Me.PictureBox138)
         Me.GroupBox4.Controls.Add(Me.PictureBox137)
         Me.GroupBox4.Controls.Add(Me.PictureBox136)
-        Me.GroupBox4.Location = New System.Drawing.Point(383, 23)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Location = New System.Drawing.Point(287, 19)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox4.Size = New System.Drawing.Size(495, 145)
+        Me.GroupBox4.Size = New System.Drawing.Size(371, 118)
         Me.GroupBox4.TabIndex = 1
         Me.GroupBox4.TabStop = False
         '
         'PictureBox139
         '
-        Me.PictureBox139.Location = New System.Drawing.Point(385, 23)
-        Me.PictureBox139.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox139.Location = New System.Drawing.Point(289, 19)
         Me.PictureBox139.Name = "PictureBox139"
-        Me.PictureBox139.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox139.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox139.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox139.TabIndex = 5
         Me.PictureBox139.TabStop = False
         '
         'PictureBox138
         '
-        Me.PictureBox138.Location = New System.Drawing.Point(260, 23)
-        Me.PictureBox138.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox138.Location = New System.Drawing.Point(195, 19)
         Me.PictureBox138.Name = "PictureBox138"
-        Me.PictureBox138.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox138.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox138.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox138.TabIndex = 4
         Me.PictureBox138.TabStop = False
         '
         'PictureBox137
         '
-        Me.PictureBox137.Location = New System.Drawing.Point(135, 23)
-        Me.PictureBox137.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox137.Location = New System.Drawing.Point(101, 19)
         Me.PictureBox137.Name = "PictureBox137"
-        Me.PictureBox137.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox137.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox137.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox137.TabIndex = 3
         Me.PictureBox137.TabStop = False
         '
         'PictureBox136
         '
-        Me.PictureBox136.Location = New System.Drawing.Point(9, 23)
-        Me.PictureBox136.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox136.Location = New System.Drawing.Point(7, 19)
         Me.PictureBox136.Name = "PictureBox136"
-        Me.PictureBox136.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox136.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox136.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox136.TabIndex = 2
         Me.PictureBox136.TabStop = False
@@ -2162,21 +1999,18 @@ Partial Class MainGame
         '
         Me.GroupBox3.Controls.Add(Me.PictureBox2)
         Me.GroupBox3.Controls.Add(Me.PictureBox1)
-        Me.GroupBox3.Location = New System.Drawing.Point(8, 23)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Location = New System.Drawing.Point(6, 19)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox3.Size = New System.Drawing.Size(321, 145)
+        Me.GroupBox3.Size = New System.Drawing.Size(241, 118)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "X/24"
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(133, 23)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Location = New System.Drawing.Point(100, 19)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox2.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
@@ -2184,10 +2018,9 @@ Partial Class MainGame
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(8, 23)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 19)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(97, 112)
+        Me.PictureBox1.Size = New System.Drawing.Size(73, 91)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -2198,12 +2031,11 @@ Partial Class MainGame
         '
         'MainGame
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(904, 880)
+        Me.ClientSize = New System.Drawing.Size(678, 609)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MainGame"
         Me.Text = "Main Games"
         Me.GroupBox1.ResumeLayout(False)
