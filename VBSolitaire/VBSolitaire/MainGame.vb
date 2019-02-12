@@ -1,4 +1,9 @@
-﻿Public Class MainGame
+﻿Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class MainGame
+    Dim constr As String = "Server=(LocalDB)\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\Game.mdf"
+    Dim conn As New SqlConnection(constr)
     Dim TimerCounter As Integer = 0
     Dim Min As Integer = 0
     Dim Hour As Integer = 0
@@ -9,7 +14,86 @@
         CheckBox1_CheckedChanged(sender, e)
         Stage.Generate_Game()
         Display()
+        Button2.Enabled = False
         MessageBox.Show("init")
+        Dim R1 As String = ""
+        For i = 0 To Stage.Row1().Count - 1
+            R1 += TryCast(Stage.Row1().Item(i), String) + " "
+        Next
+        Dim R2 As String = ""
+        For i = 0 To Stage.Row2().Count - 1
+            R2 += TryCast(Stage.Row2().Item(i), String) + " "
+        Next
+        Dim R3 As String = ""
+        For i = 0 To Stage.Row3().Count - 1
+            R3 += TryCast(Stage.Row3().Item(i), String) + " "
+        Next
+        Dim R4 As String = ""
+        For i = 0 To Stage.Row4().Count - 1
+            R4 += TryCast(Stage.Row4().Item(i), String) + " "
+        Next
+        Dim R5 As String = ""
+        For i = 0 To Stage.Row5().Count - 1
+            R5 += TryCast(Stage.Row5().Item(i), String) + " "
+        Next
+        Dim R6 As String = ""
+        For i = 0 To Stage.Row6().Count - 1
+            R6 += TryCast(Stage.Row6().Item(i), String) + " "
+        Next
+        Dim R7 As String = ""
+        For i = 0 To Stage.Row7().Count - 1
+            R7 += TryCast(Stage.Row7().Item(i), String) + " "
+        Next
+        Dim DC As String = ""
+        For i = 0 To Stage.Deck().Count - 1
+            DC += TryCast(Stage.Deck().Item(i), String) + " "
+        Next
+        Dim ODC As String = ""
+        For i = 0 To Stage.Deck_Open().Count - 1
+            ODC += TryCast(Stage.Deck_Open().Item(i), String) + " "
+        Next
+        Dim R8 As String = ""
+        For i = 0 To Stage.Row8().Count - 1
+            R8 += TryCast(Stage.Row8().Item(i), String) + " "
+        Next
+        Dim R9 As String = ""
+        For i = 0 To Stage.Row9().Count - 1
+            R9 += TryCast(Stage.Row9().Item(i), String) + " "
+        Next
+        Dim R10 As String = ""
+        For i = 0 To Stage.Row10().Count - 1
+            R10 += TryCast(Stage.Row10().Item(i), String) + " "
+        Next
+        Dim R11 As String = ""
+        For i = 0 To Stage.Row11().Count - 1
+            R11 += TryCast(Stage.Row11().Item(i), String) + " "
+        Next
+        conn.Open()
+        Dim sql As String = "Insert into Step 
+                             Values (@step, @row1, @row2, @row3, @row4, 
+                                     @row5, @row6, @row7, @deck, @odeck, 
+                                     @row8, @row9, @row10, @row11)"
+        Dim cmd As New SqlCommand(sql, conn)
+        cmd.Parameters.AddWithValue("step", 0)
+        cmd.Parameters.AddWithValue("row1", R1)
+        cmd.Parameters.AddWithValue("row2", R2)
+        cmd.Parameters.AddWithValue("row3", R3)
+        cmd.Parameters.AddWithValue("row4", R4)
+        cmd.Parameters.AddWithValue("row5", R5)
+        cmd.Parameters.AddWithValue("row6", R6)
+        cmd.Parameters.AddWithValue("row7", R7)
+        cmd.Parameters.AddWithValue("deck", DC)
+        cmd.Parameters.AddWithValue("odeck", ODC)
+        cmd.Parameters.AddWithValue("row8", R8)
+        cmd.Parameters.AddWithValue("row9", R9)
+        cmd.Parameters.AddWithValue("row10", R10)
+        cmd.Parameters.AddWithValue("row11", R11)
+        If cmd.ExecuteNonQuery = 1 Then
+            MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
+        Else
+            MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
+        End If
+        conn.Close()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -82,11 +166,214 @@
     End Sub
 
     Public Sub select_card(card As String())
-
+        Dim st As Integer = Stage.Game_Step()
         Stage.card_selected(card)
-
         Display()
+        If Stage.Game_Step() >= 1 Then
+            Button2.Enabled = True
+        End If
+        If Stage.Game_Step() > st Then
+            'Add to DB?
+            'แปลง arraylist to string?
+            Dim R1 As String = ""
+            For i = 0 To Stage.Row1().Count - 1
+                R1 += TryCast(Stage.Row1().Item(i), String) + " "
+            Next
+            Dim R2 As String = ""
+            For i = 0 To Stage.Row2().Count - 1
+                R2 += TryCast(Stage.Row2().Item(i), String) + " "
+            Next
+            Dim R3 As String = ""
+            For i = 0 To Stage.Row3().Count - 1
+                R3 += TryCast(Stage.Row3().Item(i), String) + " "
+            Next
+            Dim R4 As String = ""
+            For i = 0 To Stage.Row4().Count - 1
+                R4 += TryCast(Stage.Row4().Item(i), String) + " "
+            Next
+            Dim R5 As String = ""
+            For i = 0 To Stage.Row5().Count - 1
+                R5 += TryCast(Stage.Row5().Item(i), String) + " "
+            Next
+            Dim R6 As String = ""
+            For i = 0 To Stage.Row6().Count - 1
+                R6 += TryCast(Stage.Row6().Item(i), String) + " "
+            Next
+            Dim R7 As String = ""
+            For i = 0 To Stage.Row7().Count - 1
+                R7 += TryCast(Stage.Row7().Item(i), String) + " "
+            Next
+            Dim DC As String = ""
+            For i = 0 To Stage.Deck().Count - 1
+                DC += TryCast(Stage.Deck().Item(i), String) + " "
+            Next
+            Dim ODC As String = ""
+            For i = 0 To Stage.Deck_Open().Count - 1
+                ODC += TryCast(Stage.Deck_Open().Item(i), String) + " "
+            Next
+            Dim R8 As String = ""
+            For i = 0 To Stage.Row8().Count - 1
+                R8 += TryCast(Stage.Row8().Item(i), String) + " "
+            Next
+            Dim R9 As String = ""
+            For i = 0 To Stage.Row9().Count - 1
+                R9 += TryCast(Stage.Row9().Item(i), String) + " "
+            Next
+            Dim R10 As String = ""
+            For i = 0 To Stage.Row10().Count - 1
+                R10 += TryCast(Stage.Row10().Item(i), String) + " "
+            Next
+            Dim R11 As String = ""
+            For i = 0 To Stage.Row11().Count - 1
+                R11 += TryCast(Stage.Row11().Item(i), String) + " "
+            Next
+            'MessageBox.Show(R1, "Test")
+            conn.Open()
+            Dim sql As String = "Insert into Step 
+                                         Values (@step, @row1, @row2, @row3, @row4, 
+                                                 @row5, @row6, @row7, @deck, @odeck, 
+                                                 @row8, @row9, @row10, @row11)"
+            Dim cmd As New SqlCommand(sql, conn)
+            cmd.Parameters.AddWithValue("step", Stage.Game_Step)
+            cmd.Parameters.AddWithValue("row1", R1)
+            cmd.Parameters.AddWithValue("row2", R2)
+            cmd.Parameters.AddWithValue("row3", R3)
+            cmd.Parameters.AddWithValue("row4", R4)
+            cmd.Parameters.AddWithValue("row5", R5)
+            cmd.Parameters.AddWithValue("row6", R6)
+            cmd.Parameters.AddWithValue("row7", R7)
+            cmd.Parameters.AddWithValue("deck", DC)
+            cmd.Parameters.AddWithValue("odeck", ODC)
+            cmd.Parameters.AddWithValue("row8", R8)
+            cmd.Parameters.AddWithValue("row9", R9)
+            cmd.Parameters.AddWithValue("row10", R10)
+            cmd.Parameters.AddWithValue("row11", R11)
+            If cmd.ExecuteNonQuery = 1 Then
+                MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
+            Else
+                MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
+            End If
+            conn.Close()
+            'Add to DB?
+        End If
+    End Sub
 
+    Public Function ShowData()
+        conn.Open()
+        Dim sql As String = "Select Name, Time, Move 
+                             From Score
+                             Order by 2, 3"
+        Dim cmd As New SqlCommand(sql, conn)
+        Dim adapt As New SqlDataAdapter(cmd)
+        Dim data As New DataSet()
+        adapt.Fill(data, "score")
+        Dim dude As DataTable = data.Tables("score")
+        conn.Close()
+        Return dude
+    End Function
+
+    Public Sub DeleteStep()
+        conn.Open()
+        Dim sql As String = "Delete Step"
+        Dim cmd As New SqlCommand(sql, conn)
+        If cmd.ExecuteNonQuery = 1 Then
+            MessageBox.Show("ลบ Step หมด")
+        Else
+            MessageBox.Show("ไม่มีให้ลบ")
+        End If
+        conn.Close()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        conn.Open()
+        Dim sql As String = "Select * 
+                             from Step
+                             Order by 1"
+        Dim cmd As New SqlCommand(sql, conn)
+        Dim adapt As New SqlDataAdapter(cmd)
+        Dim data As New DataSet()
+        adapt.Fill(data, "Step")
+        Dim row1 As String = data.Tables("Step").Rows(0)("Row1")
+        Dim row2 As String = data.Tables("Step").Rows(0)("Row2")
+        Dim row3 As String = data.Tables("Step").Rows(0)("Row3")
+        Dim row4 As String = data.Tables("Step").Rows(0)("Row4")
+        Dim row5 As String = data.Tables("Step").Rows(0)("Row5")
+        Dim row6 As String = data.Tables("Step").Rows(0)("Row6")
+        Dim row7 As String = data.Tables("Step").Rows(0)("Row7")
+        Dim deck As String = data.Tables("Step").Rows(0)("Deck")
+        Dim opdeck As String = data.Tables("Step").Rows(0)("OpDeck")
+        Dim row8 As String = data.Tables("Step").Rows(0)("Row8")
+        Dim row9 As String = data.Tables("Step").Rows(0)("Row9")
+        Dim row10 As String = data.Tables("Step").Rows(0)("Row10")
+        Dim row11 As String = data.Tables("Step").Rows(0)("Row11")
+        conn.Close()
+        Stage.Row1().Clear()
+        Stage.Row2().Clear()
+        Stage.Row3().Clear()
+        Stage.Row4().Clear()
+        Stage.Row5().Clear()
+        Stage.Row6().Clear()
+        Stage.Row7().Clear()
+        Stage.Deck().Clear()
+        Stage.Deck_Open().Clear()
+        Stage.Row8().Clear()
+        Stage.Row9().Clear()
+        Stage.Row10().Clear()
+        Stage.Row11().Clear()
+        For Each i In row1.Split(" ")
+            Stage.Row1().Add(i)
+        Next
+        For Each i In row2.Split(" ")
+            Stage.Row2().Add(i)
+        Next
+        For Each i In row3.Split(" ")
+            Stage.Row3().Add(i)
+        Next
+        For Each i In row4.Split(" ")
+            Stage.Row4().Add(i)
+        Next
+        For Each i In row5.Split(" ")
+            Stage.Row5().Add(i)
+        Next
+        For Each i In row6.Split(" ")
+            Stage.Row6().Add(i)
+        Next
+        For Each i In row7.Split(" ")
+            Stage.Row7().Add(i)
+        Next
+        For Each i In deck.Split(" ")
+            Stage.Deck().Add(i)
+        Next
+        For Each i In opdeck.Split(" ")
+            Stage.Deck_Open().Add(i)
+        Next
+        For Each i In row8.Split(" ")
+            Stage.Row8().Add(i)
+        Next
+        For Each i In row9.Split(" ")
+            Stage.Row9().Add(i)
+        Next
+        For Each i In row10.Split(" ")
+            Stage.Row10().Add(i)
+        Next
+        For Each i In row11.Split(" ")
+            Stage.Row11().Add(i)
+        Next
+        Display()
+        conn.Open()
+        Dim sql2 As String = "Delete Step
+                             Where Step = " & Stage.Game_Step()
+        Dim cmd2 As New SqlCommand(sql2, conn)
+        If cmd2.ExecuteNonQuery = 1 Then
+            MessageBox.Show("ลบ Step")
+        Else
+            MessageBox.Show("ไม่มีให้ลบ")
+        End If
+        conn.Close()
+        Stage.Game_Step() -= 1
+        If Stage.Game_Step() = 0 Then
+            Button2.Enabled = False
+        End If
     End Sub
 
     Public Sub Display()
@@ -34303,7 +34590,6 @@
         End If
     End Sub
 
-
     Public Sub pb139(card As String)
 
         PictureBox139.Visible = True
@@ -34566,6 +34852,5 @@
             GroupBox11.Text = ""
         End If
     End Sub
-
 
 End Class
