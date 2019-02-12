@@ -2,9 +2,7 @@
 Imports System.Data.SqlClient
 
 Public Class Gamestage
-
-    'Dim constr As String = "Server=(LocalDB)\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\Game.mdf"
-    'Dim conn As New SqlConnection(constr)
+    Dim _debug_move As Boolean = False
 
     Dim Full_Card() As String = {"AC", "AD", "AH", "AS", "2C", "2D", "2H", "2S", "3C", "3D", "3H", "3S", "4C", "4D", "4H", "4S", "5C", "5D", "5H", "5S", "6C", "6D", "6H", "6S", "7C", "7D", "7H", "7S", "8C", "8D", "8H", "8S", "9C", "9D", "9H", "9S", "10C", "10D", "10H", "10S", "JC", "JD", "JH", "JS", "QC", "QD", "QH", "QS", "KC", "KD", "KH", "KS"}
 
@@ -204,6 +202,15 @@ Public Class Gamestage
         End Set
     End Property
 
+    Public Property Debug_move As Boolean
+        Get
+            Return _debug_move
+        End Get
+        Set(value As Boolean)
+            _debug_move = value
+        End Set
+    End Property
+
     Public Sub New()
 
     End Sub
@@ -269,7 +276,6 @@ Public Class Gamestage
 
     Public Sub Move_card(count As Integer)
 
-        MessageBox.Show("Do move" + count.ToString)
         Dim temp As String
 
         Dim row As String = Selected_card1(0)
@@ -389,26 +395,37 @@ Public Class Gamestage
                 _Condition_cardselected = False
                 _selected_card1(0) = ""
                 _selected_card1(1) = ""
+
                 Hilight_card(card, False)
 
             Else
                 _selected_card2 = card
                 Hilight_card(_selected_card1, False)
+                If row = "R8" Or row = "R9" Or row = "R10" Or row = "R11" Then
+                    If checkdeck() Or Debug_move Then
 
-                If checkmove() Then
+                        row_move()
 
-                    row_move()
+                        Game_Step += 1
+                        Game_Move += 1
 
-                    Game_Step += 1
-                    Game_Move += 1
+                    End If
+                Else
+                    If checkmove() Or Debug_move Then
 
-                    'save_stage_to_sql()
+                        row_move()
+
+                        Game_Step += 1
+                        Game_Move += 1
+
+                    End If
 
                 End If
                 _selected_card1(0) = ""
                 _selected_card1(1) = ""
                 _Condition_cardselected = False
             End If
+
         End If
 
 
@@ -441,6 +458,84 @@ Public Class Gamestage
 
 
     End Sub
+
+    Private Function checkdeck() As Boolean
+
+
+        Dim cardA As String
+        Dim cardB As String
+
+        Dim row As String = Selected_card1(0)
+        Dim location As Integer = Selected_card1(1) - 1
+
+        If row = "R1" Then
+            cardA = Row1(location)
+        ElseIf row = "R2" Then
+            cardA = Row2(location)
+        ElseIf row = ("R3") Then
+            cardA = Row3(location)
+        ElseIf row = ("R4") Then
+            cardA = Row4(location)
+        ElseIf row = ("R5") Then
+            cardA = Row5(location)
+        ElseIf row = ("R6") Then
+            cardA = Row6(location)
+        ElseIf row = ("R7") Then
+            cardA = Row7(location)
+        ElseIf row = ("R8") Then
+            cardA = Row8(location)
+        ElseIf row = ("R9") Then
+            cardA = Row9(location)
+        ElseIf row = ("R10") Then
+            cardA = Row10(location)
+        ElseIf row = ("R11") Then
+            cardA = Row11(location)
+        ElseIf row = ("TD") Then
+            cardA = Deck_Open(location)
+        End If
+
+        row = Selected_card2(0)
+
+        If row = "R1" And Row1.Count > 0 Then
+            cardB = Row1(Row1.Count - 1)
+        ElseIf row = "R2" And Row2.Count > 0 Then
+            cardB = Row2(Row2.Count - 1)
+        ElseIf row = ("R3") And Row3.Count > 0 Then
+            cardB = Row3(Row3.Count - 1)
+        ElseIf row = ("R4") And Row4.Count > 0 Then
+            cardB = Row4(Row4.Count - 1)
+        ElseIf row = ("R5") And Row5.Count > 0 Then
+            cardB = Row5(Row5.Count - 1)
+        ElseIf row = ("R6") And Row6.Count > 0 Then
+            cardB = Row6(Row6.Count - 1)
+        ElseIf row = ("R7") And Row7.Count > 0 Then
+            cardB = Row7(Row7.Count - 1)
+        ElseIf row = ("R8") And Row8.Count > 0 Then
+            cardB = Row8(Row8.Count - 1)
+        ElseIf row = ("R9") And Row9.Count > 0 Then
+            cardB = Row9(Row9.Count - 1)
+        ElseIf row = ("R10") And Row10.Count > 0 Then
+            cardB = Row10(Row10.Count - 1)
+        ElseIf row = ("R11") And Row11.Count > 0 Then
+            cardB = Row11(Row11.Count - 1)
+        ElseIf row = ("TD") And Deck_Open.Count > 0 Then
+            cardB = Deck_Open(Deck_Open.Count - 1)
+        End If
+
+        If cardB = "" And card_to_num(cardA) = 1 Then
+            Return True
+        ElseIf cardB = "" Then
+            Return False
+        End If
+
+        If CardCon(cardB, cardA) Then
+            Return True
+        Else
+            Return False
+        End If
+
+
+    End Function
 
     Public Function checkmove()
 
@@ -521,10 +616,23 @@ Public Class Gamestage
     Public Function CardCon(cardA As String, cardB As String)
 
 
-        If card_to_num(cardA) - card_to_num(cardB) = -1 Then
+        If card_to_num(cardA) - card_to_num(cardB) = -1 And card_to_char(cardA) = card_to_char(cardB) Then
             Return True
         Else
             Return False
+        End If
+
+    End Function
+
+    Public Function card_to_char(card As String)
+        If card.Contains("A") Then
+            Return "A"
+        ElseIf card.Contains("J") Then
+            Return "J"
+        ElseIf card.Contains("Q") Then
+            Return "J"
+        ElseIf card.Contains("K") Then
+            Return "J"
         End If
 
     End Function
@@ -643,15 +751,22 @@ Public Class Gamestage
         End If
     End Sub
 
+
     Public Sub Hilight_card(card As String(), condition As Boolean)
+
         Dim location As Integer = card(1) - 1
         Dim row As String = card(0)
+
         If condition Then
             If row = ("R1") Then
+
+
                 Dim temp As String
                 temp = Row1(location)
                 Row1.RemoveAt(location)
                 Row1.Insert(location, temp + "WL")
+
+
             ElseIf row = ("R2") Then
                 Dim temp As String
                 temp = Row2(location)
@@ -773,114 +888,13 @@ Public Class Gamestage
         End If
     End Sub
 
-    'Public Function showdata()
-    '    conn.Open()
-    '    Dim sql As String = "select name, time, move 
-    '                         from score
-    '                         order by 2, 3"
-    '    Dim cmd As New SqlCommand(sql, conn)
-    '    Dim adapt As New SqlDataAdapter(cmd)
-    '    Dim data As New DataSet()
-    '    adapt.Fill(data, "score")
-    '    Dim dude As DataTable = data.Tables("score")
-    '    conn.Close()
-    '    Return dude
-    'End Function
-
-    'Public Sub save_stage_to_sql()
-
-    '    'Add to DB?
-    '    'แปลง arraylist to string?
-    '    Dim R1 As String = ""
-    '    For i = 0 To _Row1.Count - 1
-    '        R1 += TryCast(_Row1.Item(i), String)
-    '    Next
-    '    Dim R2 As String = ""
-    '    For i = 0 To _Row2.Count - 1
-    '        R2 += TryCast(_Row2.Item(i), String)
-    '    Next
-    '    Dim R3 As String = ""
-    '    For i = 0 To _Row3.Count - 1
-    '        R3 += TryCast(_Row3.Item(i), String)
-    '    Next
-    '    Dim R4 As String = ""
-    '    For i = 0 To _Row4.Count - 1
-    '        R4 += TryCast(_Row4.Item(i), String)
-    '    Next
-    '    Dim R5 As String = ""
-    '    For i = 0 To _Row5.Count - 1
-    '        R5 += TryCast(_Row5.Item(i), String)
-    '    Next
-    '    Dim R6 As String = ""
-    '    For i = 0 To _Row6.Count - 1
-    '        R6 += TryCast(_Row6.Item(i), String)
-    '    Next
-    '    Dim R7 As String = ""
-    '    For i = 0 To _Row7.Count - 1
-    '        R7 += TryCast(_Row7.Item(i), String)
-    '    Next
-    '    Dim DC As String = ""
-    '    For i = 0 To _Deck.Count - 1
-    '        DC += TryCast(_Deck.Item(i), String)
-    '    Next
-    '    Dim ODC As String = ""
-    '    For i = 0 To _Deck_Open.Count - 1
-    '        ODC += TryCast(_Deck_Open.Item(i), String)
-    '    Next
-    '    Dim R8 As String = ""
-    '    For i = 0 To _Row8.Count - 1
-    '        R8 += TryCast(_Row8.Item(i), String)
-    '    Next
-    '    Dim R9 As String = ""
-    '    For i = 0 To _Row9.Count - 1
-    '        R9 += TryCast(_Row9.Item(i), String)
-    '    Next
-    '    Dim R10 As String = ""
-    '    For i = 0 To _Row10.Count - 1
-    '        R10 += TryCast(_Row10.Item(i), String)
-    '    Next
-    '    Dim R11 As String = ""
-    '    For i = 0 To _Row11.Count - 1
-    '        R11 += TryCast(_Row11.Item(i), String)
-    '    Next
-    '    conn.Open()
-    '    Dim sql As String = "Insert into Step 
-    '                                     Values (@step, @row1, @row2, @row3, @row4, 
-    '                                             @row5, @row6, @row7, @deck, @odeck, 
-    '                                             @row8, @row9, @row10, @row11)"
-    '    Dim cmd As New SqlCommand(sql, conn)
-    '    cmd.Parameters.AddWithValue("step", Game_Step)
-    '    cmd.Parameters.AddWithValue("row1", R1)
-    '    cmd.Parameters.AddWithValue("row2", R2)
-    '    cmd.Parameters.AddWithValue("row3", R3)
-    '    cmd.Parameters.AddWithValue("row4", R4)
-    '    cmd.Parameters.AddWithValue("row5", R5)
-    '    cmd.Parameters.AddWithValue("row6", R6)
-    '    cmd.Parameters.AddWithValue("row7", R7)
-    '    cmd.Parameters.AddWithValue("deck", DC)
-    '    cmd.Parameters.AddWithValue("odeck", ODC)
-    '    cmd.Parameters.AddWithValue("row8", R8)
-    '    cmd.Parameters.AddWithValue("row9", R9)
-    '    cmd.Parameters.AddWithValue("row10", R10)
-    '    cmd.Parameters.AddWithValue("row11", R11)
-    '    If cmd.ExecuteNonQuery = 1 Then
-    '        MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
-    '    Else
-    '        MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
-    '    End If
-    '    conn.Close()
-    '    'Add to DB?
-
-    'End Sub
-
-    'Public Sub load_stage_from_sql()
-
-    'End Sub
-
-    Public Sub generate_sql()
-
-
-
-    End Sub
+    Public Function End_check()
+        If (Row8.Count > 0 And Row9.Count > 0 And Row10.Count > 0 And Row11.Count > 0) Then
+            If (Row8(Row8.Count - 1).contain("K") And Row9(Row9.Count - 1).contain("K") And Row10(Row10.Count - 1).contain("K") And Row11(Row11.Count - 1).contain("K")) Then
+                Return True
+            End If
+        End If
+        Return False
+    End Function
 
 End Class

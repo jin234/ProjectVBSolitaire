@@ -10,6 +10,18 @@
         CheckBox1_CheckedChanged(sender, e)
         Stage.Generate_Game()
         Display()
+        GameEnd()
+    End Sub
+
+    Private Sub GameEnd()
+        If Stage.End_check Then
+
+            'เมื่อจบเกมส์
+
+            Dim playername As String = InputBox("You win ! " + vbNewLine + "Please input your Name")
+            MessageBox.Show(playername)
+
+        End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -34934,7 +34946,6 @@
         If CheckBox1.Checked Then
             Show_deck.Visible = True
             CheckBox2.Visible = True
-            CheckBox3.Visible = True
 
             GroupBox3.Text = "X/24"
             GroupBox5.Text = "3-21"
@@ -34949,7 +34960,6 @@
 
             Show_deck.Visible = False
             CheckBox2.Visible = False
-            CheckBox3.Visible = False
 
             GroupBox3.Text = ""
             GroupBox5.Text = ""
@@ -34962,5 +34972,11 @@
         End If
     End Sub
 
-
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked Then
+            Stage.Debug_move = True
+        Else
+            Stage.Debug_move = False
+        End If
+    End Sub
 End Class
