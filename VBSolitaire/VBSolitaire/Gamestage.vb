@@ -890,7 +890,7 @@ Public Class Gamestage
 
     Public Function End_check()
         If (Row8.Count > 0 And Row9.Count > 0 And Row10.Count > 0 And Row11.Count > 0) Then
-            If (Row8(Row8.Count - 1).contain("K") And Row9(Row9.Count - 1).contain("K") And Row10(Row10.Count - 1).contain("K") And Row11(Row11.Count - 1).contain("K")) Then
+            If (Row8(Row8.Count - 1).contains("K") And Row9(Row9.Count - 1).contains("K") And Row10(Row10.Count - 1).contains("K") And Row11(Row11.Count - 1).contains("K")) Then
                 Return True
             End If
         End If

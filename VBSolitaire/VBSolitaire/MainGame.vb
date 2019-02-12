@@ -6,11 +6,11 @@
 
     Private Sub MainGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
         Timer1.Start()
         CheckBox1_CheckedChanged(sender, e)
         Stage.Generate_Game()
         Display()
-        GameEnd()
     End Sub
 
     Private Sub GameEnd()
@@ -115,6 +115,7 @@
         Stage.card_selected(card)
 
         Display()
+        GameEnd()
 
     End Sub
 
