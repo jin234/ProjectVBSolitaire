@@ -1,11 +1,40 @@
 ﻿Public Class MainGame
+    Dim LastTime As Integer = 0
     Dim TimerCounter As Integer = 0
     Dim Min As Integer = 0
     Dim Hour As Integer = 0
     Dim Stage As Gamestage = New Gamestage
 
     Private Sub MainGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim Another As New MainMenu
 
+        Another.Owner = Me
+
+        If Another.resetTime = 1 Then
+            LastTime = 0
+            TimerCounter = 0
+            TimerCounter = TimerCounter + 1
+            If TimerCounter >= 59 Then
+                TimerCounter = 0
+                Min = Min + 1
+                If Min >= 59 Then
+                    Min = 0
+                    Hour = Hour + 1
+                End If
+            End If
+        ElseIf Another.resetTime = 2 Then
+            TimerCounter = TimerCounter + 1
+            If TimerCounter >= 59 Then
+                TimerCounter = 0
+                Min = Min + 1
+                If Min >= 59 Then
+                    Min = 0
+                    Hour = Hour + 1
+                End If
+            End If
+
+            Timer1.Start()
+        End If
 
         Timer1.Start()
         CheckBox1_CheckedChanged(sender, e)
@@ -40,6 +69,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MainMenu.Show()
         Timer1.Stop()
+        LastTime = Timer1.ToString
+        Label2.Text = (Hour.ToString("00") & " : " & Min.ToString("00") & " : " & TimerCounter.ToString("00"))
     End Sub
 
     Private Sub Show_deck_Click(sender As Object, e As EventArgs) Handles Show_deck.Click
