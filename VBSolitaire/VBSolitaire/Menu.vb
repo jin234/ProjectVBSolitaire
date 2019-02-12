@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub btnRe_Click(sender As Object, e As EventArgs) Handles btnRe.Click
-        DataGridView1.DataSource = Score.ShowData()
+        'DataGridView1.DataSource = Score.ShowData()
     End Sub
 
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click

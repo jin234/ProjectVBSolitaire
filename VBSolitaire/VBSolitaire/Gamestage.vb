@@ -3,8 +3,8 @@ Imports System.Data.SqlClient
 
 Public Class Gamestage
 
-    Dim constr As String = "Server=(LocalDB)\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\Game.mdf"
-    Dim conn As New SqlConnection(constr)
+    'Dim constr As String = "Server=(LocalDB)\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\Game.mdf"
+    'Dim conn As New SqlConnection(constr)
 
     Dim Full_Card() As String = {"AC", "AD", "AH", "AS", "2C", "2D", "2H", "2S", "3C", "3D", "3H", "3S", "4C", "4D", "4H", "4S", "5C", "5D", "5H", "5S", "6C", "6D", "6H", "6S", "7C", "7D", "7H", "7S", "8C", "8D", "8H", "8S", "9C", "9D", "9H", "9S", "10C", "10D", "10H", "10S", "JC", "JD", "JH", "JS", "QC", "QD", "QH", "QS", "KC", "KD", "KH", "KS"}
 
@@ -267,77 +267,84 @@ Public Class Gamestage
 
     End Sub
 
-    Public Sub Move_card()
+    Public Sub Move_card(count As Integer)
 
+        MessageBox.Show("Do move" + count.ToString)
         Dim temp As String
+
         Dim row As String = Selected_card1(0)
         Dim location As Integer = Selected_card1(1) - 1
 
+        For i = 0 To count - 1
 
-        If row = "R1" Then
-            temp = Row1(location)
-            Row1.RemoveAt(location)
-        ElseIf row = "R2" Then
-            temp = Row2(location)
-            Row2.RemoveAt(location)
-        ElseIf row = ("R3") Then
-            temp = Row3(location)
-            Row3.RemoveAt(location)
-        ElseIf row = ("R4") Then
-            temp = Row4(location)
-            Row4.RemoveAt(location)
-        ElseIf row = ("R5") Then
-            temp = Row5(location)
-            Row5.RemoveAt(location)
-        ElseIf row = ("R6") Then
-            temp = Row6(location)
-            Row6.RemoveAt(location)
-        ElseIf row = ("R7") Then
-            temp = Row7(location)
-            Row7.RemoveAt(location)
-        ElseIf row = ("R8") Then
-            temp = Row8(location)
-            Row8.RemoveAt(location)
-        ElseIf row = ("R9") Then
-            temp = Row9(location)
-            Row9.RemoveAt(location)
-        ElseIf row = ("R10") Then
-            temp = Row10(location)
-            Row10.RemoveAt(location)
-        ElseIf row = ("R11") Then
-            temp = Row11(location)
-            Row11.RemoveAt(location)
-        ElseIf row = ("TD") Then
-            temp = Deck_Open(location)
-            Deck_Open.RemoveAt(location)
-        End If
+            row = Selected_card1(0)
 
-        row = Selected_card2(0)
-        If row = "R1" Then
-            Row1.Add(temp)
-        ElseIf row = "R2" Then
-            Row2.Add(temp)
-        ElseIf row = ("R3") Then
-            Row3.Add(temp)
-        ElseIf row = ("R4") Then
-            Row4.Add(temp)
-        ElseIf row = ("R5") Then
-            Row5.Add(temp)
-        ElseIf row = ("R6") Then
-            Row6.Add(temp)
-        ElseIf row = ("R7") Then
-            Row7.Add(temp)
-        ElseIf row = ("R8") Then
-            Row8.Add(temp)
-        ElseIf row = ("R9") Then
-            Row9.Add(temp)
-        ElseIf row = ("R10") Then
-            Row10.Add(temp)
-        ElseIf row = ("R11") Then
-            Row11.Add(temp)
-        ElseIf row = ("TD") Then
-            Deck_Open.Add(temp)
-        End If
+            If row = "R1" Then
+                temp = Row1(location)
+                Row1.RemoveAt(location)
+            ElseIf row = "R2" Then
+                temp = Row2(location)
+                Row2.RemoveAt(location)
+            ElseIf row = ("R3") Then
+                temp = Row3(location)
+                Row3.RemoveAt(location)
+            ElseIf row = ("R4") Then
+                temp = Row4(location)
+                Row4.RemoveAt(location)
+            ElseIf row = ("R5") Then
+                temp = Row5(location)
+                Row5.RemoveAt(location)
+            ElseIf row = ("R6") Then
+                temp = Row6(location)
+                Row6.RemoveAt(location)
+            ElseIf row = ("R7") Then
+                temp = Row7(location)
+                Row7.RemoveAt(location)
+            ElseIf row = ("R8") Then
+                temp = Row8(location)
+                Row8.RemoveAt(location)
+            ElseIf row = ("R9") Then
+                temp = Row9(location)
+                Row9.RemoveAt(location)
+            ElseIf row = ("R10") Then
+                temp = Row10(location)
+                Row10.RemoveAt(location)
+            ElseIf row = ("R11") Then
+                temp = Row11(location)
+                Row11.RemoveAt(location)
+            ElseIf row = ("TD") Then
+                temp = Deck_Open(location)
+                Deck_Open.RemoveAt(location)
+            End If
+
+            row = Selected_card2(0)
+            If row = "R1" Then
+                Row1.Add(temp)
+            ElseIf row = "R2" Then
+                Row2.Add(temp)
+            ElseIf row = ("R3") Then
+                Row3.Add(temp)
+            ElseIf row = ("R4") Then
+                Row4.Add(temp)
+            ElseIf row = ("R5") Then
+                Row5.Add(temp)
+            ElseIf row = ("R6") Then
+                Row6.Add(temp)
+            ElseIf row = ("R7") Then
+                Row7.Add(temp)
+            ElseIf row = ("R8") Then
+                Row8.Add(temp)
+            ElseIf row = ("R9") Then
+                Row9.Add(temp)
+            ElseIf row = ("R10") Then
+                Row10.Add(temp)
+            ElseIf row = ("R11") Then
+                Row11.Add(temp)
+            ElseIf row = ("TD") Then
+                Deck_Open.Add(temp)
+            End If
+
+        Next
 
     End Sub
 
@@ -387,92 +394,15 @@ Public Class Gamestage
             Else
                 _selected_card2 = card
                 Hilight_card(_selected_card1, False)
+
                 If checkmove() Then
-                    Move_card()
+
+                    row_move()
+
                     Game_Step += 1
                     Game_Move += 1
 
-                    'Add to DB?
-                    'แปลง arraylist to string?
-                    Dim R1 As String = ""
-                    For i = 0 To _Row1.Count - 1
-                        R1 += TryCast(_Row1.Item(i), String)
-                    Next
-                    Dim R2 As String = ""
-                    For i = 0 To _Row2.Count - 1
-                        R2 += TryCast(_Row2.Item(i), String)
-                    Next
-                    Dim R3 As String = ""
-                    For i = 0 To _Row3.Count - 1
-                        R3 += TryCast(_Row3.Item(i), String)
-                    Next
-                    Dim R4 As String = ""
-                    For i = 0 To _Row4.Count - 1
-                        R4 += TryCast(_Row4.Item(i), String)
-                    Next
-                    Dim R5 As String = ""
-                    For i = 0 To _Row5.Count - 1
-                        R5 += TryCast(_Row5.Item(i), String)
-                    Next
-                    Dim R6 As String = ""
-                    For i = 0 To _Row6.Count - 1
-                        R6 += TryCast(_Row6.Item(i), String)
-                    Next
-                    Dim R7 As String = ""
-                    For i = 0 To _Row7.Count - 1
-                        R7 += TryCast(_Row7.Item(i), String)
-                    Next
-                    Dim DC As String = ""
-                    For i = 0 To _Deck.Count - 1
-                        DC += TryCast(_Deck.Item(i), String)
-                    Next
-                    Dim ODC As String = ""
-                    For i = 0 To _Deck_Open.Count - 1
-                        ODC += TryCast(_Deck_Open.Item(i), String)
-                    Next
-                    Dim R8 As String = ""
-                    For i = 0 To _Row8.Count - 1
-                        R8 += TryCast(_Row8.Item(i), String)
-                    Next
-                    Dim R9 As String = ""
-                    For i = 0 To _Row9.Count - 1
-                        R9 += TryCast(_Row9.Item(i), String)
-                    Next
-                    Dim R10 As String = ""
-                    For i = 0 To _Row10.Count - 1
-                        R10 += TryCast(_Row10.Item(i), String)
-                    Next
-                    Dim R11 As String = ""
-                    For i = 0 To _Row11.Count - 1
-                        R11 += TryCast(_Row11.Item(i), String)
-                    Next
-                    conn.Open()
-                    Dim sql As String = "Insert into Step 
-                                         Values (@step, @row1, @row2, @row3, @row4, 
-                                                 @row5, @row6, @row7, @deck, @odeck, 
-                                                 @row8, @row9, @row10, @row11)"
-                    Dim cmd As New SqlCommand(sql, conn)
-                    cmd.Parameters.AddWithValue("step", Game_Step)
-                    cmd.Parameters.AddWithValue("row1", R1)
-                    cmd.Parameters.AddWithValue("row2", R2)
-                    cmd.Parameters.AddWithValue("row3", R3)
-                    cmd.Parameters.AddWithValue("row4", R4)
-                    cmd.Parameters.AddWithValue("row5", R5)
-                    cmd.Parameters.AddWithValue("row6", R6)
-                    cmd.Parameters.AddWithValue("row7", R7)
-                    cmd.Parameters.AddWithValue("deck", DC)
-                    cmd.Parameters.AddWithValue("odeck", ODC)
-                    cmd.Parameters.AddWithValue("row8", R8)
-                    cmd.Parameters.AddWithValue("row9", R9)
-                    cmd.Parameters.AddWithValue("row10", R10)
-                    cmd.Parameters.AddWithValue("row11", R11)
-                    If cmd.ExecuteNonQuery = 1 Then
-                        MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
-                    Else
-                        MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
-                    End If
-                    conn.Close()
-                    'Add to DB?
+                    'save_stage_to_sql()
 
                 End If
                 _selected_card1(0) = ""
@@ -481,6 +411,33 @@ Public Class Gamestage
             End If
         End If
 
+
+
+    End Sub
+
+    Public Sub row_move()
+
+        Dim row As String = Selected_card1(0)
+
+        Dim location As Integer = Selected_card1(1) - 1
+
+        If row = "R1" Then
+            Move_card(Row1.Count - location)
+        ElseIf row = ("R2") Then
+            Move_card(Row2.Count - location)
+        ElseIf row = ("R3") Then
+            Move_card(Row3.Count - location)
+        ElseIf row = ("R4") Then
+            Move_card(Row4.Count - location)
+        ElseIf row = ("R5") Then
+            Move_card(Row5.Count - location)
+        ElseIf row = ("R6") Then
+            Move_card(Row6.Count - location)
+        ElseIf row = ("R7") Then
+            Move_card(Row7.Count - location)
+        Else
+            Move_card(1)
+        End If
 
 
     End Sub
@@ -560,6 +517,7 @@ Public Class Gamestage
         End If
 
     End Function
+
     Public Function CardCon(cardA As String, cardB As String)
 
 
@@ -591,6 +549,7 @@ Public Class Gamestage
 
         Return 0
     End Function
+
     Public Sub Flip_card()
 
         If Row1.Count > 0 Then
@@ -814,18 +773,114 @@ Public Class Gamestage
         End If
     End Sub
 
-    Public Function ShowData()
-        conn.Open()
-        Dim sql As String = "Select Name, Time, Move 
-                             From Score
-                             Order by 2, 3"
-        Dim cmd As New SqlCommand(sql, conn)
-        Dim adapt As New SqlDataAdapter(cmd)
-        Dim data As New DataSet()
-        adapt.Fill(data, "score")
-        Dim dude As DataTable = data.Tables("score")
-        conn.Close()
-        Return dude
-    End Function
+    'Public Function showdata()
+    '    conn.Open()
+    '    Dim sql As String = "select name, time, move 
+    '                         from score
+    '                         order by 2, 3"
+    '    Dim cmd As New SqlCommand(sql, conn)
+    '    Dim adapt As New SqlDataAdapter(cmd)
+    '    Dim data As New DataSet()
+    '    adapt.Fill(data, "score")
+    '    Dim dude As DataTable = data.Tables("score")
+    '    conn.Close()
+    '    Return dude
+    'End Function
+
+    'Public Sub save_stage_to_sql()
+
+    '    'Add to DB?
+    '    'แปลง arraylist to string?
+    '    Dim R1 As String = ""
+    '    For i = 0 To _Row1.Count - 1
+    '        R1 += TryCast(_Row1.Item(i), String)
+    '    Next
+    '    Dim R2 As String = ""
+    '    For i = 0 To _Row2.Count - 1
+    '        R2 += TryCast(_Row2.Item(i), String)
+    '    Next
+    '    Dim R3 As String = ""
+    '    For i = 0 To _Row3.Count - 1
+    '        R3 += TryCast(_Row3.Item(i), String)
+    '    Next
+    '    Dim R4 As String = ""
+    '    For i = 0 To _Row4.Count - 1
+    '        R4 += TryCast(_Row4.Item(i), String)
+    '    Next
+    '    Dim R5 As String = ""
+    '    For i = 0 To _Row5.Count - 1
+    '        R5 += TryCast(_Row5.Item(i), String)
+    '    Next
+    '    Dim R6 As String = ""
+    '    For i = 0 To _Row6.Count - 1
+    '        R6 += TryCast(_Row6.Item(i), String)
+    '    Next
+    '    Dim R7 As String = ""
+    '    For i = 0 To _Row7.Count - 1
+    '        R7 += TryCast(_Row7.Item(i), String)
+    '    Next
+    '    Dim DC As String = ""
+    '    For i = 0 To _Deck.Count - 1
+    '        DC += TryCast(_Deck.Item(i), String)
+    '    Next
+    '    Dim ODC As String = ""
+    '    For i = 0 To _Deck_Open.Count - 1
+    '        ODC += TryCast(_Deck_Open.Item(i), String)
+    '    Next
+    '    Dim R8 As String = ""
+    '    For i = 0 To _Row8.Count - 1
+    '        R8 += TryCast(_Row8.Item(i), String)
+    '    Next
+    '    Dim R9 As String = ""
+    '    For i = 0 To _Row9.Count - 1
+    '        R9 += TryCast(_Row9.Item(i), String)
+    '    Next
+    '    Dim R10 As String = ""
+    '    For i = 0 To _Row10.Count - 1
+    '        R10 += TryCast(_Row10.Item(i), String)
+    '    Next
+    '    Dim R11 As String = ""
+    '    For i = 0 To _Row11.Count - 1
+    '        R11 += TryCast(_Row11.Item(i), String)
+    '    Next
+    '    conn.Open()
+    '    Dim sql As String = "Insert into Step 
+    '                                     Values (@step, @row1, @row2, @row3, @row4, 
+    '                                             @row5, @row6, @row7, @deck, @odeck, 
+    '                                             @row8, @row9, @row10, @row11)"
+    '    Dim cmd As New SqlCommand(sql, conn)
+    '    cmd.Parameters.AddWithValue("step", Game_Step)
+    '    cmd.Parameters.AddWithValue("row1", R1)
+    '    cmd.Parameters.AddWithValue("row2", R2)
+    '    cmd.Parameters.AddWithValue("row3", R3)
+    '    cmd.Parameters.AddWithValue("row4", R4)
+    '    cmd.Parameters.AddWithValue("row5", R5)
+    '    cmd.Parameters.AddWithValue("row6", R6)
+    '    cmd.Parameters.AddWithValue("row7", R7)
+    '    cmd.Parameters.AddWithValue("deck", DC)
+    '    cmd.Parameters.AddWithValue("odeck", ODC)
+    '    cmd.Parameters.AddWithValue("row8", R8)
+    '    cmd.Parameters.AddWithValue("row9", R9)
+    '    cmd.Parameters.AddWithValue("row10", R10)
+    '    cmd.Parameters.AddWithValue("row11", R11)
+    '    If cmd.ExecuteNonQuery = 1 Then
+    '        MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
+    '    Else
+    '        MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
+    '    End If
+    '    conn.Close()
+    '    'Add to DB?
+
+    'End Sub
+
+    'Public Sub load_stage_from_sql()
+
+    'End Sub
+
+    Public Sub generate_sql()
+
+
+
+    End Sub
 
 End Class
