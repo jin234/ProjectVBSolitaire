@@ -14,8 +14,8 @@
         Get
             If Resetvalue = 1 Then
                 Return resetTime = 1
-            ElseIf Resetvalue = 2 Then
-                Return resetTime = 2
+            ElseIf Resetvalue = 0 Then
+                Return resetTime = 0
             End If
         End Get
         Set(ByVal value As Integer)

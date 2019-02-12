@@ -11,6 +11,8 @@
         Another.Owner = Me
 
         If Another.resetTime = 1 Then
+            Timer1.Stop()
+            Timer1.Start()
             LastTime = 0
             TimerCounter = 0
             TimerCounter = TimerCounter + 1
@@ -22,8 +24,10 @@
                     Hour = Hour + 1
                 End If
             End If
-        ElseIf Another.resetTime = 2 Then
+        ElseIf Another.resetTime = 0 Then
+            Timer1.Start()
             TimerCounter = TimerCounter + 1
+            LastTime = TimerCounter + 1
             If TimerCounter >= 59 Then
                 TimerCounter = 0
                 Min = Min + 1
@@ -31,11 +35,11 @@
                     Min = 0
                     Hour = Hour + 1
                 End If
+
             End If
 
             Timer1.Start()
         End If
-
         Timer1.Start()
         CheckBox1_CheckedChanged(sender, e)
         Stage.Generate_Game()
@@ -68,8 +72,10 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MainMenu.Show()
-        Timer1.Stop()
-        LastTime = Timer1.ToString
+        Dim Closegame As New MainGame
+        Closegame.Owner = Me
+        Me.Hide()
+
         Label2.Text = (Hour.ToString("00") & " : " & Min.ToString("00") & " : " & TimerCounter.ToString("00"))
     End Sub
 
