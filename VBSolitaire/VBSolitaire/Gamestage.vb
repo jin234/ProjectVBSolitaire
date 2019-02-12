@@ -406,89 +406,18 @@
                         Game_Step += 1
                         Game_Move += 1
 
-                        'Add to DB?
-                        'แปลง arraylist to string?
-                        Dim R1 As String = ""
-                        For i = 0 To _Row1.Count - 1
-                            R1 += TryCast(_Row1.Item(i), String)
-                        Next
-                        Dim R2 As String = ""
-                        For i = 0 To _Row2.Count - 1
-                            R2 += TryCast(_Row2.Item(i), String)
-                        Next
-                        Dim R3 As String = ""
-                        For i = 0 To _Row3.Count - 1
-                            R3 += TryCast(_Row3.Item(i), String)
-                        Next
-                        Dim R4 As String = ""
-                        For i = 0 To _Row4.Count - 1
-                            R4 += TryCast(_Row4.Item(i), String)
-                        Next
-                        Dim R5 As String = ""
-                        For i = 0 To _Row5.Count - 1
-                            R5 += TryCast(_Row5.Item(i), String)
-                        Next
-                        Dim R6 As String = ""
-                        For i = 0 To _Row6.Count - 1
-                            R6 += TryCast(_Row6.Item(i), String)
-                        Next
-                        Dim R7 As String = ""
-                        For i = 0 To _Row7.Count - 1
-                            R7 += TryCast(_Row7.Item(i), String)
-                        Next
-                        Dim DC As String = ""
-                        For i = 0 To _Deck.Count - 1
-                            DC += TryCast(_Deck.Item(i), String)
-                        Next
-                        Dim ODC As String = ""
-                        For i = 0 To _Deck_Open.Count - 1
-                            ODC += TryCast(_Deck_Open.Item(i), String)
-                        Next
-                        Dim R8 As String = ""
-                        For i = 0 To _Row8.Count - 1
-                            R8 += TryCast(_Row8.Item(i), String)
-                        Next
-                        Dim R9 As String = ""
-                        For i = 0 To _Row9.Count - 1
-                            R9 += TryCast(_Row9.Item(i), String)
-                        Next
-                        Dim R10 As String = ""
-                        For i = 0 To _Row10.Count - 1
-                            R10 += TryCast(_Row10.Item(i), String)
-                        Next
-                        Dim R11 As String = ""
-                        For i = 0 To _Row11.Count - 1
-                            R11 += TryCast(_Row11.Item(i), String)
-                        Next
-                        conn.Open()
-                        Dim sql As String = "Insert into Step 
-                                         Values (@step, @row1, @row2, @row3, @row4, 
-                                                 @row5, @row6, @row7, @deck, @odeck, 
-                                                 @row8, @row9, @row10, @row11)"
-                        Dim cmd As New SqlCommand(sql, conn)
-                        cmd.Parameters.AddWithValue("step", Game_Step)
-                        cmd.Parameters.AddWithValue("row1", R1)
-                        cmd.Parameters.AddWithValue("row2", R2)
-                        cmd.Parameters.AddWithValue("row3", R3)
-                        cmd.Parameters.AddWithValue("row4", R4)
-                        cmd.Parameters.AddWithValue("row5", R5)
-                        cmd.Parameters.AddWithValue("row6", R6)
-                        cmd.Parameters.AddWithValue("row7", R7)
-                        cmd.Parameters.AddWithValue("deck", DC)
-                        cmd.Parameters.AddWithValue("odeck", ODC)
-                        cmd.Parameters.AddWithValue("row8", R8)
-                        cmd.Parameters.AddWithValue("row9", R9)
-                        cmd.Parameters.AddWithValue("row10", R10)
-                        cmd.Parameters.AddWithValue("row11", R11)
-                        If cmd.ExecuteNonQuery = 1 Then
-                            MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
-                        Else
-                            MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
-                        End If
-                        conn.Close()
-                        'Add to DB?
+                    End If
+                Else
+                    If checkmove() Or Debug_move Then
+
+                        row_move()
+
+                        Game_Step += 1
+                        Game_Move += 1
 
                     End If
+
+                End If
                     _selected_card1(0) = ""
                     _selected_card1(1) = ""
                     _Condition_cardselected = False
@@ -956,18 +885,13 @@
         End If
     End Sub
 
-    Public Function ShowData()
-        conn.Open()
-        Dim sql As String = "Select Name, Time, Move 
-                             From Score
-                             Order by 2, 3"
-        Dim cmd As New SqlCommand(sql, conn)
-        Dim adapt As New SqlDataAdapter(cmd)
-        Dim data As New DataSet()
-        adapt.Fill(data, "score")
-        Dim dude As DataTable = data.Tables("score")
-        conn.Close()
-        Return dude
+    Public Function End_check()
+        If (Row8.Count > 0 And Row9.Count > 0 And Row10.Count > 0 And Row11.Count > 0) Then
+            If (Row8(Row8.Count - 1).contains("K") And Row9(Row9.Count - 1).contains("K") And Row10(Row10.Count - 1).contains("K") And Row11(Row11.Count - 1).contains("K")) Then
+                Return True
+            End If
+        End If
+        Return False
     End Function
 
 End Class

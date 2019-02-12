@@ -17,7 +17,6 @@ Public Class MainGame
         Stage.Generate_Game()
         Display()
         Button2.Enabled = False
-        MessageBox.Show("init")
         Dim R1 As String = ""
         For i = 0 To Stage.Row1().Count - 1
             R1 += TryCast(Stage.Row1().Item(i), String) + " "
@@ -90,11 +89,7 @@ Public Class MainGame
         cmd.Parameters.AddWithValue("row9", R9)
         cmd.Parameters.AddWithValue("row10", R10)
         cmd.Parameters.AddWithValue("row11", R11)
-        If cmd.ExecuteNonQuery = 1 Then
-            MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
-        Else
-            MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
-        End If
+        cmd.ExecuteNonQuery()
         conn.Close()
     End Sub
 
@@ -257,7 +252,6 @@ Public Class MainGame
             For i = 0 To Stage.Row11().Count - 1
                 R11 += TryCast(Stage.Row11().Item(i), String) + " "
             Next
-            'MessageBox.Show(R1, "Test")
             conn.Open()
             Dim sql As String = "Insert into Step 
                                          Values (@step, @row1, @row2, @row3, @row4, 
@@ -278,11 +272,7 @@ Public Class MainGame
             cmd.Parameters.AddWithValue("row9", R9)
             cmd.Parameters.AddWithValue("row10", R10)
             cmd.Parameters.AddWithValue("row11", R11)
-            If cmd.ExecuteNonQuery = 1 Then
-                MessageBox.Show("เพิ่มข้อมูลเรียบร้อย")
-            Else
-                MessageBox.Show("ไม่สามารถเพิ่มข้อมูลได้")
-            End If
+            cmd.ExecuteNonQuery()
             conn.Close()
             'Add to DB?
         End If
@@ -306,11 +296,7 @@ Public Class MainGame
         conn.Open()
         Dim sql As String = "Delete Step"
         Dim cmd As New SqlCommand(sql, conn)
-        If cmd.ExecuteNonQuery = 1 Then
-            MessageBox.Show("ลบ Step หมด")
-        Else
-            MessageBox.Show("ไม่มีให้ลบ")
-        End If
+        cmd.ExecuteNonQuery()
         conn.Close()
     End Sub
 
@@ -394,11 +380,7 @@ Public Class MainGame
         Dim sql2 As String = "Delete Step
                              Where Step = " & Stage.Game_Step()
         Dim cmd2 As New SqlCommand(sql2, conn)
-        If cmd2.ExecuteNonQuery = 1 Then
-            MessageBox.Show("ลบ Step")
-        Else
-            MessageBox.Show("ไม่มีให้ลบ")
-        End If
+        cmd2.ExecuteNonQuery()
         conn.Close()
         Stage.Game_Step() -= 1
         If Stage.Game_Step() = 0 Then
