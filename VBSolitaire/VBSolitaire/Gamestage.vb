@@ -816,7 +816,7 @@ Public Class Gamestage
 
     Public Function ShowData()
         conn.Open()
-        Dim sql As String = "Select * 
+        Dim sql As String = "Select Name, Time, Move 
                              From Score
                              Order by 2, 3"
         Dim cmd As New SqlCommand(sql, conn)
