@@ -396,55 +396,55 @@ Public Class Gamestage
                     'แปลง arraylist to string?
                     Dim R1 As String = ""
                     For i = 0 To _Row1.Count - 1
-                        R1 += TryCast(_Row1.Item(i), String)
+                        R1 += TryCast(_Row1.Item(i), String) + " "
                     Next
                     Dim R2 As String = ""
                     For i = 0 To _Row2.Count - 1
-                        R2 += TryCast(_Row2.Item(i), String)
+                        R2 += TryCast(_Row2.Item(i), String) + " "
                     Next
                     Dim R3 As String = ""
                     For i = 0 To _Row3.Count - 1
-                        R3 += TryCast(_Row3.Item(i), String)
+                        R3 += TryCast(_Row3.Item(i), String) + " "
                     Next
                     Dim R4 As String = ""
                     For i = 0 To _Row4.Count - 1
-                        R4 += TryCast(_Row4.Item(i), String)
+                        R4 += TryCast(_Row4.Item(i), String) + " "
                     Next
                     Dim R5 As String = ""
                     For i = 0 To _Row5.Count - 1
-                        R5 += TryCast(_Row5.Item(i), String)
+                        R5 += TryCast(_Row5.Item(i), String) + " "
                     Next
                     Dim R6 As String = ""
                     For i = 0 To _Row6.Count - 1
-                        R6 += TryCast(_Row6.Item(i), String)
+                        R6 += TryCast(_Row6.Item(i), String) + " "
                     Next
                     Dim R7 As String = ""
                     For i = 0 To _Row7.Count - 1
-                        R7 += TryCast(_Row7.Item(i), String)
+                        R7 += TryCast(_Row7.Item(i), String) + " "
                     Next
                     Dim DC As String = ""
                     For i = 0 To _Deck.Count - 1
-                        DC += TryCast(_Deck.Item(i), String)
+                        DC += TryCast(_Deck.Item(i), String) + " "
                     Next
                     Dim ODC As String = ""
                     For i = 0 To _Deck_Open.Count - 1
-                        ODC += TryCast(_Deck_Open.Item(i), String)
+                        ODC += TryCast(_Deck_Open.Item(i), String) + " "
                     Next
                     Dim R8 As String = ""
                     For i = 0 To _Row8.Count - 1
-                        R8 += TryCast(_Row8.Item(i), String)
+                        R8 += TryCast(_Row8.Item(i), String) + " "
                     Next
                     Dim R9 As String = ""
                     For i = 0 To _Row9.Count - 1
-                        R9 += TryCast(_Row9.Item(i), String)
+                        R9 += TryCast(_Row9.Item(i), String) + " "
                     Next
                     Dim R10 As String = ""
                     For i = 0 To _Row10.Count - 1
-                        R10 += TryCast(_Row10.Item(i), String)
+                        R10 += TryCast(_Row10.Item(i), String) + " "
                     Next
                     Dim R11 As String = ""
                     For i = 0 To _Row11.Count - 1
-                        R11 += TryCast(_Row11.Item(i), String)
+                        R11 += TryCast(_Row11.Item(i), String) + " "
                     Next
                     conn.Open()
                     Dim sql As String = "Insert into Step 
