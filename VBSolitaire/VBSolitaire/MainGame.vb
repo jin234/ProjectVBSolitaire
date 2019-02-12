@@ -10,6 +10,8 @@ Public Class MainGame
     Dim Stage As Gamestage = New Gamestage
 
     Private Sub MainGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
         Timer1.Start()
         CheckBox1_CheckedChanged(sender, e)
         Stage.Generate_Game()
@@ -96,6 +98,17 @@ Public Class MainGame
         conn.Close()
     End Sub
 
+    Private Sub GameEnd()
+        If Stage.End_check Then
+
+            'เมื่อจบเกมส์
+
+            Dim playername As String = InputBox("You win ! " + vbNewLine + "Please input your Name")
+            MessageBox.Show(playername)
+
+        End If
+    End Sub
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         TimerCounter = TimerCounter + 1
         If TimerCounter >= 59 Then
@@ -161,7 +174,24 @@ Public Class MainGame
             Row7 += i + " "
         Next
 
-        MessageBox.Show(deck + vbNewLine + "----" + deck_open + vbNewLine + "----" + Row1 + vbNewLine + "----" + Row2 + vbNewLine + "----" + Row3 + vbNewLine + "----" + Row4 + vbNewLine + "----" + Row5 + vbNewLine + "----" + Row6 + vbNewLine + "----" + Row7)
+        Dim Row8 As String = ""
+        For Each i In Stage.Row8
+            Row8 += i + " "
+        Next
+        Dim Row9 As String = ""
+        For Each i In Stage.Row9
+            Row9 += i + " "
+        Next
+        Dim Row10 As String = ""
+        For Each i In Stage.Row10
+            Row10 += i + " "
+        Next
+        Dim Row11 As String = ""
+        For Each i In Stage.Row11
+            Row11 += i + " "
+        Next
+
+        MessageBox.Show(deck + vbNewLine + "----" + deck_open + vbNewLine + "----" + Row1 + vbNewLine + "----" + Row2 + vbNewLine + "----" + Row3 + vbNewLine + "----" + Row4 + vbNewLine + "----" + Row5 + vbNewLine + "----" + Row6 + vbNewLine + "//////////" + Row7 + vbNewLine + "----" + Row8 + vbNewLine + "----" + Row9 + vbNewLine + "----" + Row10 + vbNewLine + "----" + Row11)
 
     End Sub
 
@@ -796,6 +826,60 @@ Public Class MainGame
 
             Else
                 pb3("")
+
+
+                pb4("")
+
+
+                pb5("")
+
+
+                pb6("")
+
+
+                pb7("")
+
+
+                pb8("")
+
+
+                pb9("")
+
+
+                pb10("")
+
+
+                pb11("")
+
+
+                pb12("")
+
+
+                pb13("")
+
+
+                pb14("")
+
+
+                pb15("")
+
+
+                pb16("")
+
+
+                pb17("")
+
+
+                pb18("")
+
+
+                pb19("")
+
+
+                pb20("")
+
+
+                pb21("")
             End If
 
         ElseIf Row = 2 Then
@@ -936,6 +1020,60 @@ Public Class MainGame
                 End If
                 count += 1
             Else
+                pb22("")
+
+
+                pb23("")
+
+
+                pb24("")
+
+
+                pb25("")
+
+
+                pb26("")
+
+
+                pb27("")
+
+
+                pb28("")
+
+
+                pb29("")
+
+
+                pb30("")
+
+
+                pb31("")
+
+
+                pb32("")
+
+
+                pb33("")
+
+
+                pb34("")
+
+
+                pb35("")
+
+
+                pb36("")
+
+
+                pb37("")
+
+
+                pb38("")
+
+
+                pb39("")
+
+
                 pb40("")
             End If
         ElseIf Row = 3 Then
@@ -1075,6 +1213,60 @@ Public Class MainGame
                 End If
                 count += 1
             Else
+                pb41("")
+
+
+                pb42("")
+
+
+                pb43("")
+
+
+                pb44("")
+
+
+                pb45("")
+
+
+                pb46("")
+
+
+                pb47("")
+
+
+                pb48("")
+
+
+                pb49("")
+
+
+                pb50("")
+
+
+                pb51("")
+
+
+                pb52("")
+
+
+                pb53("")
+
+
+                pb54("")
+
+
+                pb55("")
+
+
+                pb56("")
+
+
+                pb57("")
+
+
+                pb58("")
+
+
                 pb59("")
             End If
         ElseIf Row = 4 Then
@@ -1214,6 +1406,60 @@ Public Class MainGame
                 End If
                 count += 1
             Else
+                pb60("")
+
+
+                pb61("")
+
+
+                pb62("")
+
+
+                pb63("")
+
+
+                pb64("")
+
+
+                pb65("")
+
+
+                pb66("")
+
+
+                pb67("")
+
+
+                pb68("")
+
+
+                pb69("")
+
+
+                pb70("")
+
+
+                pb71("")
+
+
+                pb72("")
+
+
+                pb73("")
+
+
+                pb74("")
+
+
+                pb75("")
+
+
+                pb76("")
+
+
+                pb77("")
+
+
                 pb78("")
             End If
         ElseIf Row = 5 Then
@@ -1353,6 +1599,60 @@ Public Class MainGame
                 End If
                 count += 1
             Else
+                pb79("")
+
+
+                pb80("")
+
+
+                pb81("")
+
+
+                pb82("")
+
+
+                pb83("")
+
+
+                pb84("")
+
+
+                pb85("")
+
+
+                pb86("")
+
+
+                pb87("")
+
+
+                pb88("")
+
+
+                pb89("")
+
+
+                pb90("")
+
+
+                pb91("")
+
+
+                pb92("")
+
+
+                pb93("")
+
+
+                pb94("")
+
+
+                pb95("")
+
+
+                pb96("")
+
+
                 pb97("")
             End If
         ElseIf Row = 6 Then
@@ -1492,6 +1792,60 @@ Public Class MainGame
                 End If
                 count += 1
             Else
+                pb98("")
+
+
+                pb99("")
+
+
+                pb100("")
+
+
+                pb101("")
+
+
+                pb102("")
+
+
+                pb103("")
+
+
+                pb104("")
+
+
+                pb105("")
+
+
+                pb106("")
+
+
+                pb107("")
+
+
+                pb108("")
+
+
+                pb109("")
+
+
+                pb110("")
+
+
+                pb111("")
+
+
+                pb112("")
+
+
+                pb113("")
+
+
+                pb114("")
+
+
+                pb115("")
+
+
                 pb116("")
             End If
         ElseIf Row = 7 Then
@@ -1631,6 +1985,60 @@ Public Class MainGame
                 End If
                 count += 1
             Else
+                pb117("")
+
+
+                pb118("")
+
+
+                pb119("")
+
+
+                pb120("")
+
+
+                pb121("")
+
+
+                pb122("")
+
+
+                pb123("")
+
+
+                pb124("")
+
+
+                pb125("")
+
+
+                pb126("")
+
+
+                pb127("")
+
+
+                pb128("")
+
+
+                pb129("")
+
+
+                pb130("")
+
+
+                pb131("")
+
+
+                pb132("")
+
+
+                pb133("")
+
+
+                pb134("")
+
+
                 pb135("")
             End If
         ElseIf Row = 8 Then
@@ -34825,7 +35233,6 @@ Public Class MainGame
         If CheckBox1.Checked Then
             Show_deck.Visible = True
             CheckBox2.Visible = True
-            CheckBox3.Visible = True
 
             GroupBox3.Text = "X/24"
             GroupBox5.Text = "3-21"
@@ -34840,7 +35247,6 @@ Public Class MainGame
 
             Show_deck.Visible = False
             CheckBox2.Visible = False
-            CheckBox3.Visible = False
 
             GroupBox3.Text = ""
             GroupBox5.Text = ""
@@ -34853,4 +35259,11 @@ Public Class MainGame
         End If
     End Sub
 
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked Then
+            Stage.Debug_move = True
+        Else
+            Stage.Debug_move = False
+        End If
+    End Sub
 End Class

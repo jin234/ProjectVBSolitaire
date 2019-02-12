@@ -16,5 +16,6 @@
 
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
         MainGame.Show()
+
     End Sub
 End Class
